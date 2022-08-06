@@ -14,7 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a604563f-99c9-4261-b66e-024d051595ce" name="Default Changelist" comment="bugs solved &amp; update">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/raihan/dailyfamily/model/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/raihan/dailyfamily/model/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/logo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/poetlogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/poetlogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/stamp.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/stamp.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="project.structure.last.edited" value="Build Variants" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -56,6 +60,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspace\Daily-Family\app\src\main\res\drawable" />
       <recent name="E:\Workspace\Daily-Family\app" />
       <recent name="E:\Workspace\Friends-Unity\app\src\main\assets" />
       <recent name="E:\Workspace\Friends-Unity\app\src\main\res\drawable" />
@@ -350,7 +355,28 @@
       <option name="project" value="LOCAL" />
       <updated>1659791244287</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="bugs solved &amp; update">
+      <created>1659791622180</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1659791622180</updated>
+    </task>
+    <task id="LOCAL-00033" summary="bugs solved &amp; update">
+      <created>1659791725979</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1659791725979</updated>
+    </task>
+    <task id="LOCAL-00034" summary="bugs solved &amp; update">
+      <created>1659791907220</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1659791907220</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
