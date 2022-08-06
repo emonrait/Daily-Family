@@ -383,10 +383,10 @@ public class DialogCustom {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot edtData : dataSnapshot.getChildren()) {
                     edtData.getRef().child("balance").setValue(String.valueOf(newtotal));
-                    edtData.getRef().child("notify").setValue("1. Your 'Plan of Establishing Together (POET)' Monthly Payment" + " " + amount
+                    edtData.getRef().child("notify").setValue("1. Your 'Daily Family' Monthly Payment" + " " + amount
                             + " Tk is Completed in " + " " + date + ". Your Invoice no is: " + invoice
                             + ". Your TXNID is: " + id + ". Your Total Balance is " + newtotal + " Tk."
-                            + "Thank you so much for staying with us. Any query? Please notify us by this email (poetol22@gmail.com) also confirm your payment.");
+                            + "Thank you so much for staying with us. Any query? Please notify us by this email (dailyfamilym22@gmail.com) also confirm your payment.");
                 }
                 Toast.makeText(activity, "Balance Update", Toast.LENGTH_LONG).show();
             }
