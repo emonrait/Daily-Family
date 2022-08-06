@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_short">8dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="headerTextSize">28sp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="dashboard_margint_left_base">5dp</dimen>
+    <dimen name="dashboard_margint_top_base">5dp</dimen>
+    <dimen name="dashboard_margint_right_base">5dp</dimen>
+    <dimen name="fudtransfer_menu_gridview_hs_base">5dp</dimen>
+    <dimen name="fudtransfer_menu_gridview_vs_base">5dp</dimen>
+    <dimen name="login_card_corner_radius_base">10dp</dimen>
+    <dimen name="login_card_elevation_base">5dp</dimen>
+    <dimen name="welcome_menu_icon_height_base">35dp</dimen>
+    <dimen name="input_padding_letf_base">15dp</dimen>
+    <dimen name="input_padding_top_base">7dp</dimen>
+    <dimen name="input_padding_right_base">15dp</dimen>
+    <dimen name="textsize_base">14sp</dimen>
+    <dimen name="account_balance_label_textsize_base">12sp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="account_detail_padding_base">10dp</dimen>
+    <dimen name="divider_height_base">1dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="title_textsize_base">20sp</dimen>
+    <dimen name="content_minus_top_base">-45dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="input_padding_bottom_base">7dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+</resources>

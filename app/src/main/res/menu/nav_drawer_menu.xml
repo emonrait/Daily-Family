@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_user"
+        android:title="@string/profile" />
+    <item
+        android:id="@+id/totalbal"
+        android:icon="@drawable/taka"
+        android:title="@string/total_balnace" />
+    <item
+        android:id="@+id/state"
+        android:icon="@drawable/ic_bank_statement"
+        android:title="@string/statement" />
+    <item
+        android:id="@+id/members"
+        android:icon="@drawable/ic_community"
+        android:title="@string/member" />
+    <item
+        android:id="@+id/cond"
+        android:icon="@drawable/ic_terms_and_conditions"
+        android:title="@string/condition" />
+    <item
+        android:id="@+id/contact"
+        android:icon="@drawable/ic_contact_information"
+        android:title="@string/contact" />
+    <item
+        android:id="@+id/notifications"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/notifications" />
+    <item
+        android:id="@+id/develop"
+        android:icon="@drawable/ic_programmer"
+        android:title="@string/developer" />
+    <item
+        android:id="@+id/debit"
+        android:icon="@drawable/ic_limit"
+        android:title="@string/debit" />
+    <item
+        android:id="@+id/credit"
+        android:icon="@drawable/ic_credit_card"
+        android:title="@string/credit" />
+    <item
+        android:id="@+id/report"
+        android:icon="@drawable/reportnew"
+        android:title="@string/report" />
+    <item
+        android:id="@+id/passChange"
+        android:icon="@drawable/password"
+        android:title="@string/password_change" />
+    <item
+        android:id="@+id/imgUpload"
+        android:icon="@drawable/camera"
+        android:title="@string/upload_image" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/logout" />
+
+</menu>

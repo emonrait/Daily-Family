@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_header_general"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/welcome_menu_icon_height_base"
+                android:layout_height="@dimen/welcome_menu_icon_height_base"
+                android:layout_marginTop="5dp"
+                android:padding="@dimen/padding_5"
+                android:src="@drawable/arrow_left" />
+
+            <TextView
+                android:id="@+id/tv_genereal_header_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="@string/title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/title_textsize_base" />
+
+            <ImageView
+                android:id="@+id/ivLogout"
+                android:layout_width="@dimen/welcome_menu_icon_height_base"
+                android:layout_height="@dimen/welcome_menu_icon_height_base"
+                android:layout_gravity="right"
+                android:padding="@dimen/padding_5"
+                android:src="@drawable/ic_logout" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

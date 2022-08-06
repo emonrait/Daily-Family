@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.raihan.friendsunity"
+    android:targetSandboxVersion="2"
+    android:versionCode="6"
+    android:versionName="1.0.6" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="32" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <application
+        android:name="com.raihan.friendsunity.model.GlobalVariable"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:fullBackupContent="@xml/my_backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.raihan.friendsunity.activity.ImageUpload"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.PasswordChangeNew"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.raihan.friendsunity.model.FCMService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.raihan.friendsunity.activity.ReportActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:parentActivityName="com.raihan.friendsunity.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.NewDashboardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.friendsunity.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.AllTxnListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.friendsunity.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashScreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.raihan.friendsunity.activity.QRcodeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.friendsunity.activity.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.CreditActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.friendsunity.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.DebitActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.friendsunity.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.TransactionActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.friendsunity.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.AboutActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.friendsunity.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.NotificationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.friendsunity.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.friendsunity.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.ContactActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.friendsunity.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.StatetmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.friendsunity.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.TotalBalanceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.friendsunity.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.ProfileActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.friendsunity.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.ConditionActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.friendsunity.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.MemberActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.friendsunity.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.DashboardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.raihan.friendsunity.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="firebase.auth"
+                    android:path="/"
+                    android:scheme="genericidp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="firebase.auth"
+                    android:path="/"
+                    android:scheme="recaptcha" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             but set to not exported to explicitly avoid allowing another app to call it.
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.raihan.friendsunity.com.squareup.picasso"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.raihan.friendsunity.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.raihan.friendsunity.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false" >
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+    </application>
+
+</manifest>

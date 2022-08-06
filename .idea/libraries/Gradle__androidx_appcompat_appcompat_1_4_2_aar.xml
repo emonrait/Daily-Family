@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.appcompat:appcompat:1.4.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/1486c5eb4ca27922cbdd8a5dc7ef486e/appcompat-1.4.2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/1486c5eb4ca27922cbdd8a5dc7ef486e/appcompat-1.4.2/jars/classes.jar!/" />
+      <root url="file://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/1486c5eb4ca27922cbdd8a5dc7ef486e/appcompat-1.4.2/res" />
+      <root url="file://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/1486c5eb4ca27922cbdd8a5dc7ef486e/appcompat-1.4.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://H:/Workspace/Android project/BankAsiaSmartApp/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.4.2/a0a6b931c735952c318e94c90b0239966c500c52/appcompat-1.4.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
