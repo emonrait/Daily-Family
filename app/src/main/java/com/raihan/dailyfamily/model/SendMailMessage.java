@@ -87,7 +87,7 @@ public class SendMailMessage extends AsyncTask<Void, Void, Void> {
             //Setting sender address
             //mm.setFrom(new InternetAddress("xzy@outlook.com", "Naveed Qureshi"));
 
-            mm.setFrom(new InternetAddress(Config.EMAIL, "POET"));
+            mm.setFrom(new InternetAddress(Config.EMAIL, "Daily Family"));
             //Adding receiver
             mm.addRecipient(Message.RecipientType.TO, new InternetAddress(email));
             //mm.addRecipient(Message.RecipientType.CC, new InternetAddress("muzahidzoom@gmail.com"));

@@ -97,7 +97,7 @@ public class SendMailAll extends AsyncTask<Void, Void, Void> {
             MimeMessage mm = new MimeMessage(session);
 
             //Setting sender address
-            mm.setFrom(new InternetAddress(Config.EMAIL,"POET"));
+            mm.setFrom(new InternetAddress(Config.EMAIL,"Daily Family"));
             //Adding receiver
             //InternetAddress[]cc = new InternetAddress[]{InternetAddress.parse("fhgfh@gmail.com")};
             //mm.addRecipient(Message.RecipientType.CC, new InternetAddress(email));
