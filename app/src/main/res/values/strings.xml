@@ -25,7 +25,7 @@
     </string>
     <string name="lb_helpline">01816028491</string>
     <string name="developed_by_emon_raihan">Developed by: Emon Raihan</string>
-    <string name="about_us">Plan of Establishing Together (POET) একটি অরাজনৈতিক, সঞ্চয়ী ও ভবিষৎ বিনিয়োগ প্রতিশ্রুতিবদ্ধ সংগঠন। সমমনা ব্যক্তিবর্গের সমন্বয়ে গঠিত এই সংগঠন পারষ্পরিক সমঝোতার ভিত্তিতে সংশ্লিষ্ট সদস্যদের আর্থ সামাজিক উন্নয়নে ঐক্য, শান্তি, নিরাপত্তা বিষয়গুলোর প্রতি লক্ষ্য রেখে ন্যায়, সততা ও দৃঢ়তার সাথে কাজ করে যাবে।</string>
+    <string name="about_us">Daily Family</string>
     <string name="contact_informatiom">Contact Informatiom</string>
     <string name="title">Title</string>
     <string name="statement_search">Statement Search</string>
@@ -36,7 +36,7 @@
     <string name="please_enter_email_id">Please Enter Your Email Address</string>
     <string name="about">About Us</string>
     <string name="developer_information">Developer Information</string>
-    <string name="positive_thinkers_unity">Plan of Establishing Together (POET)</string>
+    <string name="positive_thinkers_unity">Daily Family</string>
     <string name="forgot_password"><u>Forgot Password?</u></string>
     <string name="upload_image">Upload Image</string>
     <string name="new_member_registration">New Member Registration</string>
@@ -64,7 +64,7 @@
     <string name="_0_00">0.00 ৳</string>
     <string name="emon_raihan">Emon Raihan</string>
     <string name="example_gmail_com">example@gmail.com</string>
-    <string name="welcome_to_the_positive_thinkers_unity">Welcome To The Plan of Establishing Together (POET)</string>
+    <string name="welcome_to_the_positive_thinkers_unity">Welcome To The Daily Family</string>
     <string name="enter_your_user_id">Enter Your User ID</string>
     <string name="enter_password">Enter Your Password</string>
     <string name="login">login</string>
@@ -73,13 +73,13 @@
     <string name="notice">Notice</string>
     <string name="_1_your_january_month_payment_2000_tk_is_completed">1. Your January Month Payment 2000 Tk is Completed.</string>
     <string name="regards_and_thanks_by">Regards and Thanks By</string>
-    <string name="positive_thinkers_unity_authority">Plan of Establishing Together (POET) Authority</string>
+    <string name="positive_thinkers_unity_authority">Daily Family Authority</string>
     <string name="balance">Balance</string>
     <string name="_0_00_u09f3">৳</string>
     <string name="please_wait">Please Wait…</string>
 
     <string name="biometric_title">Login</string>
-    <string name="biometric_subtitle">Login to PPlan of Establishing Together (POET) App</string>
+    <string name="biometric_subtitle">Login to PDaily Family App</string>
     <string name="biometric_description">Place your finger on the device home button to verify your identity</string>
     <string name="biometric_negative_button_text">Login With Email</string>
 

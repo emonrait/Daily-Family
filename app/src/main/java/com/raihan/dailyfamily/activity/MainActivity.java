@@ -104,14 +104,14 @@ public class MainActivity extends CustomKeyboardHide {
         globalVariable = ((GlobalVariable) getApplicationContext());
         globalVariable.setNewversioncode(String.valueOf(BuildConfig.VERSION_CODE));
         globalVariable.setVersionName(BuildConfig.VERSION_NAME);
-       // globalVariable.setDeviceid(ValidationUtil.getDeviceId(this));
+        // globalVariable.setDeviceid(ValidationUtil.getDeviceId(this));
         globalVariable.setModel(ValidationUtil.getDeviceName());
 
         if (!checkPermission()) {
             ActivityCompat.requestPermissions(MainActivity.this, new String[]{
                     Manifest.permission.READ_PHONE_STATE, Manifest.permission.ACCESS_NETWORK_STATE, Manifest.permission.CALL_PHONE}, PackageManager.PERMISSION_GRANTED);
 
-        }else {
+        } else {
             globalVariable.setDeviceid(ValidationUtil.getDeviceId(this));
         }
 
