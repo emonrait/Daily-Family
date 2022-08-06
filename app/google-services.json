@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "432225614022",
+    "project_id": "daily-family-947b1",
+    "storage_bucket": "daily-family-947b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432225614022:android:f5bd481ae5ce3b14be3fc7",
+        "android_client_info": {
+          "package_name": "com.raihan.dailyfamily"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432225614022-q2c5thseeo7q2ej1o8kpfv2k8lrd7n0v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVFLRLoNXCzrNag0nhs0ynvJKzay3Gjzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432225614022-q2c5thseeo7q2ej1o8kpfv2k8lrd7n0v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -138,7 +138,7 @@ public class MainActivity extends CustomKeyboardHide {
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), TransactionActivity.class);
                 startActivity(i);
-                Snackbar.make(view, "Welcome To The Plan of Establishing Together (POET)", Snackbar.LENGTH_LONG).show();
+                Snackbar.make(view, "Welcome To The Daily Family", Snackbar.LENGTH_LONG).show();
 
             }
         });
@@ -410,11 +410,11 @@ public class MainActivity extends CustomKeyboardHide {
         try {
             String subject = "Your Password";
 
-            String message = "Dear " + member_name + "," + "\n" + "\n" + "Your 'Plan of Establishing Together (POET)' Android Apps login information as below"
+            String message = "Dear " + member_name + "," + "\n" + "\n" + "Your 'Daily Family' Android Apps login information as below"
                     + "\n" + "Your User Id is: " + useremail + ". "
                     + "\n" + "Your Password is: " + forgetpassword + ". "
                     + "\n" + "Thank you so much for staying with us. Any query? Please notify us by this email. Please preserve your login information for future."
-                    + "\n" + "\n" + "Thanks & Regards" + "\n" + "Plan of Establishing Together (POET)" + "\n" + "Email: poetol22@gmail.com";
+                    + "\n" + "\n" + "Thanks & Regards" + "\n" + "Daily Family" + "\n" + "Email: dailyfamilym22@gmail.com";
 
             SendMailMessage sm = new SendMailMessage(this, useremail, subject, message);
             sm.execute();

@@ -511,10 +511,10 @@ public class TransactionActivity extends AutoLogout {
                     titlepaint.setTextAlign(Paint.Align.CENTER);
                     titlepaint.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
                     titlepaint.setTextSize(45f);
-                    canvas.drawText("Plan of Establishing Together (POET)", 1200 / 2, 290, titlepaint);
+                    canvas.drawText("Daily Family", 1200 / 2, 290, titlepaint);
                     titlepaint.setTextSize(25f);
                     canvas.drawText("(Maijdee Court, Sadar, Noakhali-3800)", 1200 / 2, 330, titlepaint);
-                    canvas.drawText("(poetol22@gmail.com)", 1200 / 2, 360, titlepaint);
+                    canvas.drawText("(dailyfamilym22@gmail.com)", 1200 / 2, 360, titlepaint);
                     canvas.drawText("(ESTD:01/01/2022)", 1200 / 2, 395, titlepaint);
                     canvas.drawBitmap(scaledbmp, 500, 45, titlepaint);
 
@@ -522,7 +522,7 @@ public class TransactionActivity extends AutoLogout {
                     //paint.setColor(Color.rgb(255, 255, 255));
                     //paint.setTextSize(35f);
                     //paint.setTextAlign(Paint.Align.RIGHT);
-                    //canvas.drawText("Email: poetol22@gmail.com", 1180, 35, paint);
+                    //canvas.drawText("Email: dailyfamilym22@gmail.com", 1180, 35, paint);
                     //canvas.drawText("01816028491", 1180, 90, paint);
 
                     titlepaint.setTextAlign(Paint.Align.CENTER);
@@ -614,12 +614,12 @@ public class TransactionActivity extends AutoLogout {
                     //paint.setColor(Color.BLACK);
                     // paint.setTextSize(40f);
                     // paint.setTextAlign(Paint.Align.LEFT);
-                    // canvas.drawText("Plan of Establishing Together (POET)", 30, 1640, paint);
+                    // canvas.drawText("Daily Family", 30, 1640, paint);
 
                     // paint.setColor(Color.BLACK);
                     // paint.setTextSize(40f);
                     // paint.setTextAlign(Paint.Align.LEFT);
-                    //canvas.drawText("poetol22@gmail.com", 30, 1690, paint);
+                    //canvas.drawText("dailyfamilym22@gmail.com", 30, 1690, paint);
 
                     canvas.drawBitmap(sealbmp, 350, 1400, titlepaint);
 
@@ -761,13 +761,13 @@ public class TransactionActivity extends AutoLogout {
         String total2 = amet.getText().toString().trim();
         String formatString = ValidationUtil.commaSeparateAmount(total2);
         String formatString1 = ValidationUtil.commaSeparateAmount(newtotal1);
-        String message = "Dear " + member_name + "," + "\n" + "\n" + "Your 'Plan of Establishing Together (POET)' Monthly Payment" + " "
+        String message = "Dear " + member_name + "," + "\n" + "\n" + "Your 'Daily Family' Monthly Payment" + " "
                 + formatString + " is Completed date of " + date + " by " + paymentmode.getSelectedItem().toString().trim() + "."
                 + "\n" + "Your Invoice no is: " + invoice + ". "
                 + "\n" + "Your TXNID is: " + id + ". "
                 + "\n" + "Your Total Balance is " + formatString1 + " ."
                 + "\n" + "Thank you so much for staying with us. Any query? Please notify us by this email also confirm your payment."
-                + "\n" + "\n" + "Thanks & Regards" + "\n" + "Plan of Establishing Together (POET)" + "\n" + "Email: poetol22@gmail.com";
+                + "\n" + "\n" + "Thanks & Regards" + "\n" + "Daily Family" + "\n" + "Email: dailyfamilym22@gmail.com";
 
         return message;
     }
@@ -785,13 +785,13 @@ public class TransactionActivity extends AutoLogout {
         String formatString1 = ValidationUtil.commaSeparateAmount(String.valueOf(newtotal1));
 
 
-        String message = "Dear " + member_name + "," + "\n" + "\n" + "Your 'Plan of Establishing Together (POET)' Monthly Payment" + " "
+        String message = "Dear " + member_name + "," + "\n" + "\n" + "Your 'Daily Family' Monthly Payment" + " "
                 + formatString + " is Completed date of " + date + " by " + paymentmode.getSelectedItem().toString().trim() + "."
                 + "\n" + "Your Invoice no is: " + invoice + ". "
                 + "\n" + "Your TXNID is: " + id + ". "
                 + "\n" + "Your Total Balance is " + formatString1 + "."
                 + "\n" + "Thank you so much for staying with us. Any query? Please notify us by this email also confirm your payment."
-                + "\n" + "\n" + "Thanks & Regards" + "\n" + "Plan of Establishing Together (POET)" + "\n" + "Email: poetol22@gmail.com";
+                + "\n" + "\n" + "Thanks & Regards" + "\n" + "Daily Family" + "\n" + "Email: dailyfamilym22@gmail.com";
 
 
         try {
@@ -812,10 +812,10 @@ public class TransactionActivity extends AutoLogout {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot edtData : dataSnapshot.getChildren()) {
                     edtData.getRef().child("balance").setValue(String.valueOf(newtotal));
-                    edtData.getRef().child("notify").setValue("1. Your 'Plan of Establishing Together (POET)' Monthly Payment" + " " + String.valueOf(bal)
+                    edtData.getRef().child("notify").setValue("1. Your 'Daily Family' Monthly Payment" + " " + String.valueOf(bal)
                             + " Tk is Completed in " + " " + datet.getText().toString() + ". Your Invoice no is: " + invoice
                             + ". Your TXNID is: " + id + ". Your Total Balance is " + String.valueOf(newtotal) + " Tk."
-                            + "Thank you so much for staying with us. Any query? Please notify us by this email (poetol22@gmail.com) also confirm your payment.");
+                            + "Thank you so much for staying with us. Any query? Please notify us by this email (dailyfamilym22@gmail.com) also confirm your payment.");
                 }
                 Toast.makeText(TransactionActivity.this, "Balance Update", Toast.LENGTH_LONG).show();
             }
@@ -972,7 +972,7 @@ public class TransactionActivity extends AutoLogout {
                         String email = "emonrait@gmail.com";
                         String subject = "Important Information & Notice";
 
-                        String message = "Dear All," + "\n" + "\n" + notice5 + "\n" + "\n" + "Thanks & Regards" + "\n" + "Plan of Establishing Together (POET)" + "\n" + "Email: poetol22@gmail.com";
+                        String message = "Dear All," + "\n" + "\n" + notice5 + "\n" + "\n" + "Thanks & Regards" + "\n" + "Daily Family" + "\n" + "Email: dailyfamilym22@gmail.com";
                         ;
                         SendMailAll sma = new SendMailAll(TransactionActivity.this, email, subject, message, globalVariable.getEmailList());
                         sma.execute();

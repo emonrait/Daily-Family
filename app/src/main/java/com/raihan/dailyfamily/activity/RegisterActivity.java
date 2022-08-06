@@ -206,12 +206,12 @@ public class RegisterActivity extends AutoLogout {
 
     private String getMessage() {
 
-        message = "Dear " + member_name + "," + "\n" + "\n" + "A warm welcome and lots of good wishes on becoming part of 'Plan of Establishing Together (POET)'. Congratulations and on behalf of all the members. We are all happy and excited about your inputs and contribution to our company & Unity. "
+        message = "Dear " + member_name + "," + "\n" + "\n" + "A warm welcome and lots of good wishes on becoming part of 'Daily Family'. Congratulations and on behalf of all the members. We are all happy and excited about your inputs and contribution to our company & Unity. "
                 + "\n" + "Your User Id is: " + email + ". "
                 + "\n" + "Your Password is: " + password + ". "
                 + "\n" + "Your Mobile No is: " + mobile + ". "
                 + "\n" + "Thank you so much for staying with us. Any query? Please notify us by this email. Please preserve your login information for future."
-                + "\n" + "\n" + "Thanks & Regards" + "\n" + "Plan of Establishing Together (POET)" + "\n" + "Email: poetol22@gmail.com";
+                + "\n" + "\n" + "Thanks & Regards" + "\n" + "Daily Family" + "\n" + "Email: dailyfamilym22@gmail.com";
 
         return message;
     }
@@ -220,12 +220,12 @@ public class RegisterActivity extends AutoLogout {
         String email1 = mEmail.getText().toString().trim();
         String subject = "Welcome Message to " + member_name;
 
-        String message = "Dear " + member_name + "," + "\n" + "\n" + "A warm welcome and lots of good wishes on becoming part of 'Plan of Establishing Together (POET)'. Congratulations and on behalf of all the members. We are all happy and excited about your inputs and contribution to our company & Unity. "
+        String message = "Dear " + member_name + "," + "\n" + "\n" + "A warm welcome and lots of good wishes on becoming part of 'Daily Family'. Congratulations and on behalf of all the members. We are all happy and excited about your inputs. "
                 + "\n" + "Your User Id is: " + email + ". "
                 + "\n" + "Your Password is: " + password + ". "
                 + "\n" + "Your Mobile No is: " + mobile + ". "
                 + "\n" + "Thank you so much for staying with us. Any query? Please notify us by this email. Please preserve your login information for future."
-                + "\n" + "\n" + "Thanks & Regards" + "\n" + "Plan of Establishing Together (POET)" + "\n" + "Email: poetol22@gmail.com";
+                + "\n" + "\n" + "Thanks & Regards" + "\n" + "Daily Family" + "\n" + "Email: dailyfamilym22@gmail.com";
 
         SendMailMessage sm = new SendMailMessage(this, email1, subject, message);
         sm.execute();
@@ -246,7 +246,7 @@ public class RegisterActivity extends AutoLogout {
         nid = mNid.getText().toString();
         address = mAddress.getText().toString();
         balance = "0";
-        notify = "Welcome To The Plan of Establishing Together (POET). Thanks stay connected with us.";
+        notify = "Welcome To The Daily Family. Thanks stay connected with us.";
         occupation = "Private Service";
         version = String.valueOf(BuildConfig.VERSION_CODE);
         role = "user";
