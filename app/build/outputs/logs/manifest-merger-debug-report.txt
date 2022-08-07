@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:2:1-160:12
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-167:12
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-167:12
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-167:12
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-167:12
 MERGED from [androidx.multidex:multidex:2.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\206f108751a2f5c3eb85a58ab584c925\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.7.0-alpha01] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\3d46d1742139235713c7290afedd8340\material-1.7.0-alpha01\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\e2ed4bb1e4fb431131953fa714005ea9\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -102,31 +102,31 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] H:\Workspace\Android proj
 MERGED from [androidx.documentfile:documentfile:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\beeb1faf75debc28d0db76f0ae023bfe\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\92bface2787d8d2d0dd3db086e997be3\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\0b916f9d9d31d576339b50edb56f6cb1\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:2:1-160:12
-INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:2:1-160:12
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-167:12
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-167:12
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-167:12
 	package
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:4:5-38
-		INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:4:5-37
+		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:2:1-160:12
-		INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-167:12
+		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:2:1-160:12
-		INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-167:12
+		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:6:5-80
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:6:5-80
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:6:22-77
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:6:22-77
 uses-permission#android.permission.INTERNET
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:7:5-67
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:7:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-storage:20.0.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\eaec50b544866e4a374be6761e5c7bf4\jetified-firebase-storage-20.0.1\AndroidManifest.xml:27:5-67
@@ -150,27 +150,27 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] H:
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\4d5d7d161560a81f1db413da412040fc\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\4d5d7d161560a81f1db413da412040fc\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:7:22-64
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:7:22-64
 uses-permission#android.permission.CALL_PHONE
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:8:5-69
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:8:5-69
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:8:22-66
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:8:22-66
 uses-permission#android.permission.READ_PRIVILEGED_PHONE_STATE
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:9:5-10:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:9:5-11:47
 	tools:ignore
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:10:9-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:11:9-44
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:9:22-83
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:10:9-70
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:11:5-81
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:11:22-78
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:12:22-78
 uses-permission#android.permission.USE_BIOMETRIC
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:12:5-72
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:13:5-72
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:12:22-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:13:22-69
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:13:5-79
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:14:5-79
 MERGED from [com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-storage:20.0.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\eaec50b544866e4a374be6761e5c7bf4\jetified-firebase-storage-20.0.1\AndroidManifest.xml:26:5-79
@@ -196,19 +196,19 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] H:\Wo
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7ebff0a6e4a0de1ef1798a3e0b956cf7\jetified-transport-runtime-3.1.6\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7ebff0a6e4a0de1ef1798a3e0b956cf7\jetified-transport-runtime-3.1.6\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:13:22-76
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:14:22-76
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:14:5-75
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:15:5-75
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:14:22-72
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:15:22-72
 uses-permission#android.permission.WRITE_SETTINGS
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:15:5-17:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:16:5-18:47
 	tools:ignore
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:17:9-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:18:9-44
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:16:9-57
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:17:9-57
 application
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:19:5-158:19
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:20:5-165:19
 MERGED from [com.google.android.material:material:1.7.0-alpha01] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\3d46d1742139235713c7290afedd8340\material-1.7.0-alpha01\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0-alpha01] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\3d46d1742139235713c7290afedd8340\material-1.7.0-alpha01\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\e2ed4bb1e4fb431131953fa714005ea9\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -282,277 +282,289 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] H:\Workspace\Android pr
 MERGED from [androidx.startup:startup-runtime:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\8c403f29db8cef4aceccf5346fad0fbd\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\8c403f29db8cef4aceccf5346fad0fbd\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
 	android:requestLegacyExternalStorage
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:25:9-52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:26:9-52
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\939757828d99f44c512ab2a186308018\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:27:9-35
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:28:9-35
 	android:label
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:24:9-41
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:25:9-41
 	android:fullBackupContent
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:22:9-57
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:23:9-57
 	android:roundIcon
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:26:9-54
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:27:9-54
 	android:icon
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:23:9-43
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:24:9-43
 	android:allowBackup
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:22:9-35
 	android:theme
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:28:9-40
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:29:9-40
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:20:9-68
-activity#com.raihan.friendsunity.activity.ImageUpload
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:29:9-33:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:21:9-45
+activity#com.raihan.dailyfamily.activity.AddMeal
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:30:9-32:39
+	android:exported
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:32:13-36
+	android:name
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:31:13-45
+activity#com.raihan.dailyfamily.activity.MealBoard
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:33:9-35:39
+	android:exported
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:35:13-36
+	android:name
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:34:13-47
+activity#com.raihan.dailyfamily.activity.ImageUpload
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:36:9-40:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:33:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:40:13-49
 	android:exported
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:31:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:39:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:32:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:38:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:30:13-72
-activity#com.raihan.friendsunity.activity.PasswordChangeNew
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:34:9-38:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:37:13-49
+activity#com.raihan.dailyfamily.activity.PasswordChangeNew
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:41:9-45:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:38:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:45:13-49
 	android:exported
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:37:13-37
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:44:13-37
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:36:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:43:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:35:13-78
-service#com.raihan.friendsunity.model.FCMService
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:40:9-46:19
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:42:13-55
+service#com.raihan.dailyfamily.model.FCMService
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:47:9-53:19
 	android:exported
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:42:13-37
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:41:13-68
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:48:13-45
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:43:13-45:29
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:50:13-52:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:44:17-78
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:51:17-78
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:44:25-75
-activity#com.raihan.friendsunity.activity.ReportActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:48:9-53:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:51:25-75
+activity#com.raihan.dailyfamily.activity.ReportActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:55:9-60:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:53:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:60:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:52:13-92
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:59:13-69
 	android:exported
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:51:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:58:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:50:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:57:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:49:13-75
-activity#com.raihan.friendsunity.activity.NewDashboardActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:54:9-58:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:56:13-52
+activity#com.raihan.dailyfamily.activity.NewDashboardActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:61:9-65:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:58:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:65:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:57:13-92
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:64:13-69
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:56:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:63:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:55:13-81
-activity#com.raihan.friendsunity.activity.AllTxnListActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:59:9-63:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:62:13-58
+activity#com.raihan.dailyfamily.activity.AllTxnListActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:66:9-70:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:63:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:70:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:62:13-92
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:69:13-69
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:61:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:68:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:60:13-79
-activity#com.raihan.friendsunity.activity.SplashActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:64:9-75:20
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:67:13-56
+activity#com.raihan.dailyfamily.activity.SplashActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:71:9-82:20
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:68:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:75:13-49
 	android:exported
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:67:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:74:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:66:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:73:13-63
 	android:theme
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:69:13-53
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:76:13-53
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:65:13-75
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:72:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:70:13-74:29
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:77:13-81:29
 action#android.intent.action.MAIN
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:71:17-69
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:78:17-69
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:71:25-66
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:78:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:73:17-77
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:80:17-77
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:73:27-74
-activity#com.raihan.friendsunity.activity.QRcodeActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:76:9-80:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:80:27-74
+activity#com.raihan.dailyfamily.activity.QRcodeActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:83:9-87:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:80:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:87:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:79:13-90
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:86:13-67
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:78:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:85:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:77:13-75
-activity#com.raihan.friendsunity.activity.CreditActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:81:9-85:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:84:13-52
+activity#com.raihan.dailyfamily.activity.CreditActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:88:9-92:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:85:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:92:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:84:13-92
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:91:13-69
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:83:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:90:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:82:13-75
-activity#com.raihan.friendsunity.activity.DebitActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:86:9-90:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:89:13-52
+activity#com.raihan.dailyfamily.activity.DebitActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:93:9-97:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:90:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:97:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:89:13-92
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:96:13-69
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:88:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:95:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:87:13-74
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:94:13-51
 activity#com.theartofdev.edmodo.cropper.CropImageActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:91:9-95:59
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:98:9-102:59
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:94:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:101:13-49
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:93:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:100:13-63
 	android:theme
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:95:13-56
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:102:13-56
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:92:13-76
-activity#com.raihan.friendsunity.activity.TransactionActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:96:9-100:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:99:13-76
+activity#com.raihan.dailyfamily.activity.TransactionActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:103:9-107:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:100:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:107:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:99:13-92
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:106:13-69
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:98:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:105:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:97:13-80
-activity#com.raihan.friendsunity.activity.AboutActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:101:9-105:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:104:13-57
+activity#com.raihan.dailyfamily.activity.AboutActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:108:9-112:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:105:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:112:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:104:13-92
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:111:13-69
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:103:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:110:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:102:13-74
-activity#com.raihan.friendsunity.activity.NotificationActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:106:9-110:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:109:13-51
+activity#com.raihan.dailyfamily.activity.NotificationActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:113:9-117:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:110:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:117:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:109:13-92
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:116:13-69
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:108:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:115:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:107:13-81
-activity#com.raihan.friendsunity.activity.RegisterActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:111:9-115:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:114:13-58
+activity#com.raihan.dailyfamily.activity.RegisterActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:118:9-122:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:115:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:122:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:114:13-87
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:121:13-64
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:113:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:120:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:112:13-77
-activity#com.raihan.friendsunity.activity.ContactActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:116:9-120:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:119:13-54
+activity#com.raihan.dailyfamily.activity.ContactActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:123:9-127:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:120:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:127:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:119:13-92
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:126:13-69
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:118:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:125:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:117:13-76
-activity#com.raihan.friendsunity.activity.StatetmentActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:121:9-125:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:124:13-53
+activity#com.raihan.dailyfamily.activity.StatetmentActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:128:9-132:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:125:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:132:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:124:13-92
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:131:13-69
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:123:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:130:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:122:13-79
-activity#com.raihan.friendsunity.activity.TotalBalanceActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:126:9-130:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:129:13-56
+activity#com.raihan.dailyfamily.activity.TotalBalanceActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:133:9-137:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:130:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:137:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:129:13-92
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:136:13-69
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:128:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:135:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:127:13-81
-activity#com.raihan.friendsunity.activity.ProfileActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:131:9-135:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:134:13-58
+activity#com.raihan.dailyfamily.activity.ProfileActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:138:9-142:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:135:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:142:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:134:13-92
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:141:13-69
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:133:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:140:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:132:13-76
-activity#com.raihan.friendsunity.activity.ConditionActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:136:9-140:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:139:13-53
+activity#com.raihan.dailyfamily.activity.ConditionActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:143:9-147:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:140:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:147:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:139:13-92
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:146:13-69
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:138:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:145:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:137:13-78
-activity#com.raihan.friendsunity.activity.MemberActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:141:9-145:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:144:13-55
+activity#com.raihan.dailyfamily.activity.MemberActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:148:9-152:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:145:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:152:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:144:13-92
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:151:13-69
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:143:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:150:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:142:13-75
-activity#com.raihan.friendsunity.activity.DashboardActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:146:9-149:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:149:13-52
+activity#com.raihan.dailyfamily.activity.DashboardActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:153:9-156:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:149:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:156:13-49
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:148:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:155:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:147:13-78
-activity#com.raihan.friendsunity.activity.MainActivity
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:150:9-153:52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:154:13-55
+activity#com.raihan.dailyfamily.activity.MainActivity
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:157:9-160:52
 	android:screenOrientation
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:153:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:160:13-49
 	android:configChanges
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:152:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:159:13-63
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:151:13-73
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:158:13-50
 meta-data#preloaded_fonts
-ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:155:9-157:57
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:162:9-164:57
 	android:resource
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:157:13-54
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:164:13-54
 	android:name
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml:156:13-43
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:163:13-43
 uses-sdk
-INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
-INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
 MERGED from [androidx.multidex:multidex:2.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\206f108751a2f5c3eb85a58ab584c925\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\206f108751a2f5c3eb85a58ab584c925\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.material:material:1.7.0-alpha01] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\3d46d1742139235713c7290afedd8340\material-1.7.0-alpha01\AndroidManifest.xml:20:5-22:41
@@ -749,16 +761,16 @@ MERGED from [androidx.print:print:1.0.0] H:\Workspace\Android project\BankAsiaSm
 MERGED from [androidx.print:print:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\92bface2787d8d2d0dd3db086e997be3\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\0b916f9d9d31d576339b50edb56f6cb1\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\0b916f9d9d31d576339b50edb56f6cb1\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
-INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
-		ADDED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
-		INJECTED from E:\Workspace\Friends-Unity\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
 activity#com.google.firebase.auth.internal.GenericIdpActivity
 ADDED from [com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:27:9-44:20
 	android:excludeFromRecents

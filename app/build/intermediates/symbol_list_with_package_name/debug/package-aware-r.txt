@@ -1,4 +1,4 @@
-com.raihan.friendsunity
+com.raihan.dailyfamily
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -2943,11 +2943,13 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id breakfast_value
 id browser_actions_header_text
 id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnSubmit
 id btnUpdate
 id btnUpload
 id btn_cancel
@@ -3024,6 +3026,7 @@ id cut
 id dark
 id date
 id date_picker_actions
+id date_value
 id debit
 id decelerate
 id decelerateAndComplete
@@ -3040,6 +3043,7 @@ id develop
 id deviceid
 id dialog_button
 id dimensions
+id dinner_value
 id direct
 id disableHome
 id disableIntraAutoTransition
@@ -3168,6 +3172,7 @@ id ivLogout
 id jumpToEnd
 id jumpToStart
 id labeled
+id launch_value
 id layout
 id layout_content
 id layout_header_general
@@ -3518,8 +3523,6 @@ id tv_deposit_amount
 id tv_deposit_amount_label
 id tv_due_balance
 id tv_due_balance_label
-id tv_due_months
-id tv_due_months_label
 id tv_email
 id tv_email_level
 id tv_genereal_header_title
@@ -3531,6 +3534,12 @@ id tv_ocp_level
 id tv_registration_title
 id tv_title
 id tv_total_amount_label
+id tv_total_meal
+id tv_total_meal_cost
+id tv_total_meal_cost_label
+id tv_total_meal_label
+id tv_total_shoping_cost
+id tv_total_shoping_cost_label
 id tv_txnid
 id txn_listall
 id unchecked
@@ -3670,6 +3679,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_about
+layout activity_add_meal
 layout activity_all_txn_list
 layout activity_condition
 layout activity_contact
@@ -3678,6 +3688,7 @@ layout activity_dashboard
 layout activity_debit
 layout activity_image_upload
 layout activity_main
+layout activity_meal_board
 layout activity_member
 layout activity_new_dashboard
 layout activity_notification
@@ -3879,6 +3890,7 @@ string abc_toolbar_collapse_description
 string about
 string about_us
 string account
+string add_daily_meal
 string address
 string already_a_member_login
 string androidx_startup
@@ -3901,6 +3913,7 @@ string biometric_title
 string blogspot
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
+string breakfast
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -3940,12 +3953,14 @@ string crop_image_menu_flip_vertically
 string crop_image_menu_rotate_left
 string crop_image_menu_rotate_right
 string customer_care
+string date
 string debit
 string default_web_client_id
 string deposit_amount
 string developed_by_emon_raihan
 string developer
 string developer_information
+string dinner
 string do_you_want_to_logout_the_application
 string due_balance
 string due_months
@@ -3988,6 +4003,7 @@ string iamge_upload
 string icon_content_description
 string item_view_role_description
 string label
+string launch
 string lb_accountinfo
 string lb_channel_banking_address_text
 string lb_contact_email
@@ -4033,6 +4049,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string meal_board
 string member
 string member_name
 string mobile_no
@@ -4121,6 +4138,9 @@ string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
 string title
 string total_balnace
+string total_meal
+string total_meal_cost
+string total_shopping_cost
 string update_image
 string upload_image
 string v7_preference_off

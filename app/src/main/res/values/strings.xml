@@ -107,6 +107,8 @@
     <string name="old_password">Old Password</string>
     <string name="enter_old_password">Enter Old Password</string>
     <string name="iamge_upload">Upload/Change Image</string>
+    <string name="meal_board">Meal Board</string>
+    <string name="add_daily_meal">Add Your Daily Meal</string>
     <string name="select_your_profile_image">Select Your Profile Image</string>
     <string name="update_image">Update Image</string>
     <string name="welcome">Welcome to</string>
@@ -122,6 +124,13 @@
     <string name="logout">Logout</string>
     <string name="report">Report</string>
     <string name="new_total">New Total</string>
+    <string name="total_meal">Total Meal</string>
+    <string name="total_meal_cost">Total Meal Cost</string>
+    <string name="total_shopping_cost">Total Shopping Cost</string>
+    <string name="launch">Launch</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="dinner">Dinner</string>
+    <string name="date">Date</string>
 
 
     <string-array name="spinnerItems">

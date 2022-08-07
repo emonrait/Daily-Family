@@ -19,6 +19,7 @@ import java.net.URL;
 import java.text.DecimalFormat;
 import java.text.Format;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Locale;
 import java.util.regex.Pattern;
 
@@ -171,6 +172,20 @@ public class ValidationUtil {
         return b;
     }
 
+    public static int getNumber(String b, String l, String d) {
+        int value = 0;
+        try {
+            if (b != "" || l != "" || d != "") {
+                value = Integer.parseInt(b) + Integer.parseInt(l) + Integer.parseInt(d);
+
+            }
+
+        } catch (NumberFormatException e) {
+            value = 0;
+        }
+        return value;
+    }
+
     public static String getRetrofit_NullCheck(String s) {
         String rValue = "";
         if (null == s || s.isEmpty() || s.endsWith("null") || s == "") {
@@ -276,11 +291,29 @@ public class ValidationUtil {
 
 
     public static String getTransactionCurrentDate() {
+        String date = "";
+        try {
+            java.util.Date dNow = new java.util.Date();
+            SimpleDateFormat ft = new SimpleDateFormat("dd/MM/yyyy");
+            date = ft.format(dNow);
+        } catch (Exception e) {
 
-        java.util.Date dNow = new java.util.Date();
-        SimpleDateFormat ft = new SimpleDateFormat("MMM dd',' 'at' hh:mm a");
-        return ft.format(dNow);
+        }
 
+        return date;
+    }
+
+    public static String dateFormate(Calendar datevalue) {
+        String date = "";
+        try {
+            String myFormat = "dd/MM/yyyy";
+            SimpleDateFormat dateFormat = new SimpleDateFormat(myFormat, Locale.US);
+            date = dateFormat.format(datevalue.getTime());
+        } catch (Exception e) {
+
+        }
+
+        return date;
     }
 
     public static Drawable drawableFromUrl(String url) throws IOException {

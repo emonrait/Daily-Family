@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "applicationId": "com.raihan.friendsunity",
+  "applicationId": "com.raihan.dailyfamily",
   "variantType": "BASE_APK",
   "elements": [
     {
@@ -10,8 +10,8 @@
       "apkData": {
         "type": "MAIN",
         "splits": [],
-        "versionCode": 6,
-        "versionName": "1.0.6",
+        "versionCode": 1,
+        "versionName": "1.0.0",
         "outputFile": "app-debug.apk",
         "fullName": "debug",
         "baseName": "debug",
@@ -19,7 +19,7 @@
       },
       "path": "AndroidManifest.xml",
       "properties": {
-        "packageId": "com.raihan.friendsunity",
+        "packageId": "com.raihan.dailyfamily",
         "split": "",
         "minSdkVersion": "19"
       }

@@ -43,7 +43,7 @@ public class ReportListAdapter extends RecyclerView.Adapter<ReportListAdapter.My
     String monthlydep = "";
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView tv_name, tv_deposit_amount, tv_due_balance, tv_due_months, tv_due_balance_label, tv_due_months_label;
+        TextView tv_name, tv_deposit_amount, tv_due_balance, tv_total_meal, tv_due_balance_label, tv_total_meal_label;
         Button btn_payment_details;
 
         public MyViewHolder(View view) {
@@ -51,9 +51,9 @@ public class ReportListAdapter extends RecyclerView.Adapter<ReportListAdapter.My
             tv_name = (TextView) itemView.findViewById(R.id.tv_name);
             tv_deposit_amount = (TextView) itemView.findViewById(R.id.tv_deposit_amount);
             tv_due_balance = (TextView) itemView.findViewById(R.id.tv_due_balance);
-            tv_due_months = (TextView) itemView.findViewById(R.id.tv_due_months);
+            tv_total_meal = (TextView) itemView.findViewById(R.id.tv_total_meal);
             tv_due_balance_label = (TextView) itemView.findViewById(R.id.tv_due_balance_label);
-            tv_due_months_label = (TextView) itemView.findViewById(R.id.tv_due_months_label);
+            tv_total_meal_label = (TextView) itemView.findViewById(R.id.tv_total_meal_label);
             btn_payment_details = (Button) itemView.findViewById(R.id.btn_payment_details);
 
           /*  view.setOnClickListener(new View.OnClickListener() {
@@ -108,7 +108,7 @@ public class ReportListAdapter extends RecyclerView.Adapter<ReportListAdapter.My
                         if (map.isEmpty()) {
                             holder.tv_deposit_amount.setText(ValidationUtil.commaSeparateAmount("0"));
                             holder.tv_due_balance.setText(ValidationUtil.commaSeparateAmount("0"));
-                            holder.tv_due_months.setText(ValidationUtil.commaSeparateMonth("0"));
+                            holder.tv_total_meal.setText(ValidationUtil.commaSeparateMonth("0"));
                         } else {
                             double pvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(amount)));
                             total += pvalue;
@@ -145,18 +145,18 @@ public class ReportListAdapter extends RecyclerView.Adapter<ReportListAdapter.My
                                 double totalamt = oldotal + (totalMonths * currentMonthlyDepo);
                                 double dueamt = total - totalamt;
 
-                                holder.tv_due_months.setText(ValidationUtil.commaSeparateMonth(String.valueOf((dueamt / currentMonthlyDepo))));
+                                holder.tv_total_meal.setText(ValidationUtil.commaSeparateMonth(String.valueOf((dueamt / currentMonthlyDepo))));
 
                                 if (dueamt > 0) {
                                     holder.tv_due_balance.setText(ValidationUtil.commaSeparateAmount(String.valueOf(dueamt)));
                                     holder.tv_due_balance_label.setText("Extra Balance: ");
-                                    holder.tv_due_months_label.setText("Extra Months: ");
+                                    holder.tv_total_meal_label.setText("Extra Months: ");
                                 } else if (dueamt == 0) {
                                     holder.tv_due_balance.setText("0" + ValidationUtil.commaSeparateAmount(String.valueOf(dueamt)));
-                                    holder.tv_due_months_label.setText("Due Months: ");
+                                    holder.tv_total_meal_label.setText("Due Months: ");
                                 } else {
                                     holder.tv_due_balance.setText(ValidationUtil.commaSeparateAmount(String.valueOf(dueamt)));
-                                    holder.tv_due_months_label.setText("Due Months: ");
+                                    holder.tv_total_meal_label.setText("Due Months: ");
                                 }
 
                             } catch (ParseException e) {
@@ -169,7 +169,7 @@ public class ReportListAdapter extends RecyclerView.Adapter<ReportListAdapter.My
                 } else {
                     holder.tv_deposit_amount.setText(ValidationUtil.commaSeparateAmount("0"));
                     holder.tv_due_balance.setText(ValidationUtil.commaSeparateAmount("0"));
-                    holder.tv_due_months.setText(ValidationUtil.commaSeparateMonth("0"));
+                    holder.tv_total_meal.setText(ValidationUtil.commaSeparateMonth("0"));
                 }
 
 
@@ -181,7 +181,7 @@ public class ReportListAdapter extends RecyclerView.Adapter<ReportListAdapter.My
                 // throw databaseError.toException(); // don't ignore errors
                 holder.tv_deposit_amount.setText(ValidationUtil.commaSeparateAmount("0"));
                 holder.tv_due_balance.setText(ValidationUtil.commaSeparateAmount("0"));
-                holder.tv_due_months.setText(ValidationUtil.commaSeparateMonth("0"));
+                holder.tv_total_meal.setText(ValidationUtil.commaSeparateMonth("0"));
             }
         });
 

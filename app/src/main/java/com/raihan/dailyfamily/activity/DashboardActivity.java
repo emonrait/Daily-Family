@@ -266,7 +266,7 @@ public class DashboardActivity extends AutoLogout {
                         String pattern = "yyyy-MM-dd";
                         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
                         String date = simpleDateFormat.format(new Date());
-                        String reformattedStr = simpleDateFormat.format(fromUser.parse(inputString));
+                        String reformattedStr = simpleDateFormat.format(Objects.requireNonNull(fromUser.parse(inputString)));
                         Calendar actDate = new GregorianCalendar();
                         Calendar curDate = new GregorianCalendar();
                         Date thedate = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH).parse(reformattedStr);
@@ -429,12 +429,14 @@ public class DashboardActivity extends AutoLogout {
         if (globalVariable.getRole().toLowerCase().equals("admin")) {
             list.add(new MenuModel("Profile", R.drawable.ic_user, "pf"));
             list.add(new MenuModel("Balance", R.drawable.taka, "bl"));
+            list.add(new MenuModel("Meal Board", R.drawable.logo, "mb"));
+            list.add(new MenuModel("Add Meal", R.drawable.ic_chat, "am"));
             list.add(new MenuModel("Statement", R.drawable.ic_bank_statement, "st"));
             list.add(new MenuModel("Members", R.drawable.ic_community, "me"));
             list.add(new MenuModel("Condition", R.drawable.ic_terms_and_conditions, "co"));
             list.add(new MenuModel("Notification", R.drawable.ic_chat, "no"));
-            list.add(new MenuModel("Debit", R.drawable.ic_limit, "db"));
-            list.add(new MenuModel("Credit", R.drawable.ic_credit_card, "cr"));
+            //list.add(new MenuModel("Debit", R.drawable.ic_limit, "db"));
+           // list.add(new MenuModel("Credit", R.drawable.ic_credit_card, "cr"));
             list.add(new MenuModel("Contact", R.drawable.ic_contact_information, "con"));
             list.add(new MenuModel("Developer", R.drawable.ic_programmer, "dev"));
             list.add(new MenuModel("Payment", R.drawable.online_payment, "pa"));
@@ -447,12 +449,14 @@ public class DashboardActivity extends AutoLogout {
         } else if (globalVariable.getRole().toLowerCase().equals("cash")) {
             list.add(new MenuModel("Profile", R.drawable.ic_user, "pf"));
             list.add(new MenuModel("Balance", R.drawable.taka, "bl"));
+            list.add(new MenuModel("Meal Board", R.drawable.logo, "mb"));
+            list.add(new MenuModel("Add Meal", R.drawable.ic_chat, "am"));
             list.add(new MenuModel("Statement", R.drawable.ic_bank_statement, "st"));
             list.add(new MenuModel("Members", R.drawable.ic_community, "me"));
             list.add(new MenuModel("Condition", R.drawable.ic_terms_and_conditions, "co"));
             list.add(new MenuModel("Notification", R.drawable.ic_chat, "no"));
-            list.add(new MenuModel("Debit", R.drawable.ic_limit, "db"));
-            list.add(new MenuModel("Credit", R.drawable.ic_credit_card, "cr"));
+            //list.add(new MenuModel("Debit", R.drawable.ic_limit, "db"));
+           // list.add(new MenuModel("Credit", R.drawable.ic_credit_card, "cr"));
             list.add(new MenuModel("Contact", R.drawable.ic_contact_information, "con"));
             list.add(new MenuModel("Developer", R.drawable.ic_programmer, "dev"));
             list.add(new MenuModel("Payment", R.drawable.online_payment, "pa"));
@@ -465,17 +469,20 @@ public class DashboardActivity extends AutoLogout {
         } else {
             list.add(new MenuModel("Profile", R.drawable.ic_user, "pf"));
             list.add(new MenuModel("Balance", R.drawable.taka, "bl"));
+            list.add(new MenuModel("Meal Board", R.drawable.logo, "mb"));
+            list.add(new MenuModel("Add Meal", R.drawable.ic_chat, "am"));
             list.add(new MenuModel("Statement", R.drawable.ic_bank_statement, "st"));
             list.add(new MenuModel("Members", R.drawable.ic_community, "me"));
             list.add(new MenuModel("Condition", R.drawable.ic_terms_and_conditions, "co"));
             list.add(new MenuModel("Notification", R.drawable.ic_chat, "no"));
-            list.add(new MenuModel("Debit", R.drawable.ic_limit, "db"));
-            list.add(new MenuModel("Credit", R.drawable.ic_credit_card, "cr"));
+            //list.add(new MenuModel("Debit", R.drawable.ic_limit, "db"));
+            //list.add(new MenuModel("Credit", R.drawable.ic_credit_card, "cr"));
             list.add(new MenuModel("Contact", R.drawable.ic_contact_information, "con"));
             list.add(new MenuModel("Developer", R.drawable.ic_programmer, "dev"));
             list.add(new MenuModel("Report", R.drawable.reportnew, "rep"));
             list.add(new MenuModel("Password Change", R.drawable.password, "pac"));
             list.add(new MenuModel("Upload Image", R.drawable.camera, "ui"));
+            list.add(new MenuModel("Registration", R.drawable.membership, "reg"));
         }
 
         MenuAdapter adapter = new MenuAdapter(this, list);
@@ -549,6 +556,12 @@ public class DashboardActivity extends AutoLogout {
                 Intent intent = new Intent(DashboardActivity.this, ImageUpload.class);
                 startActivity(intent);
 
+            } else if ("mb".equals(menu_soft_code.getText().toString())) {
+                Intent intent = new Intent(DashboardActivity.this, MealBoard.class);
+                startActivity(intent);
+            }else if ("am".equals(menu_soft_code.getText().toString())) {
+                Intent intent = new Intent(DashboardActivity.this, AddMeal.class);
+                startActivity(intent);
             }
 
 
@@ -563,7 +576,7 @@ public class DashboardActivity extends AutoLogout {
             databaseReferencet.addValueEventListener(new ValueEventListener() {
 
                 @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     loadingDialog.dismisstDialoglog();
                     double total = 0;
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
