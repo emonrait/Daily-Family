@@ -153,6 +153,7 @@ public class MealBoard extends AutoLogout {
         LoadingDialog loadingDialog = new LoadingDialog(this);
         loadingDialog.startDialoglog();
         ArrayList<String> emailList = new ArrayList<>();
+        listdata = new ArrayList<>();
         databaseReferenceM.addValueEventListener(new ValueEventListener() {
             @SuppressLint("NotifyDataSetChanged")
             @Override
@@ -166,12 +167,8 @@ public class MealBoard extends AutoLogout {
                     String profile = ds.child("prolink").getValue(String.class);
                     String nick = ds.child("nick").getValue(String.class);
                     //Log.d("TAG", name + " / "+email+" / "+mobile+" / "+profile);
-                    Report members = new Report(name, mobile, email, profile, nick, "");
-                    if (globalVariable.isMemberFlag()) {
-                        emailList.add(email);
-                        globalVariable.setEmailList(emailList);
-                        globalVariable.setMemberFlag(false);
-                    }
+                    Report members = new Report(name, mobile, email, profile, nick, nick);
+
                     listdata.add(members);
                     loadingDialog.dismisstDialoglog();
 
