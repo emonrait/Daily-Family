@@ -1,10 +1,12 @@
 package com.raihan.dailyfamily.activity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.text.format.DateUtils;
 import android.view.View;
 import android.widget.Button;
@@ -13,10 +15,20 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.raihan.dailyfamily.BuildConfig;
 import com.raihan.dailyfamily.R;
 import com.raihan.dailyfamily.model.AutoLogout;
 import com.raihan.dailyfamily.model.DialogCustom;
 import com.raihan.dailyfamily.model.GlobalVariable;
+import com.raihan.dailyfamily.model.ListItem;
+import com.raihan.dailyfamily.model.Meal;
+import com.raihan.dailyfamily.model.Members;
 import com.raihan.dailyfamily.model.ValidationUtil;
 
 import java.util.Calendar;
@@ -34,6 +46,10 @@ public class AddMeal extends AutoLogout {
     private Button btnSubmit;
     final Calendar myCalendar = Calendar.getInstance();
 
+    FirebaseAuth firebaseAuth;
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReferenceMeal;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +66,10 @@ public class AddMeal extends AutoLogout {
 
 
         globalVariable = ((GlobalVariable) getApplicationContext());
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReferenceMeal = FirebaseDatabase.getInstance().getReference("Meal");
 
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +89,7 @@ public class AddMeal extends AutoLogout {
         });
 
 
-         date_value.setText(ValidationUtil.getTransactionCurrentDate());
+        date_value.setText(ValidationUtil.getTransactionCurrentDate());
 
         DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
             @Override
@@ -108,15 +128,52 @@ public class AddMeal extends AutoLogout {
                     DialogCustom.showErrorMessage(AddMeal.this, "Please Enter Your Dinner Meal.");
 
                 } else if (ValidationUtil.getNumber(breakfast_value.getText().toString().trim(), launch_value.getText().toString().trim(), dinner_value.getText().toString().trim()) <= 0) {
+                    dinner_value.requestFocus();
                     DialogCustom.showErrorMessage(AddMeal.this, "Please Select at least any type of one Meal.");
                 } else {
-                    DialogCustom.showSuccessMessage(AddMeal.this, "Your Meal Add Successfully.");
+                    String id = databaseReferenceMeal.push().getKey();
+                    String date = date_value.getText().toString().trim();
+                    String email = firebaseAuth.getCurrentUser().getEmail();
+                    String breakfast = breakfast_value.getText().toString().trim();
+                    String launch = launch_value.getText().toString().trim();
+                    String dinner = dinner_value.getText().toString().trim();
+                    String flag = "Y";
+                    Meal meal = new Meal(id, date, email, breakfast, launch, dinner, flag);
+                    // assert id != null;
+                    //databaseReferenceMeal.child(id).setValue(meal);
+                    final LoadingDialog loadingDialog = new LoadingDialog(AddMeal.this);
+                    loadingDialog.startDialoglog();
+                    try {
+                        databaseReferenceMeal.child(id)
+                                .setValue(meal)
+                                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task) {
+                                        if (task.isSuccessful()) {
+
+                                            loadingDialog.dismisstDialoglog();
+                                            DialogCustom.showSuccessMessage(AddMeal.this, "Your Meal Add Successfully.");
+
+
+                                        } else {
+                                            DialogCustom.showErrorMessage(AddMeal.this, task.getResult() + "Unsuccessful");
+                                            loadingDialog.dismisstDialoglog();
+
+                                        }
+                                        loadingDialog.dismisstDialoglog();
+                                    }
+                                });
+                    } catch (Exception e) {
+                        DialogCustom.showErrorMessage(AddMeal.this, e.getMessage());
+                    }
+
                 }
             }
         });
 
 
     }
+
 
     @Override
     public void onBackPressed() {

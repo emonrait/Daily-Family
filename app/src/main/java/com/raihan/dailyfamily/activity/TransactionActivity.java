@@ -669,7 +669,7 @@ public class TransactionActivity extends AutoLogout {
             pdfDocument.close();
             stream.flush();
             sendEmail("/" + invoice + ".pdf");
-            sendwts(mobile,getMessage());
+            sendwts(mobile, getMessage());
             amet.setText("");
             Toast.makeText(this, "PDF Create Success", Toast.LENGTH_LONG).show();
 
@@ -918,7 +918,7 @@ public class TransactionActivity extends AutoLogout {
             DialogCustom.showInternetConnectionMessage(TransactionActivity.this);
         } else {
             id = databaseReferenceT.push().getKey();
-            ListItem listItem = new ListItem(id, txnid, date, "+" + amount, email, invoice, updateBy);
+            ListItem listItem = new ListItem(id, txnid, date, amount, email, invoice, updateBy);
             assert id != null;
             databaseReferenceT.child(id).setValue(listItem);
             //Toast.makeText(TransactionActivity.this, "Payment Success", Toast.LENGTH_LONG).show();
@@ -1418,7 +1418,7 @@ public class TransactionActivity extends AutoLogout {
 
         PackageManager pm = getPackageManager();
         try {
-            String phoneNumberWithCountryCode = "+88"+mobile.trim();
+            String phoneNumberWithCountryCode = "+88" + mobile.trim();
             //String message = "Hallo";
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone=" + phoneNumberWithCountryCode + "&text=" + message)));
 
