@@ -68,6 +68,7 @@ public class AddMeal extends AutoLogout {
         globalVariable = ((GlobalVariable) getApplicationContext());
 
         firebaseAuth = FirebaseAuth.getInstance();
+
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReferenceMeal = FirebaseDatabase.getInstance().getReference("Meal");
 

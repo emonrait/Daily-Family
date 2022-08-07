@@ -1280,6 +1280,10 @@
         "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\drawable\\bt_background_rounded_yellow.xml"
     },
     {
+        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addfood.png.flat",
+        "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\drawable\\addfood.png"
+    },
+    {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_taka.png.flat",
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_taka.png"
     },

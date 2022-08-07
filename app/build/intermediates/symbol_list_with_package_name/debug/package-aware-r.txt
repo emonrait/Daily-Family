@@ -2653,6 +2653,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable addfood
 drawable arrow_left
 drawable avd_hide_password
 drawable avd_show_password
@@ -3219,6 +3220,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id meal_recyclerView
 id media_actions
 id members
 id menuGridView
@@ -3527,6 +3529,7 @@ id tv_email
 id tv_email_level
 id tv_genereal_header_title
 id tv_invoiceno
+id tv_meal_info
 id tv_message
 id tv_name
 id tv_name_label
