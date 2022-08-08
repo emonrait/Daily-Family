@@ -28,11 +28,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".activity.AddBazarCost"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".activity.AddMeal"
-            android:exported="true" />
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.MealBoard"
-            android:exported="true" />
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.ImageUpload"
             android:configChanges="orientation|keyboardHidden"

@@ -109,6 +109,7 @@
     <string name="iamge_upload">Upload/Change Image</string>
     <string name="meal_board">Meal Board</string>
     <string name="add_daily_meal">Add Your Daily Meal</string>
+    <string name="add_daily_bazar_cost">Add Your Daily Bazaar Cost</string>
     <string name="select_your_profile_image">Select Your Profile Image</string>
     <string name="update_image">Update Image</string>
     <string name="welcome">Welcome to</string>
@@ -131,6 +132,9 @@
     <string name="breakfast">Breakfast</string>
     <string name="dinner">Dinner</string>
     <string name="date">Date</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="please_input_your_daily_bazaar_cost">Please Input Your Daily Bazaar Cost</string>
+    <string name="please_enter_product_details">Please Enter Product Details</string>
 
 
     <string-array name="spinnerItems">

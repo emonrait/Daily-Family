@@ -431,6 +431,7 @@ public class DashboardActivity extends AutoLogout {
             list.add(new MenuModel("Balance", R.drawable.taka, "bl"));
             list.add(new MenuModel("Meal Board", R.drawable.logo, "mb"));
             list.add(new MenuModel("Add Meal", R.drawable.addfood, "am"));
+            list.add(new MenuModel("Add Bazaar Cost", R.drawable.addfood, "abc"));
             list.add(new MenuModel("Statement", R.drawable.ic_bank_statement, "st"));
             list.add(new MenuModel("Members", R.drawable.ic_community, "me"));
             list.add(new MenuModel("Condition", R.drawable.ic_terms_and_conditions, "co"));
@@ -451,6 +452,7 @@ public class DashboardActivity extends AutoLogout {
             list.add(new MenuModel("Balance", R.drawable.taka, "bl"));
             list.add(new MenuModel("Meal Board", R.drawable.logo, "mb"));
             list.add(new MenuModel("Add Meal", R.drawable.addfood, "am"));
+            list.add(new MenuModel("Add Bazaar Cost", R.drawable.addfood, "abc"));
             list.add(new MenuModel("Statement", R.drawable.ic_bank_statement, "st"));
             list.add(new MenuModel("Members", R.drawable.ic_community, "me"));
             list.add(new MenuModel("Condition", R.drawable.ic_terms_and_conditions, "co"));
@@ -471,6 +473,7 @@ public class DashboardActivity extends AutoLogout {
             list.add(new MenuModel("Balance", R.drawable.taka, "bl"));
             list.add(new MenuModel("Meal Board", R.drawable.logo, "mb"));
             list.add(new MenuModel("Add Meal", R.drawable.addfood, "am"));
+            list.add(new MenuModel("Add Bazaar Cost", R.drawable.addfood, "abc"));
             list.add(new MenuModel("Statement", R.drawable.ic_bank_statement, "st"));
             list.add(new MenuModel("Members", R.drawable.ic_community, "me"));
             list.add(new MenuModel("Condition", R.drawable.ic_terms_and_conditions, "co"));
@@ -561,6 +564,9 @@ public class DashboardActivity extends AutoLogout {
                 startActivity(intent);
             } else if ("am".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, AddMeal.class);
+                startActivity(intent);
+            } else if ("abc".equals(menu_soft_code.getText().toString())) {
+                Intent intent = new Intent(DashboardActivity.this, AddBazarCost.class);
                 startActivity(intent);
             }
 

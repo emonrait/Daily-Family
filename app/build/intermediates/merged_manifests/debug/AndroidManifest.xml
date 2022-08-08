@@ -37,11 +37,20 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.raihan.dailyfamily.activity.AddBazarCost"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.raihan.dailyfamily.activity.AddMeal"
-            android:exported="true" />
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.raihan.dailyfamily.activity.MealBoard"
-            android:exported="true" />
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.raihan.dailyfamily.activity.ImageUpload"
             android:configChanges="orientation|keyboardHidden"

@@ -3682,6 +3682,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_about
+layout activity_add_bazar_cost
 layout activity_add_meal
 layout activity_all_txn_list
 layout activity_condition
@@ -3893,6 +3894,7 @@ string abc_toolbar_collapse_description
 string about
 string about_us
 string account
+string add_daily_bazar_cost
 string add_daily_meal
 string address
 string already_a_member_login
@@ -4119,6 +4121,8 @@ string path_password_strike_through
 string payment_prompt
 string pick_image_intent_chooser_title
 string please_enter_email_id
+string please_enter_product_details
+string please_input_your_daily_bazaar_cost
 string please_wait
 string positive_thinkers_unity
 string positive_thinkers_unity_authority
@@ -4140,6 +4144,7 @@ string statement_search
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
 string title
+string total_amount
 string total_balnace
 string total_meal
 string total_meal_cost

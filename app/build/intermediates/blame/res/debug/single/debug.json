@@ -140,6 +140,10 @@
         "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\drawable\\humidity16.png"
     },
     {
+        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_bazar_cost.xml.flat",
+        "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\layout\\activity_add_bazar_cost.xml"
+    },
+    {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_camera.png.flat",
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_camera.png"
     },
