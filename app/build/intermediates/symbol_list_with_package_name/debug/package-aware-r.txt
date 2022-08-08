@@ -2913,6 +2913,7 @@ id all
 id allStates
 id always
 id amount
+id amount_value
 id amountnew
 id amt
 id androidx_window_activity_scope
@@ -3333,6 +3334,7 @@ id prebalTVtitle
 id preferences_detail
 id preferences_header
 id preferences_sliding_pane_layout
+id product_details_value
 id profiId
 id profile
 id profile1

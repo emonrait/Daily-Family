@@ -142,7 +142,7 @@
                                             android:textColor="@color/black" />
 
                                         <EditText
-                                            android:id="@+id/breakfast_value"
+                                            android:id="@+id/amount_value"
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:layout_weight="1"
@@ -173,7 +173,7 @@
 
 
                                         <EditText
-                                            android:id="@+id/launch_value"
+                                            android:id="@+id/product_details_value"
                                             android:layout_width="match_parent"
                                             android:layout_height="100dp"
                                             android:layout_weight="1"
