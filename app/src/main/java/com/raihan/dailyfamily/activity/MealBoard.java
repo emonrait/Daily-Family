@@ -126,17 +126,17 @@ public class MealBoard extends AutoLogout {
                     double dinnertotal = 0;
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
                         Map<String, Object> map = (Map<String, Object>) ds.getValue();
-                        //  if (map.get("date").equals(ValidationUtil.getTransactionCurrentDate())) {
-                        Object breakfast = map.get("breakfast");
-                        Object launch = map.get("launch");
-                        Object dinner = map.get("dinner");
-                        double breakfastvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(breakfast)));
-                        double launchvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(launch)));
-                        double dinnervalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(dinner)));
-                        breakfasttotal += breakfastvalue;
-                        launchtotal += launchvalue;
-                        dinnertotal += dinnervalue;
-                        //   }
+                        if (map.get("flag").equals("Y")) {
+                            Object breakfast = map.get("breakfast");
+                            Object launch = map.get("launch");
+                            Object dinner = map.get("dinner");
+                            double breakfastvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(breakfast)));
+                            double launchvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(launch)));
+                            double dinnervalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(dinner)));
+                            breakfasttotal += breakfastvalue;
+                            launchtotal += launchvalue;
+                            dinnertotal += dinnervalue;
+                        }
 
 
                     }
@@ -171,13 +171,14 @@ public class MealBoard extends AutoLogout {
 
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
                         Map<String, Object> map = (Map<String, Object>) ds.getValue();
+                        if (map.get("flag").equals("Y")) {
+                            Object breakfast = map.get("amount");
 
-                        Object breakfast = map.get("amount");
-
-                        double bazarvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(breakfast)));
-                        bazartotal += bazarvalue;
+                            double bazarvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(breakfast)));
+                            bazartotal += bazarvalue;
 
 
+                        }
                     }
                     //globalVariable.setTotalAmount(String.valueOf(total));
 
@@ -213,8 +214,6 @@ public class MealBoard extends AutoLogout {
                     String nick = ds.child("nick").getValue(String.class);
                     //Log.d("TAG", name + " / "+email+" / "+mobile+" / "+profile);
 
-
-                    //  Meal(String id, String date, String email, String breakfast, String launch, String dinner, String name, String nick)
 
 
                     Meal members = new Meal(mobile, name, email, name, name, name, name, nick);

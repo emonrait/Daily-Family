@@ -138,7 +138,7 @@ public class AddMeal extends AutoLogout {
                     String breakfast = breakfast_value.getText().toString().trim();
                     String launch = launch_value.getText().toString().trim();
                     String dinner = dinner_value.getText().toString().trim();
-                    String flag = "Y";
+                    String flag = "N";
                     Meal meal = new Meal(id, date, email, breakfast, launch, dinner, flag);
                     // assert id != null;
                     //databaseReferenceMeal.child(id).setValue(meal);

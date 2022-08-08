@@ -28,16 +28,16 @@
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_logoutsvg.png"
     },
     {
-        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_camera.xml.flat",
-        "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_camera.xml"
+        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_call.png.flat",
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_call.png"
     },
     {
-        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_camera.xml.flat",
+        "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_camera.xml"
     },
     {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_logout.png.flat",
@@ -552,6 +552,10 @@
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\image_placeholder.png"
     },
     {
+        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mealboard.png.flat",
+        "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\drawable\\mealboard.png"
+    },
+    {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_community.png.flat",
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_community.png"
     },
@@ -686,6 +690,10 @@
     {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_money.xml.flat",
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_money.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addcart.png.flat",
+        "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\drawable\\addcart.png"
     },
     {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_image_placeholder.png.flat",

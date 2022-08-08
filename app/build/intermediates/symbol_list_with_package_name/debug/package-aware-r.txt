@@ -2653,6 +2653,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable addcart
 drawable addfood
 drawable arrow_left
 drawable avd_hide_password
@@ -2774,6 +2775,7 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable mealboard
 drawable membership
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
@@ -2928,6 +2930,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id available_balance_value
 id bal
 id balTV
 id balance
@@ -3322,6 +3325,7 @@ id pay_mode
 id paymentmode
 id pdfView
 id peekHeight
+id per_meal_cost_value
 id percent
 id pic
 id picture
@@ -3503,6 +3507,13 @@ id toolbar
 id top
 id topPanel
 id total_bazar_value
+id total_breakfast_value
+id total_cost_value
+id total_deposit_amount_value
+id total_diner_meal_value
+id total_launch_meal_value
+id total_meal_cost_value
+id total_meal_value
 id total_tv
 id totalbal
 id touch_outside
@@ -3911,6 +3922,7 @@ string already_a_member_login
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string available_balance
 string balance
 string balance_informatiom
 string balance_information
@@ -4130,6 +4142,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string payment_prompt
+string per_meal_cost
 string pick_image_intent_chooser_title
 string please_enter_email_id
 string please_enter_product_details
@@ -4157,6 +4170,11 @@ string summary_collapsed_preference_list
 string title
 string total_amount
 string total_balnace
+string total_breakfast
+string total_cost
+string total_deposit_amount
+string total_diner_meal
+string total_launch_meal
 string total_meal
 string total_meal_cost
 string total_shopping_cost

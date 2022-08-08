@@ -90,7 +90,7 @@ public class MealReportDailyListAdapter extends RecyclerView.Adapter<MealReportD
         holder.tv_name.setText(data.getName());
 
         //  martextshow();
-        Query queryt = FirebaseDatabase.getInstance().getReference().child("Meal").orderByChild("email").equalTo(data.getEmail().trim());
+        Query queryt = FirebaseDatabase.getInstance().getReference().child("Meal").orderByChild("date").equalTo(ValidationUtil.getTransactionCurrentDate());
 
         queryt.addValueEventListener(new ValueEventListener() {
             @Override
@@ -102,7 +102,7 @@ public class MealReportDailyListAdapter extends RecyclerView.Adapter<MealReportD
 
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
                         Map<String, Object> map = (Map<String, Object>) ds.getValue();
-                        if (map.get("date").equals(ValidationUtil.getTransactionCurrentDate())) {
+                        if (map.get("flag").equals("Y")) {
                             Object breakfast = map.get("breakfast");
                             Object launch = map.get("launch");
                             Object dinner = map.get("dinner");
@@ -195,31 +195,6 @@ public class MealReportDailyListAdapter extends RecyclerView.Adapter<MealReportD
 
     public interface OnItemClickListener {
         void onContactSelected(Meal contact);
-    }
-
-    private void martextshow() {
-        FirebaseDatabase.getInstance()
-                .getReference().child("Message")
-                .orderByChild("message2")
-                .addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        for (DataSnapshot ds : dataSnapshot.getChildren()) {
-                            date = "" + ds.child("date").getValue();
-                            oldtotal = "" + ds.child("oldtotal").getValue();
-                            monthlydep = "" + ds.child("monthlydep").getValue();
-
-                            //DialogCustom.showErrorMessage((Activity) context, date + oldtotal + monthlydep);
-                        }
-
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-                        //DialogCustom.showErrorMessage((Activity) context, databaseError.getMessage());
-
-                    }
-                });
     }
 
 }

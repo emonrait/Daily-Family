@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.google.firebase.database.Query;
 import com.raihan.dailyfamily.R;
 import com.raihan.dailyfamily.model.AutoLogout;
 import com.raihan.dailyfamily.model.CustomMethod;
@@ -37,8 +38,13 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.widget.Toolbar;
 
 public class TotalBalanceActivity extends AutoLogout {
+    GlobalVariable globalVariable;
+
     TextView textView, totv, cbtv;
-    DatabaseReference databaseReference;
+    DatabaseReference databaseReferenceT;
+    DatabaseReference databaseReferenceMeal;
+    DatabaseReference databaseReferenceBazaar;
+    DatabaseReference databaseReferenceM;
     FirebaseUser user;
     FirebaseAuth firebaseAuth;
     ListItem star;
@@ -49,7 +55,23 @@ public class TotalBalanceActivity extends AutoLogout {
     private ImageView ivLogout;
     private ImageView ivBack;
     private TextView tv_genereal_header_title;
-    GlobalVariable globalVariable;
+
+
+    private TextView available_balance_value;
+    private TextView total_deposit_amount_value;
+    private TextView total_cost_value;
+    private TextView total_meal_value;
+    private TextView per_meal_cost_value;
+    private TextView total_meal_cost_value;
+    private TextView total_breakfast_value;
+    private TextView total_launch_meal_value;
+    private TextView total_diner_meal_value;
+    final LoadingDialog loadingDialog = new LoadingDialog(TotalBalanceActivity.this);
+
+    private double totalDepositAmount = 0.0;
+    private double totalCostAmount = 0.0;
+    private double totalMeal = 0.0;
+    private double perMealAmount = 0.0;
 
     @SuppressLint("RestrictedApi")
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -69,10 +91,21 @@ public class TotalBalanceActivity extends AutoLogout {
         ivLogout = findViewById(R.id.ivLogout);
         ivBack = findViewById(R.id.ivBack);
         tv_genereal_header_title = findViewById(R.id.tv_genereal_header_title);
-//        setSupportActionBar(toolbar);
-//        getSupportActionBar().setHomeButtonEnabled(true);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setTitle("Total Balance");
+
+        available_balance_value = findViewById(R.id.available_balance_value);
+        total_deposit_amount_value = findViewById(R.id.total_deposit_amount_value);
+        total_cost_value = findViewById(R.id.total_cost_value);
+        total_meal_value = findViewById(R.id.total_meal_value);
+        per_meal_cost_value = findViewById(R.id.per_meal_cost_value);
+        total_meal_cost_value = findViewById(R.id.total_meal_cost_value);
+        total_breakfast_value = findViewById(R.id.total_breakfast_value);
+        total_launch_meal_value = findViewById(R.id.total_launch_meal_value);
+        total_diner_meal_value = findViewById(R.id.total_diner_meal_value);
+
+        databaseReferenceT = FirebaseDatabase.getInstance().getReference("Transaction");
+        databaseReferenceMeal = FirebaseDatabase.getInstance().getReference("Meal");
+        databaseReferenceM = FirebaseDatabase.getInstance().getReference("Members");
+        databaseReferenceBazaar = FirebaseDatabase.getInstance().getReference("Bazaar");
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,48 +122,11 @@ public class TotalBalanceActivity extends AutoLogout {
                 DialogCustom.englishcustomLogout(TotalBalanceActivity.this);
             }
         });
-        final LoadingDialog loadingDialog = new LoadingDialog(TotalBalanceActivity.this);
 
-        databaseReference = FirebaseDatabase.getInstance().getReference("Transaction");
+        totalAmount();
+        totalBazar();
+        totalMeal();
 
-        if (!DialogCustom.isOnline(TotalBalanceActivity.this)) {
-            DialogCustom.showInternetConnectionMessage(TotalBalanceActivity.this);
-        } else {
-            loadingDialog.startDialoglog();
-            databaseReference.addValueEventListener(new ValueEventListener() {
-
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    loadingDialog.dismisstDialoglog();
-                    double total = 0;
-                    for (DataSnapshot ds : dataSnapshot.getChildren()) {
-                        String lastbal = "" + ds.child("amount").getValue();
-                        Map<String, Object> map = (Map<String, Object>) ds.getValue();
-                        Object amount = map.get("amount");
-                        double pvalue = Double.parseDouble(String.valueOf(amount));
-                        total += pvalue;
-                        DecimalFormat formater = new DecimalFormat("#,##,###.00");
-                        String formatString = formater.format(total);
-                        String formatString1 = formater.format(Double.parseDouble(lastbal));
-
-                        //totv.setText(formatString + " \u09F3");
-                        //cbtv.setText(formatString1 + " \u09F3");
-
-                        totv.setText(ValidationUtil.commaSeparateAmount(String.valueOf(total)));
-                        cbtv.setText(ValidationUtil.commaSeparateAmount(String.valueOf(lastbal)));
-
-
-                    }
-                    globalVariable.setTotalAmount(String.valueOf(total));
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError) {
-                    //throw databaseError.toException(); // don't ignore errors
-                    DialogCustom.showErrorMessage(TotalBalanceActivity.this, databaseError.getMessage());
-                }
-            });
-        }
 
         int present = (int) CustomMethod.calculatePercentage(ValidationUtil.replacecommaDouble(globalVariable.getMyAmount()), ValidationUtil.replacecommaDouble(globalVariable.getTotalAmount()));
 
@@ -160,6 +156,143 @@ public class TotalBalanceActivity extends AutoLogout {
             DialogCustom.englishcustomLogout(this);
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void totalMeal() {
+        if (!DialogCustom.isOnline(TotalBalanceActivity.this)) {
+            DialogCustom.showInternetConnectionMessage(TotalBalanceActivity.this);
+        } else {
+            //loadingDialog.startDialoglog();
+            Query queryt = databaseReferenceMeal.orderByChild("date").equalTo(ValidationUtil.getTransactionCurrentDate());
+            databaseReferenceMeal.addValueEventListener(new ValueEventListener() {
+
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    // loadingDialog.dismisstDialoglog();
+                    double breakfasttotal = 0;
+                    double launchtotal = 0;
+                    double dinnertotal = 0;
+                    for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                        Map<String, Object> map = (Map<String, Object>) ds.getValue();
+                        if (map.get("flag").equals("Y")) {
+                            Object breakfast = map.get("breakfast");
+                            Object launch = map.get("launch");
+                            Object dinner = map.get("dinner");
+                            double breakfastvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(breakfast)));
+                            double launchvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(launch)));
+                            double dinnervalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(dinner)));
+                            breakfasttotal += breakfastvalue;
+                            launchtotal += launchvalue;
+                            dinnertotal += dinnervalue;
+                        }
+
+
+                    }
+
+                    totalMeal = (breakfasttotal * .5) + launchtotal + dinnertotal;
+                    perMealAmount = totalCostAmount / totalMeal;
+
+
+                    total_meal_value.setText(String.valueOf(totalMeal));
+                    total_breakfast_value.setText(String.valueOf((breakfasttotal)));
+                    total_launch_meal_value.setText(String.valueOf((launchtotal)));
+                    total_diner_meal_value.setText(String.valueOf((dinnertotal)));
+
+                    available_balance_value.setText(ValidationUtil.commaSeparateAmount(String.valueOf(totalDepositAmount - totalCostAmount)));
+                    per_meal_cost_value.setText(ValidationUtil.commaSeparateAmount(String.valueOf(perMealAmount)));
+                    total_meal_cost_value.setText(ValidationUtil.commaSeparateAmount(String.valueOf(perMealAmount * totalMeal)));
+
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    //loadingDialog.dismisstDialoglog();
+                    //throw databaseError.toException(); // don't ignore errors
+                    DialogCustom.showErrorMessage(TotalBalanceActivity.this, databaseError.getMessage());
+                }
+            });
+        }
+    }
+
+    private void totalBazar() {
+        if (!DialogCustom.isOnline(TotalBalanceActivity.this)) {
+            DialogCustom.showInternetConnectionMessage(TotalBalanceActivity.this);
+        } else {
+            //loadingDialog.startDialoglog();
+            // Query queryt = databaseReferenceBazaar.orderByChild("date").equalTo(ValidationUtil.getTransactionCurrentDate());
+            databaseReferenceBazaar.addValueEventListener(new ValueEventListener() {
+
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    // loadingDialog.dismisstDialoglog();
+                    double bazartotal = 0;
+
+                    for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                        Map<String, Object> map = (Map<String, Object>) ds.getValue();
+                        if (map.get("flag").equals("Y")) {
+                            Object breakfast = map.get("amount");
+
+                            double bazarvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(breakfast)));
+                            bazartotal += bazarvalue;
+                            totalCostAmount = bazartotal;
+
+                        }
+                    }
+                    //globalVariable.setTotalAmount(String.valueOf(total));
+
+                    total_cost_value.setText(ValidationUtil.commaSeparateAmount(String.valueOf(bazartotal)));
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    //loadingDialog.dismisstDialoglog();
+                    //throw databaseError.toException(); // don't ignore errors
+                    DialogCustom.showErrorMessage(TotalBalanceActivity.this, databaseError.getMessage());
+                }
+            });
+        }
+    }
+
+    private void totalAmount() {
+        if (!DialogCustom.isOnline(TotalBalanceActivity.this)) {
+            DialogCustom.showInternetConnectionMessage(TotalBalanceActivity.this);
+        } else {
+            loadingDialog.startDialoglog();
+            databaseReferenceT.addValueEventListener(new ValueEventListener() {
+
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    loadingDialog.dismisstDialoglog();
+                    double total = 0.0;
+                    for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                        String lastbal = "" + ds.child("amount").getValue();
+                        Map<String, Object> map = (Map<String, Object>) ds.getValue();
+
+                        Object amount = map.get("amount");
+                        double pvalue = Double.parseDouble(String.valueOf(amount));
+                        total += pvalue;
+
+
+                    }
+
+                    totv.setText(ValidationUtil.commaSeparateAmount(String.valueOf(total)));
+                    total_deposit_amount_value.setText(ValidationUtil.commaSeparateAmount(String.valueOf(total)));
+                    //cbtv.setText(ValidationUtil.commaSeparateAmount(String.valueOf(lastbal)));
+                    totalDepositAmount = total;
+
+                    globalVariable.setTotalAmount(String.valueOf(total));
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    //throw databaseError.toException(); // don't ignore errors
+                    DialogCustom.showErrorMessage(TotalBalanceActivity.this, databaseError.getMessage());
+                    loadingDialog.startDialoglog();
+                }
+            });
+        }
     }
 
 

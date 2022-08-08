@@ -429,9 +429,9 @@ public class DashboardActivity extends AutoLogout {
         if (globalVariable.getRole().toLowerCase().equals("admin")) {
             list.add(new MenuModel("Profile", R.drawable.ic_user, "pf"));
             list.add(new MenuModel("Balance", R.drawable.taka, "bl"));
-            list.add(new MenuModel("Meal Board", R.drawable.logo, "mb"));
+            list.add(new MenuModel("Meal Board", R.drawable.mealboard, "mb"));
             list.add(new MenuModel("Add Meal", R.drawable.addfood, "am"));
-            list.add(new MenuModel("Add Bazaar Cost", R.drawable.addfood, "abc"));
+            list.add(new MenuModel("Add Bazaar Cost", R.drawable.addcart, "abc"));
             list.add(new MenuModel("Statement", R.drawable.ic_bank_statement, "st"));
             list.add(new MenuModel("Members", R.drawable.ic_community, "me"));
             list.add(new MenuModel("Condition", R.drawable.ic_terms_and_conditions, "co"));
@@ -450,9 +450,9 @@ public class DashboardActivity extends AutoLogout {
         } else if (globalVariable.getRole().toLowerCase().equals("cash")) {
             list.add(new MenuModel("Profile", R.drawable.ic_user, "pf"));
             list.add(new MenuModel("Balance", R.drawable.taka, "bl"));
-            list.add(new MenuModel("Meal Board", R.drawable.logo, "mb"));
+            list.add(new MenuModel("Meal Board", R.drawable.mealboard, "mb"));
             list.add(new MenuModel("Add Meal", R.drawable.addfood, "am"));
-            list.add(new MenuModel("Add Bazaar Cost", R.drawable.addfood, "abc"));
+            list.add(new MenuModel("Add Bazaar Cost", R.drawable.addcart, "abc"));
             list.add(new MenuModel("Statement", R.drawable.ic_bank_statement, "st"));
             list.add(new MenuModel("Members", R.drawable.ic_community, "me"));
             list.add(new MenuModel("Condition", R.drawable.ic_terms_and_conditions, "co"));
@@ -471,9 +471,9 @@ public class DashboardActivity extends AutoLogout {
         } else {
             list.add(new MenuModel("Profile", R.drawable.ic_user, "pf"));
             list.add(new MenuModel("Balance", R.drawable.taka, "bl"));
-            list.add(new MenuModel("Meal Board", R.drawable.logo, "mb"));
+            list.add(new MenuModel("Meal Board", R.drawable.mealboard, "mb"));
             list.add(new MenuModel("Add Meal", R.drawable.addfood, "am"));
-            list.add(new MenuModel("Add Bazaar Cost", R.drawable.addfood, "abc"));
+            list.add(new MenuModel("Add Bazaar Cost", R.drawable.addcart, "abc"));
             list.add(new MenuModel("Statement", R.drawable.ic_bank_statement, "st"));
             list.add(new MenuModel("Members", R.drawable.ic_community, "me"));
             list.add(new MenuModel("Condition", R.drawable.ic_terms_and_conditions, "co"));
