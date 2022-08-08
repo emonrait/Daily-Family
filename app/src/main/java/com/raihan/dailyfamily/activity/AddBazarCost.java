@@ -138,7 +138,8 @@ public class AddBazarCost extends AutoLogout {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
                                         if (task.isSuccessful()) {
-
+                                            amount_value.setText("");
+                                            product_details_value.setText("");
                                             loadingDialog.dismisstDialoglog();
                                             DialogCustom.showSuccessMessage(AddBazarCost.this, "Your Product Cost Add Successfully.");
 

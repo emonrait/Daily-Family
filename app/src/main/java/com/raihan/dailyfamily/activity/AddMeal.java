@@ -151,7 +151,9 @@ public class AddMeal extends AutoLogout {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
                                         if (task.isSuccessful()) {
-
+                                            breakfast_value.setText("");
+                                            launch_value.setText("");
+                                            dinner_value.setText("");
                                             loadingDialog.dismisstDialoglog();
                                             DialogCustom.showSuccessMessage(AddMeal.this, "Your Meal Add Successfully.");
 
