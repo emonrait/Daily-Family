@@ -88,7 +88,7 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:layout_weight="1"
-                                            android:gravity="center"
+                                            android:gravity="center_vertical"
                                             android:text="@string/date"
                                             android:textColor="@color/black" />
 
@@ -125,7 +125,7 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:layout_weight="1"
-                                            android:gravity="center"
+                                            android:gravity="center_vertical"
                                             android:text="@string/breakfast"
                                             android:textColor="@color/black" />
 
@@ -162,7 +162,7 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:layout_weight="1"
-                                            android:gravity="center"
+                                            android:gravity="center_vertical"
                                             android:text="@string/launch"
                                             android:textColor="@color/black" />
 
@@ -199,7 +199,7 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:layout_weight="1"
-                                            android:gravity="center"
+                                            android:gravity="center_vertical"
                                             android:text="@string/dinner"
                                             android:textColor="@color/black" />
 
@@ -213,6 +213,43 @@
 
                                         <TextView
                                             android:id="@+id/dinner_value"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/rectangale"
+                                            android:gravity="center"
+                                            android:inputType="number"
+                                            android:text="0"
+                                            android:textColor="@color/black" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:gravity="center_horizontal"
+                                        android:orientation="horizontal"
+                                        android:padding="@dimen/padding_5"
+                                        android:weightSum="3">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center_vertical"
+                                            android:text="@string/bazaar"
+                                            android:textColor="@color/black" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text=":"
+                                            android:textColor="@color/black" />
+
+                                        <TextView
+                                            android:id="@+id/total_bazar_value"
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:layout_weight="1"

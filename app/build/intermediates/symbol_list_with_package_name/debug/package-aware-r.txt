@@ -3502,6 +3502,7 @@ id toggle
 id toolbar
 id top
 id topPanel
+id total_bazar_value
 id total_tv
 id totalbal
 id touch_outside
@@ -3521,16 +3522,22 @@ id tv_amoumt
 id tv_amount
 id tv_bill_date_label
 id tv_bill_type_label
+id tv_breakfast
+id tv_breakfast_label
 id tv_customer_care
 id tv_date
 id tv_deposit_amount
 id tv_deposit_amount_label
+id tv_dinner
+id tv_dinner_label
 id tv_due_balance
 id tv_due_balance_label
 id tv_email
 id tv_email_level
 id tv_genereal_header_title
 id tv_invoiceno
+id tv_launch
+id tv_launch_label
 id tv_meal_info
 id tv_message
 id tv_name
@@ -3820,6 +3827,7 @@ layout preference_widget_seekbar_material
 layout preference_widget_switch
 layout preference_widget_switch_compat
 layout row_fundtransfer_menu
+layout row_report_daily_meal
 layout row_report_listviewall
 layout row_statement_listview
 layout row_statement_listviewall
@@ -3906,6 +3914,7 @@ string appbar_scrolling_view_behavior
 string balance
 string balance_informatiom
 string balance_information
+string bazaar
 string biometric_cancelled
 string biometric_description
 string biometric_error_fingerprint_not_available

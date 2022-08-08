@@ -664,6 +664,10 @@
         "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\font\\solaimanlipi_regular.ttf"
     },
     {
+        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_report_daily_meal.xml.flat",
+        "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\layout\\row_report_daily_meal.xml"
+    },
+    {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bt_background_rounded_red.xml.flat",
         "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\drawable\\bt_background_rounded_red.xml"
     },

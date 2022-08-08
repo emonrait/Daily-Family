@@ -27,6 +27,8 @@ import com.raihan.dailyfamily.R;
 import com.raihan.dailyfamily.model.AutoLogout;
 import com.raihan.dailyfamily.model.DialogCustom;
 import com.raihan.dailyfamily.model.GlobalVariable;
+import com.raihan.dailyfamily.model.Meal;
+import com.raihan.dailyfamily.model.MealReportDailyListAdapter;
 import com.raihan.dailyfamily.model.Members;
 import com.raihan.dailyfamily.model.Report;
 import com.raihan.dailyfamily.model.ReportListAdapter;
@@ -48,15 +50,17 @@ public class MealBoard extends AutoLogout {
     private TextView breakfast_value;
     private TextView launch_value;
     private TextView dinner_value;
+    private TextView total_bazar_value;
 
     FirebaseUser user;
     FirebaseAuth firebaseAuth;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReferenceMeal;
+    DatabaseReference databaseReferenceBazaar;
     DatabaseReference databaseReferenceM;
-    ArrayList<Report> listdata;
+    ArrayList<Meal> listdata;
     RecyclerView meal_recyclerView;
-    ReportListAdapter adpter;
+    MealReportDailyListAdapter adpter;
     LoadingDialog loadingDialog = new LoadingDialog(MealBoard.this);
 
     @Override
@@ -72,6 +76,7 @@ public class MealBoard extends AutoLogout {
         launch_value = findViewById(R.id.launch_value);
         dinner_value = findViewById(R.id.dinner_value);
         meal_recyclerView = findViewById(R.id.meal_recyclerView);
+        total_bazar_value = findViewById(R.id.total_bazar_value);
 
         globalVariable = ((GlobalVariable) getApplicationContext());
         firebaseAuth = FirebaseAuth.getInstance();
@@ -79,6 +84,7 @@ public class MealBoard extends AutoLogout {
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReferenceMeal = FirebaseDatabase.getInstance().getReference("Meal");
         databaseReferenceM = FirebaseDatabase.getInstance().getReference("Members");
+        databaseReferenceBazaar = FirebaseDatabase.getInstance().getReference("Bazaar");
 
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,6 +106,7 @@ public class MealBoard extends AutoLogout {
         date_value.setText(ValidationUtil.getTransactionCurrentDate());
         totalMeal();
         allMemberMealInfo();
+        totalBazar();
 
     }
 
@@ -108,7 +115,7 @@ public class MealBoard extends AutoLogout {
             DialogCustom.showInternetConnectionMessage(MealBoard.this);
         } else {
             //loadingDialog.startDialoglog();
-            Query queryt = databaseReferenceMeal.orderByChild("email").equalTo(user.getEmail());
+            Query queryt = databaseReferenceMeal.orderByChild("date").equalTo(ValidationUtil.getTransactionCurrentDate());
             queryt.addValueEventListener(new ValueEventListener() {
 
                 @Override
@@ -119,17 +126,17 @@ public class MealBoard extends AutoLogout {
                     double dinnertotal = 0;
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
                         Map<String, Object> map = (Map<String, Object>) ds.getValue();
-                        if (map.get("date").equals(ValidationUtil.getTransactionCurrentDate())) {
-                            Object breakfast = map.get("breakfast");
-                            Object launch = map.get("launch");
-                            Object dinner = map.get("dinner");
-                            double breakfastvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(breakfast)));
-                            double launchvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(launch)));
-                            double dinnervalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(dinner)));
-                            breakfasttotal += breakfastvalue;
-                            launchtotal += launchvalue;
-                            dinnertotal += dinnervalue;
-                        }
+                        //  if (map.get("date").equals(ValidationUtil.getTransactionCurrentDate())) {
+                        Object breakfast = map.get("breakfast");
+                        Object launch = map.get("launch");
+                        Object dinner = map.get("dinner");
+                        double breakfastvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(breakfast)));
+                        double launchvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(launch)));
+                        double dinnervalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(dinner)));
+                        breakfasttotal += breakfastvalue;
+                        launchtotal += launchvalue;
+                        dinnertotal += dinnervalue;
+                        //   }
 
 
                     }
@@ -137,6 +144,44 @@ public class MealBoard extends AutoLogout {
                     breakfast_value.setText(String.valueOf(breakfasttotal));
                     launch_value.setText(String.valueOf(launchtotal));
                     dinner_value.setText(String.valueOf(dinnertotal));
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    //loadingDialog.dismisstDialoglog();
+                    //throw databaseError.toException(); // don't ignore errors
+                    DialogCustom.showErrorMessage(MealBoard.this, databaseError.getMessage());
+                }
+            });
+        }
+    }
+
+    private void totalBazar() {
+        if (!DialogCustom.isOnline(MealBoard.this)) {
+            DialogCustom.showInternetConnectionMessage(MealBoard.this);
+        } else {
+            //loadingDialog.startDialoglog();
+            Query queryt = databaseReferenceBazaar.orderByChild("date").equalTo(ValidationUtil.getTransactionCurrentDate());
+            queryt.addValueEventListener(new ValueEventListener() {
+
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    // loadingDialog.dismisstDialoglog();
+                    double bazartotal = 0;
+
+                    for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                        Map<String, Object> map = (Map<String, Object>) ds.getValue();
+
+                        Object breakfast = map.get("amount");
+
+                        double bazarvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(breakfast)));
+                        bazartotal += bazarvalue;
+
+
+                    }
+                    //globalVariable.setTotalAmount(String.valueOf(total));
+
+                    total_bazar_value.setText(String.valueOf(bazartotal));
                 }
 
                 @Override
@@ -167,23 +212,28 @@ public class MealBoard extends AutoLogout {
                     String profile = ds.child("prolink").getValue(String.class);
                     String nick = ds.child("nick").getValue(String.class);
                     //Log.d("TAG", name + " / "+email+" / "+mobile+" / "+profile);
-                    Report members = new Report(name, mobile, email, profile, nick, nick);
+
+
+                    //  Meal(String id, String date, String email, String breakfast, String launch, String dinner, String name, String nick)
+
+
+                    Meal members = new Meal(mobile, name, email, name, name, name, name, nick);
 
                     listdata.add(members);
                     loadingDialog.dismisstDialoglog();
 
 
                 }
-                Collections.sort(listdata, new Comparator<Report>() {
+                Collections.sort(listdata, new Comparator<Meal>() {
                     @Override
-                    public int compare(Report m1, Report m2) {
+                    public int compare(Meal m1, Meal m2) {
                         return Integer.compare(ValidationUtil.replacePoet(m1.getNick()), ValidationUtil.replacePoet(m2.getNick()));
                     }
 
                 });
-                adpter = new ReportListAdapter(MealBoard.this, listdata, new ReportListAdapter.OnItemClickListener() {
+                adpter = new MealReportDailyListAdapter(MealBoard.this, listdata, new MealReportDailyListAdapter.OnItemClickListener() {
                     @Override
-                    public void onContactSelected(Report item) {
+                    public void onContactSelected(Meal item) {
                         DialogCustom.showSuccessMessage(MealBoard.this, item.getName() + item.getEmail());
 
                     }

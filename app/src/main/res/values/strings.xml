@@ -135,6 +135,7 @@
     <string name="total_amount">Total Amount</string>
     <string name="please_input_your_daily_bazaar_cost">Please Input Your Daily Bazaar Cost</string>
     <string name="please_enter_product_details">Please Enter Product Details</string>
+    <string name="bazaar">Total Bazaar</string>
 
 
     <string-array name="spinnerItems">

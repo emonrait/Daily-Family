@@ -8,13 +8,26 @@ public class Meal {
     private String dinner = "";
     private String flag = "";
     private String id = "";
+    private String name = "";
+    private String nick = "";
 
 
     public Meal() {
 
     }
 
-    public Meal(String id,String date, String email, String breakfast, String launch, String dinner, String flag) {
+    public Meal(String id, String date, String email, String breakfast, String launch, String dinner, String name,String nick) {
+        this.id = id;
+        this.date = date;
+        this.email = email;
+        this.breakfast = breakfast;
+        this.launch = launch;
+        this.dinner = dinner;
+        this.nick = nick;
+        this.name = name;
+    }
+
+    public Meal(String id, String date, String email, String breakfast, String launch, String dinner, String flag) {
         this.id = id;
         this.date = date;
         this.email = email;
@@ -22,6 +35,22 @@ public class Meal {
         this.launch = launch;
         this.dinner = dinner;
         this.flag = flag;
+    }
+
+    public String getNick() {
+        return nick;
+    }
+
+    public void setNick(String nick) {
+        this.nick = nick;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getId() {
