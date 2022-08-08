@@ -2930,6 +2930,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id available_balance_label
 id available_balance_value
 id bal
 id balTV

@@ -66,12 +66,14 @@ public class TotalBalanceActivity extends AutoLogout {
     private TextView total_breakfast_value;
     private TextView total_launch_meal_value;
     private TextView total_diner_meal_value;
+    private TextView available_balance_label;
     final LoadingDialog loadingDialog = new LoadingDialog(TotalBalanceActivity.this);
 
     private double totalDepositAmount = 0.0;
     private double totalCostAmount = 0.0;
     private double totalMeal = 0.0;
     private double perMealAmount = 0.0;
+    private double availableBalance = 0.0;
 
     @SuppressLint("RestrictedApi")
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -101,6 +103,7 @@ public class TotalBalanceActivity extends AutoLogout {
         total_breakfast_value = findViewById(R.id.total_breakfast_value);
         total_launch_meal_value = findViewById(R.id.total_launch_meal_value);
         total_diner_meal_value = findViewById(R.id.total_diner_meal_value);
+        available_balance_label = findViewById(R.id.available_balance_label);
 
         databaseReferenceT = FirebaseDatabase.getInstance().getReference("Transaction");
         databaseReferenceMeal = FirebaseDatabase.getInstance().getReference("Meal");
@@ -114,7 +117,7 @@ public class TotalBalanceActivity extends AutoLogout {
             }
         });
 
-        tv_genereal_header_title.setText("Total Balance");
+        tv_genereal_header_title.setText("Total Information");
 
         ivLogout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -191,6 +194,7 @@ public class TotalBalanceActivity extends AutoLogout {
 
                     totalMeal = (breakfasttotal * .5) + launchtotal + dinnertotal;
                     perMealAmount = totalCostAmount / totalMeal;
+                    availableBalance = totalDepositAmount - totalCostAmount;
 
 
                     total_meal_value.setText(String.valueOf(totalMeal));
@@ -198,9 +202,16 @@ public class TotalBalanceActivity extends AutoLogout {
                     total_launch_meal_value.setText(String.valueOf((launchtotal)));
                     total_diner_meal_value.setText(String.valueOf((dinnertotal)));
 
-                    available_balance_value.setText(ValidationUtil.commaSeparateAmount(String.valueOf(totalDepositAmount - totalCostAmount)));
+
                     per_meal_cost_value.setText(ValidationUtil.commaSeparateAmount(String.valueOf(perMealAmount)));
                     total_meal_cost_value.setText(ValidationUtil.commaSeparateAmount(String.valueOf(perMealAmount * totalMeal)));
+
+                    if (totalDepositAmount >= totalCostAmount) {
+                        available_balance_value.setText(ValidationUtil.commaSeparateAmount(String.valueOf(availableBalance)));
+                    } else {
+                        available_balance_value.setText(ValidationUtil.commaSeparateAmount(String.valueOf(availableBalance)));
+                        available_balance_label.setText("Due Balance");
+                    }
 
 
                 }

@@ -29,7 +29,8 @@
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -49,7 +50,8 @@
                             android:id="@+id/profile1"
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
-                            android:src="@drawable/taka" />
+                            android:src="@drawable/taka"
+                            android:visibility="gone" />
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
@@ -316,7 +318,6 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/margin_30"
                             android:orientation="vertical"
                             android:visibility="visible">
 
@@ -338,7 +339,6 @@
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:elevation="15dp"
                                     android:visibility="visible"
                                     app:cardBackgroundColor="@color/white"
                                     app:cardCornerRadius="15dp"
@@ -367,6 +367,7 @@
                                                 android:weightSum="5">
 
                                                 <TextView
+                                                    android:id="@+id/available_balance_label"
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"
                                                     android:layout_weight="1.5"
@@ -382,7 +383,7 @@
                                                     android:text=":"
                                                     android:textColor="@color/black" />
 
-                                                <EditText
+                                                <TextView
                                                     android:id="@+id/available_balance_value"
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"
@@ -393,7 +394,6 @@
                                                     android:focusable="false"
                                                     android:focusableInTouchMode="false"
                                                     android:gravity="center"
-                                                    android:inputType="date"
                                                     android:textColor="@color/black" />
 
                                             </LinearLayout>
@@ -422,7 +422,7 @@
                                                     android:text=":"
                                                     android:textColor="@color/black" />
 
-                                                <EditText
+                                                <TextView
                                                     android:id="@+id/total_deposit_amount_value"
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"
@@ -459,7 +459,7 @@
                                                     android:text=":"
                                                     android:textColor="@color/black" />
 
-                                                <EditText
+                                                <TextView
                                                     android:id="@+id/total_cost_value"
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"
@@ -496,7 +496,7 @@
                                                     android:text=":"
                                                     android:textColor="@color/black" />
 
-                                                <EditText
+                                                <TextView
                                                     android:id="@+id/total_breakfast_value"
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"
@@ -533,7 +533,7 @@
                                                     android:text=":"
                                                     android:textColor="@color/black" />
 
-                                                <EditText
+                                                <TextView
                                                     android:id="@+id/total_launch_meal_value"
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"
@@ -570,7 +570,7 @@
                                                     android:text=":"
                                                     android:textColor="@color/black" />
 
-                                                <EditText
+                                                <TextView
                                                     android:id="@+id/total_diner_meal_value"
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"
@@ -607,7 +607,7 @@
                                                     android:text=":"
                                                     android:textColor="@color/black" />
 
-                                                <EditText
+                                                <TextView
                                                     android:id="@+id/total_meal_value"
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"
@@ -644,7 +644,7 @@
                                                     android:text=":"
                                                     android:textColor="@color/black" />
 
-                                                <EditText
+                                                <TextView
                                                     android:id="@+id/per_meal_cost_value"
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"
@@ -681,7 +681,7 @@
                                                     android:text=":"
                                                     android:textColor="@color/black" />
 
-                                                <EditText
+                                                <TextView
                                                     android:id="@+id/total_meal_cost_value"
                                                     android:layout_width="match_parent"
                                                     android:layout_height="match_parent"

@@ -46,6 +46,7 @@ public class ValidationUtil {
             ((DecimalFormat) f).setDecimalSeparatorAlwaysShown(true);
             ((DecimalFormat) f).setMaximumFractionDigits(2);
             ((DecimalFormat) f).setMinimumFractionDigits(2);
+            ((DecimalFormat) f).setNegativePrefix("-");
 
             if (amount == 0.00) {
                 rValue = "0.00" + " \u09F3";
