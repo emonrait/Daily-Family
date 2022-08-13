@@ -93,7 +93,7 @@ dependencies {
 
     //  implementation(group: 'com.an.biometric', name: 'biometric-auth', version: '0.1.0', ext: 'aar', classifier: '')
 
-    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    //implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
 
 
 }

@@ -1001,10 +1001,6 @@ attr rotationCenterId
 attr round
 attr roundPercent
 attr saturation
-attr sb_handlerColor
-attr sb_horizontal
-attr sb_indicatorColor
-attr sb_indicatorTextColor
 attr scaleFromTextSize
 attr scopeUris
 attr scrimAnimationDuration
@@ -2698,10 +2694,6 @@ drawable crop_image_menu_rotate_left
 drawable crop_image_menu_rotate_right
 drawable customprocessbarbackground
 drawable customprogressbar
-drawable default_scroll_handle_bottom
-drawable default_scroll_handle_left
-drawable default_scroll_handle_right
-drawable default_scroll_handle_top
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3327,7 +3319,6 @@ id pathRelative
 id pay_amount
 id pay_mode
 id paymentmode
-id pdfView
 id peekHeight
 id per_meal_cost_value
 id percent
@@ -5433,7 +5424,6 @@ styleable RangeSlider minSeparation values
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
 styleable ScrimInsetsFrameLayout insetForeground
-styleable ScrollBar sb_handlerColor sb_horizontal sb_indicatorColor sb_indicatorTextColor
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
 styleable SeekBarPreference android_layout android_max adjustable min seekBarIncrement showSeekBarValue updatesContinuously

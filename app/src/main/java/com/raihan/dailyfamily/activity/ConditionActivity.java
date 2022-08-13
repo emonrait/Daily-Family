@@ -12,7 +12,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.github.barteksc.pdfviewer.PDFView;
 import com.raihan.dailyfamily.R;
 import com.raihan.dailyfamily.model.AutoLogout;
 import com.raihan.dailyfamily.model.DialogCustom;
@@ -27,7 +26,6 @@ public class ConditionActivity extends AutoLogout {
     private ImageView ivBack;
     private TextView tv_genereal_header_title;
     GlobalVariable globalVariable;
-    private PDFView pdfView;
     Uri uri;
     String url;
 
@@ -43,7 +41,7 @@ public class ConditionActivity extends AutoLogout {
         ivLogout = findViewById(R.id.ivLogout);
         ivBack = findViewById(R.id.ivBack);
         tv_genereal_header_title = findViewById(R.id.tv_genereal_header_title);
-        pdfView = (PDFView) findViewById(R.id.pdfView);
+       // pdfView = (PDFView) findViewById(R.id.pdfView);
 
 
         ivBack.setOnClickListener(new View.OnClickListener() {
@@ -63,9 +61,9 @@ public class ConditionActivity extends AutoLogout {
             }
         });
 
-        pdfView.fromAsset("filename.pdf")
+       // pdfView.fromAsset("filename.pdf")
 
-                .load();
+               // .load();
 
 
 

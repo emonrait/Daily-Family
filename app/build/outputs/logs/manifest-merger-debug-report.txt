@@ -18,7 +18,6 @@ MERGED from [com.google.firebase:firebase-database:20.0.5] /Users/user/.gradle/c
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/user/.gradle/caches/transforms-2/files-2.1/39fef48a04108d80cc3888306575b59b/jetified-picasso-2.71828/AndroidManifest.xml:2:1-14:12
 MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/ff42c55a5520e404490056a373db4b7e/jetified-circleimageview-3.1.0/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-core:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c15972fc60e3fe4451195537b9c66ce6/jetified-firebase-core-21.1.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] /Users/user/.gradle/caches/transforms-2/files-2.1/ba5970ad32eb1e41e6d3c8eeabd07e13/jetified-android-pdf-viewer-2.8.2/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/user/.gradle/caches/transforms-2/files-2.1/aa3b9b1147152a085a03769ea828e659/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/e473dddd07dfa18e2985af2dadb25e9e/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/380c1e9e15c8c761f0e74051277bebb5/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
@@ -44,7 +43,6 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] /U
 MERGED from [com.google.android.gms:play-services-measurement-base:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/e7e2cc01dc367a32e11e655205f751cc/jetified-play-services-measurement-base-21.1.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/d2379cadb68a0ce08072e2bdac672d53/jetified-play-services-basement-18.0.0/AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/3d2ecdf5aed4ca80a94916aef33ff53a/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.github.barteksc:pdfium-android:1.7.1] /Users/user/.gradle/caches/transforms-2/files-2.1/362523a033a19cb1654a8a4fc03c0e93/jetified-pdfium-android-1.7.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/32ece6ac832addbb341b3b0401337d3b/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment-ktx:1.3.6] /Users/user/.gradle/caches/transforms-2/files-2.1/9a4d3942c6503196ebbe8ad94c4b4103/jetified-fragment-ktx-1.3.6/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/user/.gradle/caches/transforms-2/files-2.1/f383ec728509891dc8bcfa54f90c406a/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
@@ -627,8 +625,6 @@ MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/user/.gradle/caches/tran
 MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/ff42c55a5520e404490056a373db4b7e/jetified-circleimageview-3.1.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-core:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c15972fc60e3fe4451195537b9c66ce6/jetified-firebase-core-21.1.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-core:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c15972fc60e3fe4451195537b9c66ce6/jetified-firebase-core-21.1.0/AndroidManifest.xml:5:5-44
-MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] /Users/user/.gradle/caches/transforms-2/files-2.1/ba5970ad32eb1e41e6d3c8eeabd07e13/jetified-android-pdf-viewer-2.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] /Users/user/.gradle/caches/transforms-2/files-2.1/ba5970ad32eb1e41e6d3c8eeabd07e13/jetified-android-pdf-viewer-2.8.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/user/.gradle/caches/transforms-2/files-2.1/aa3b9b1147152a085a03769ea828e659/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/user/.gradle/caches/transforms-2/files-2.1/aa3b9b1147152a085a03769ea828e659/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/e473dddd07dfa18e2985af2dadb25e9e/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
@@ -679,8 +675,6 @@ MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/user/.
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/d2379cadb68a0ce08072e2bdac672d53/jetified-play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/3d2ecdf5aed4ca80a94916aef33ff53a/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/3d2ecdf5aed4ca80a94916aef33ff53a/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.github.barteksc:pdfium-android:1.7.1] /Users/user/.gradle/caches/transforms-2/files-2.1/362523a033a19cb1654a8a4fc03c0e93/jetified-pdfium-android-1.7.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.barteksc:pdfium-android:1.7.1] /Users/user/.gradle/caches/transforms-2/files-2.1/362523a033a19cb1654a8a4fc03c0e93/jetified-pdfium-android-1.7.1/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/32ece6ac832addbb341b3b0401337d3b/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/32ece6ac832addbb341b3b0401337d3b/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment-ktx:1.3.6] /Users/user/.gradle/caches/transforms-2/files-2.1/9a4d3942c6503196ebbe8ad94c4b4103/jetified-fragment-ktx-1.3.6/AndroidManifest.xml:20:5-22:41
