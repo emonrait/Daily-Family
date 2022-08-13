@@ -23,6 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.raihan.dailyfamily.R;
+import com.raihan.dailyfamily.model.AutoLogout;
 import com.raihan.dailyfamily.model.DialogCustom;
 import com.raihan.dailyfamily.model.GlobalVariable;
 import com.raihan.dailyfamily.model.Meal;
@@ -35,7 +36,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Map;
 
-public class MealApproval extends AppCompatActivity {
+public class MealApproval extends AutoLogout {
     GlobalVariable globalVariable;
     private ImageView ivLogout;
     private ImageView ivBack;

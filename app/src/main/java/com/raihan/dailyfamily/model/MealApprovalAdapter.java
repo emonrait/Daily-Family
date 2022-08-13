@@ -86,72 +86,25 @@ public class MealApprovalAdapter extends RecyclerView.Adapter<MealApprovalAdapte
 
 
         holder.tv_name.setText(data.getName());
-
-        //  martextshow();
-        Query queryt = FirebaseDatabase.getInstance().getReference().child("Meal").orderByChild("flag").equalTo("N");
-
-        queryt.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                double breakfasttotal = 0;
-                double launchtotal = 0;
-                double dinnertotal = 0;
-                if (dataSnapshot.exists()) {
-
-                    for (DataSnapshot ds : dataSnapshot.getChildren()) {
-                        Map<String, Object> map = (Map<String, Object>) ds.getValue();
-                        if (!map.isEmpty()) {
-                            Object breakfast = map.get("breakfast");
-                            Object launch = map.get("launch");
-                            Object dinner = map.get("dinner");
-                            double breakfastvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(breakfast)));
-                            double launchvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(launch)));
-                            double dinnervalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(dinner)));
-                            breakfasttotal += breakfastvalue;
-                            launchtotal += launchvalue;
-                            dinnertotal += dinnervalue;
-                        }
-
-                        holder.tv_breakfast.setText(String.valueOf(breakfasttotal));
-                        holder.tv_launch.setText(String.valueOf(launchtotal));
-                        holder.tv_dinner.setText(String.valueOf(dinnertotal));
-
-
-                    }
-                } else {
-                    holder.tv_breakfast.setText(ValidationUtil.commaSeparateAmount("0"));
-                    holder.tv_launch.setText(ValidationUtil.commaSeparateAmount("0"));
-                    holder.tv_dinner.setText(ValidationUtil.commaSeparateMonth("0"));
-                }
-
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                //DialogCustom.showErrorMessage(DashboardActivity.this, databaseError.getMessage());
-                // throw databaseError.toException(); // don't ignore errors
-                holder.tv_breakfast.setText(ValidationUtil.commaSeparateAmount("0"));
-                holder.tv_launch.setText(ValidationUtil.commaSeparateAmount("0"));
-                holder.tv_dinner.setText(ValidationUtil.commaSeparateMonth("0"));
-            }
-        });
+        holder.tv_breakfast.setText(String.valueOf(data.getBreakfast()));
+        holder.tv_launch.setText(String.valueOf(data.getLaunch()));
+        holder.tv_dinner.setText(String.valueOf(data.getDinner()));
 
 
         holder.btn_declined.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateMealApproval(data.getEmail(), "R");
+
+                updateMealApproval(data.getEmail(), "R", data.getBreakfast(), data.getLaunch(), data.getDinner(), data.getDate());
             }
         });
 
         holder.btn_approved.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateMealApproval(data.getEmail(), "Y");
+                updateMealApproval(data.getEmail(), "Y", data.getBreakfast(), data.getLaunch(), data.getDinner(), data.getDate());
             }
         });
-
 
     }
 
@@ -202,7 +155,7 @@ public class MealApprovalAdapter extends RecyclerView.Adapter<MealApprovalAdapte
         void onContactSelected(Meal contact);
     }
 
-    private void updateMealApproval(String email, String flag) {
+    private void updateMealApproval(String email, String flag, String breakfast, String launch, String dinner, String date) {
 
         Query queryt = FirebaseDatabase.getInstance().getReference().child("Meal").orderByChild("email").equalTo(email);
 
@@ -211,6 +164,11 @@ public class MealApprovalAdapter extends RecyclerView.Adapter<MealApprovalAdapte
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot edtData : dataSnapshot.getChildren()) {
                     edtData.getRef().child("flag").setValue(flag);
+                    edtData.getRef().child("email").setValue(email);
+                    edtData.getRef().child("breakfast").setValue(breakfast);
+                    edtData.getRef().child("launch").setValue(launch);
+                    edtData.getRef().child("dinner").setValue(dinner);
+                    edtData.getRef().child("date").setValue(date);
 
                 }
             }

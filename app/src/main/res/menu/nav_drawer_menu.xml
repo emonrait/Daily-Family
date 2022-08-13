@@ -33,13 +33,17 @@
         android:icon="@drawable/ic_programmer"
         android:title="@string/developer" />
     <item
-        android:id="@+id/debit"
-        android:icon="@drawable/ic_limit"
-        android:title="@string/debit" />
+        android:id="@+id/mb"
+        android:icon="@drawable/mealboard"
+        android:title="@string/meal_board" />
     <item
-        android:id="@+id/credit"
-        android:icon="@drawable/ic_credit_card"
-        android:title="@string/credit" />
+        android:id="@+id/am"
+        android:icon="@drawable/addfood"
+        android:title="@string/add_meal" />
+    <item
+        android:id="@+id/bc"
+        android:icon="@drawable/addcart"
+        android:title="@string/add_bazaar_cost" />
     <item
         android:id="@+id/report"
         android:icon="@drawable/reportnew"

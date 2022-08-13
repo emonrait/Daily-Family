@@ -38,6 +38,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.raihan.dailyfamily.BazarApproval"
+            android:exported="false" />
+        <activity
             android:name="com.raihan.dailyfamily.activity.MealApproval"
             android:configChanges="orientation|keyboardHidden"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"

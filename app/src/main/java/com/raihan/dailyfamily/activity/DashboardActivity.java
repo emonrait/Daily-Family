@@ -178,11 +178,14 @@ public class DashboardActivity extends AutoLogout {
             } else if (item.getItemId() == R.id.develop) {
                 Intent a = new Intent(getApplicationContext(), AboutActivity.class);
                 startActivity(a);
-            } else if (item.getItemId() == R.id.debit) {
-                Intent a = new Intent(getApplicationContext(), DebitActivity.class);
+            } else if (item.getItemId() == R.id.am) {
+                Intent a = new Intent(getApplicationContext(), AddMeal.class);
                 startActivity(a);
-            } else if (item.getItemId() == R.id.credit) {
-                Intent a = new Intent(getApplicationContext(), CreditActivity.class);
+            } else if (item.getItemId() == R.id.bc) {
+                Intent a = new Intent(getApplicationContext(), AddBazarCost.class);
+                startActivity(a);
+            }else if (item.getItemId() == R.id.mb) {
+                Intent a = new Intent(getApplicationContext(), MealBoard.class);
                 startActivity(a);
             } else if (item.getItemId() == R.id.passChange) {
                 Intent a = new Intent(getApplicationContext(), PasswordChangeNew.class);
@@ -446,7 +449,8 @@ public class DashboardActivity extends AutoLogout {
             list.add(new MenuModel("Report", R.drawable.reportnew, "rep"));
             list.add(new MenuModel("Password Change", R.drawable.password, "pac"));
             list.add(new MenuModel("Upload Image", R.drawable.camera, "ui"));
-            list.add(new MenuModel("Meal Appoval", R.drawable.camera, "ma"));
+            list.add(new MenuModel("Meal Approval", R.drawable.mealboard, "ma"));
+            list.add(new MenuModel("Bazaar Approval", R.drawable.addcart, "ba"));
 
         } else if (globalVariable.getRole().toLowerCase().equals("cash")) {
             list.add(new MenuModel("Profile", R.drawable.ic_user, "pf"));
@@ -468,7 +472,9 @@ public class DashboardActivity extends AutoLogout {
             list.add(new MenuModel("Report", R.drawable.reportnew, "rep"));
             list.add(new MenuModel("Password Change", R.drawable.password, "pac"));
             list.add(new MenuModel("Upload Image", R.drawable.camera, "ui"));
-            list.add(new MenuModel("Meal Appoval", R.drawable.camera, "ma"));
+            list.add(new MenuModel("Meal Approval", R.drawable.mealboard, "ma"));
+            list.add(new MenuModel("Bazaar Approval", R.drawable.addcart, "ba"));
+
 
         } else {
             list.add(new MenuModel("Profile", R.drawable.ic_user, "pf"));
@@ -556,6 +562,9 @@ public class DashboardActivity extends AutoLogout {
                 startActivity(intent);
             } else if ("ma".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, MealApproval.class);
+                startActivity(intent);
+            } else if ("ba".equals(menu_soft_code.getText().toString())) {
+                Intent intent = new Intent(DashboardActivity.this, BazarApproval.class);
                 startActivity(intent);
             }
 

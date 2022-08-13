@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ml\\values-ml.xml",
+            "outputFile": "/Users/user/Documents/Daily-Family/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml/values-ml.xml",
             "map": [
                 {
-                    "source": "H:\\Workspace\\Android project\\BankAsiaSmartApp\\caches\\transforms-2\\files-2.1\\d2379cadb68a0ce08072e2bdac672d53\\jetified-play-services-basement-18.0.0\\res\\values-ml\\values.xml",
+                    "source": "/Users/user/.gradle/caches/transforms-2/files-2.1/d2379cadb68a0ce08072e2bdac672d53/jetified-play-services-basement-18.0.0/res/values-ml/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,41 +21,24 @@
                     }
                 },
                 {
-                    "source": "H:\\Workspace\\Android project\\BankAsiaSmartApp\\caches\\transforms-2\\files-2.1\\f92feca41b7822724e3c6c6a028e32c1\\browser-1.4.0\\res\\values-ml\\values-ml.xml",
+                    "source": "/Users/user/.gradle/caches/transforms-2/files-2.1/939757828d99f44c512ab2a186308018/core-1.7.0/res/values-ml/values-ml.xml",
                     "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,164,267,378",
-                        "endColumns": "108,102,110,103",
-                        "endOffsets": "159,262,373,477"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "56,60,61,62",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "5841,6203,6306,6417",
-                        "endColumns": "108,102,110,103",
-                        "endOffsets": "5945,6301,6412,6516"
+                        "startLines": "114",
+                        "startColumns": "4",
+                        "startOffsets": "10803",
+                        "endColumns": "100",
+                        "endOffsets": "10899"
                     }
                 },
                 {
-                    "source": "H:\\Workspace\\Android project\\BankAsiaSmartApp\\caches\\transforms-2\\files-2.1\\1b1150b390a5cf89aca8be1be0478a5d\\preference-1.2.0\\res\\values-ml\\values-ml.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "105,177,266,352,493,662,744",
-                        "endColumns": "71,88,85,140,168,81,75",
-                        "endOffsets": "172,261,347,488,657,739,815"
-                    },
-                    "to": {
-                        "startLines": "55,58,110,112,115,116,117",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "5769,6015,10409,10579,10904,11073,11155",
-                        "endColumns": "71,88,85,140,168,81,75",
-                        "endOffsets": "5836,6099,10490,10715,11068,11150,11226"
-                    }
-                },
-                {
-                    "source": "H:\\Workspace\\Android project\\BankAsiaSmartApp\\caches\\transforms-2\\files-2.1\\ad860e74d9f67c730e88c221860bc6c6\\jetified-play-services-base-18.0.1\\res\\values-ml\\values.xml",
+                    "source": "/Users/user/.gradle/caches/transforms-2/files-2.1/ad860e74d9f67c730e88c221860bc6c6/jetified-play-services-base-18.0.1/res/values-ml/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -72,7 +55,24 @@
                     }
                 },
                 {
-                    "source": "H:\\Workspace\\Android project\\BankAsiaSmartApp\\caches\\transforms-2\\files-2.1\\1486c5eb4ca27922cbdd8a5dc7ef486e\\appcompat-1.4.2\\res\\values-ml\\values-ml.xml",
+                    "source": "/Users/user/.gradle/caches/transforms-2/files-2.1/f92feca41b7822724e3c6c6a028e32c1/browser-1.4.0/res/values-ml/values-ml.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,164,267,378",
+                        "endColumns": "108,102,110,103",
+                        "endOffsets": "159,262,373,477"
+                    },
+                    "to": {
+                        "startLines": "56,60,61,62",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "5841,6203,6306,6417",
+                        "endColumns": "108,102,110,103",
+                        "endOffsets": "5945,6301,6412,6516"
+                    }
+                },
+                {
+                    "source": "/Users/user/.gradle/caches/transforms-2/files-2.1/1486c5eb4ca27922cbdd8a5dc7ef486e/appcompat-1.4.2/res/values-ml/values-ml.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -89,7 +89,7 @@
                     }
                 },
                 {
-                    "source": "H:\\Workspace\\Android project\\BankAsiaSmartApp\\caches\\transforms-2\\files-2.1\\3d46d1742139235713c7290afedd8340\\material-1.7.0-alpha01\\res\\values-ml\\values-ml.xml",
+                    "source": "/Users/user/.gradle/caches/transforms-2/files-2.1/3d46d1742139235713c7290afedd8340/material-1.7.0-alpha01/res/values-ml/values-ml.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -108,20 +108,20 @@
                     }
                 },
                 {
-                    "source": "H:\\Workspace\\Android project\\BankAsiaSmartApp\\caches\\transforms-2\\files-2.1\\939757828d99f44c512ab2a186308018\\core-1.7.0\\res\\values-ml\\values-ml.xml",
+                    "source": "/Users/user/.gradle/caches/transforms-2/files-2.1/1b1150b390a5cf89aca8be1be0478a5d/preference-1.2.0/res/values-ml/values-ml.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "105,177,266,352,493,662,744",
+                        "endColumns": "71,88,85,140,168,81,75",
+                        "endOffsets": "172,261,347,488,657,739,815"
                     },
                     "to": {
-                        "startLines": "114",
-                        "startColumns": "4",
-                        "startOffsets": "10803",
-                        "endColumns": "100",
-                        "endOffsets": "10899"
+                        "startLines": "55,58,110,112,115,116,117",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "5769,6015,10409,10579,10904,11073,11155",
+                        "endColumns": "71,88,85,140,168,81,75",
+                        "endOffsets": "5836,6099,10490,10715,11068,11150,11226"
                     }
                 }
             ]

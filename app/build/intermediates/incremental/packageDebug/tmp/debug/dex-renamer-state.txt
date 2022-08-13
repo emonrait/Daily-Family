@@ -1,9 +1,9 @@
-#Sat Aug 13 12:38:31 BDT 2022
-base.2=E\:\\Workspace\\Daily-Family\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Sat Aug 13 23:40:05 BDT 2022
+base.2=/Users/user/Documents/Daily-Family/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
 path.2=classes2.dex
-base.1=E\:\\Workspace\\Daily-Family\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.1=/Users/user/Documents/Daily-Family/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
 path.1=classes.dex
-base.0=E\:\\Workspace\\Daily-Family\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.0=/Users/user/Documents/Daily-Family/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex

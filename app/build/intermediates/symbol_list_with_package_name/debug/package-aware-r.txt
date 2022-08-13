@@ -2914,6 +2914,7 @@ id aligned
 id all
 id allStates
 id always
+id am
 id amount
 id amount_value
 id amountnew
@@ -2940,6 +2941,7 @@ id bannerIV
 id barcod
 id barrier
 id baseline
+id bc
 id beginOnFirstDraw
 id beginning
 id bestChoice
@@ -3016,7 +3018,6 @@ id continuousVelocity
 id coordinator
 id cos
 id counterclockwise
-id credit
 id cropImageView
 id crop_image_menu_crop
 id crop_image_menu_flip
@@ -3035,7 +3036,6 @@ id dark
 id date
 id date_picker_actions
 id date_value
-id debit
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -3227,6 +3227,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id mb
 id meal_recyclerView
 id media_actions
 id members
@@ -3708,6 +3709,7 @@ layout activity_about
 layout activity_add_bazar_cost
 layout activity_add_meal
 layout activity_all_txn_list
+layout activity_bazar_approval
 layout activity_condition
 layout activity_contact
 layout activity_credit
@@ -3920,8 +3922,10 @@ string abc_toolbar_collapse_description
 string about
 string about_us
 string account
+string add_bazaar_cost
 string add_daily_bazar_cost
 string add_daily_meal
+string add_meal
 string address
 string already_a_member_login
 string androidx_startup
