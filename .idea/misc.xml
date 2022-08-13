@@ -39,10 +39,13 @@
         <entry key="..\:/Workspace/Daily-Family/app/src/main/res/layout/activity_add_meal.xml" value="0.27291666666666664" />
         <entry key="..\:/Workspace/Daily-Family/app/src/main/res/layout/activity_dashboard.xml" value="0.27291666666666664" />
         <entry key="..\:/Workspace/Daily-Family/app/src/main/res/layout/activity_image_upload.xml" value="0.27291666666666664" />
+        <entry key="..\:/Workspace/Daily-Family/app/src/main/res/layout/activity_meal_approval.xml" value="0.27291666666666664" />
         <entry key="..\:/Workspace/Daily-Family/app/src/main/res/layout/activity_meal_board.xml" value="0.25885416666666666" />
         <entry key="..\:/Workspace/Daily-Family/app/src/main/res/layout/activity_total_balance.xml" value="0.27291666666666664" />
+        <entry key="..\:/Workspace/Daily-Family/app/src/main/res/layout/row_daily_meal_approval.xml" value="0.25" />
         <entry key="..\:/Workspace/Daily-Family/app/src/main/res/layout/row_report_daily_meal.xml" value="0.28489583333333335" />
         <entry key="..\:/Workspace/Daily-Family/app/src/main/res/layout/row_report_listviewall.xml" value="0.27291666666666664" />
+        <entry key="..\:/Workspace/Daily-Family/app/src/main/res/layout/test_dialog.xml" value="0.27291666666666664" />
         <entry key="..\:/Workspace/Daily-Family/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2722222222222222" />
         <entry key="..\:/Workspace/Friends-Unity/app/src/main/res/drawable/balance_icon.xml" value="0.27685185185185185" />
         <entry key="..\:/Workspace/Friends-Unity/app/src/main/res/drawable/bt_background_rounded_yellow.xml" value="0.24722222222222223" />

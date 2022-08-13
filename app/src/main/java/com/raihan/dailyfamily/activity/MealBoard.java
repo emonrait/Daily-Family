@@ -8,9 +8,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -35,6 +37,7 @@ import com.raihan.dailyfamily.model.ReportListAdapter;
 import com.raihan.dailyfamily.model.ValidationUtil;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -62,6 +65,7 @@ public class MealBoard extends AutoLogout {
     RecyclerView meal_recyclerView;
     MealReportDailyListAdapter adpter;
     LoadingDialog loadingDialog = new LoadingDialog(MealBoard.this);
+    final Calendar myCalendar = Calendar.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,6 +108,25 @@ public class MealBoard extends AutoLogout {
         });
 
         date_value.setText(ValidationUtil.getTransactionCurrentDate());
+        DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int day) {
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, month);
+                myCalendar.set(Calendar.DAY_OF_MONTH, day);
+                date_value.setText(ValidationUtil.dateFormate(myCalendar));
+                totalMeal();
+                allMemberMealInfo();
+                totalBazar();
+            }
+        };
+        date_value.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new DatePickerDialog(MealBoard.this, date, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+
         totalMeal();
         allMemberMealInfo();
         totalBazar();
@@ -115,7 +138,7 @@ public class MealBoard extends AutoLogout {
             DialogCustom.showInternetConnectionMessage(MealBoard.this);
         } else {
             //loadingDialog.startDialoglog();
-            Query queryt = databaseReferenceMeal.orderByChild("date").equalTo(ValidationUtil.getTransactionCurrentDate());
+            Query queryt = databaseReferenceMeal.orderByChild("date").equalTo(date_value.getText().toString().trim());
             queryt.addValueEventListener(new ValueEventListener() {
 
                 @Override
@@ -161,7 +184,7 @@ public class MealBoard extends AutoLogout {
             DialogCustom.showInternetConnectionMessage(MealBoard.this);
         } else {
             //loadingDialog.startDialoglog();
-            Query queryt = databaseReferenceBazaar.orderByChild("date").equalTo(ValidationUtil.getTransactionCurrentDate());
+            Query queryt = databaseReferenceBazaar.orderByChild("date").equalTo(date_value.getText().toString().trim());
             queryt.addValueEventListener(new ValueEventListener() {
 
                 @Override
@@ -213,7 +236,6 @@ public class MealBoard extends AutoLogout {
                     String profile = ds.child("prolink").getValue(String.class);
                     String nick = ds.child("nick").getValue(String.class);
                     //Log.d("TAG", name + " / "+email+" / "+mobile+" / "+profile);
-
 
 
                     Meal members = new Meal(mobile, name, email, name, name, name, name, nick);

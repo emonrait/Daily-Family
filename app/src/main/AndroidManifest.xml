@@ -28,6 +28,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".activity.MealApproval"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName=".activity.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".activity.AddBazarCost"
             android:configChanges="orientation|keyboardHidden"
             android:parentActivityName=".activity.DashboardActivity"

@@ -2958,7 +2958,9 @@ id browser_actions_menu_view
 id btnSubmit
 id btnUpdate
 id btnUpload
+id btn_approved
 id btn_cancel
+id btn_declined
 id btn_delete
 id btn_edit
 id btn_no
@@ -3713,6 +3715,7 @@ layout activity_dashboard
 layout activity_debit
 layout activity_image_upload
 layout activity_main
+layout activity_meal_approval
 layout activity_meal_board
 layout activity_member
 layout activity_new_dashboard
@@ -3838,6 +3841,7 @@ layout preference_widget_seekbar
 layout preference_widget_seekbar_material
 layout preference_widget_switch
 layout preference_widget_switch_compat
+layout row_daily_meal_approval
 layout row_fundtransfer_menu
 layout row_report_daily_meal
 layout row_report_listviewall
@@ -3923,6 +3927,7 @@ string already_a_member_login
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string approved
 string available_balance
 string balance
 string balance_informatiom
@@ -3984,6 +3989,7 @@ string crop_image_menu_rotate_right
 string customer_care
 string date
 string debit
+string declined
 string default_web_client_id
 string deposit_amount
 string developed_by_emon_raihan
@@ -4175,6 +4181,7 @@ string total_breakfast
 string total_cost
 string total_deposit_amount
 string total_diner_meal
+string total_information
 string total_launch_meal
 string total_meal
 string total_meal_cost

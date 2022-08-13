@@ -396,6 +396,10 @@
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_call.png"
     },
     {
+        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_daily_meal_approval.xml.flat",
+        "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\layout\\row_daily_meal_approval.xml"
+    },
+    {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_addpic.png.flat",
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_addpic.png"
     },
@@ -854,6 +858,10 @@
     {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_logout.png.flat",
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_logout.png"
+    },
+    {
+        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_meal_approval.xml.flat",
+        "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\layout\\activity_meal_approval.xml"
     },
     {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_devloper.png.flat",

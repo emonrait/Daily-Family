@@ -143,6 +143,9 @@
     <string name="total_breakfast">Total Breakfast Meal</string>
     <string name="total_launch_meal">Total Launch Meal</string>
     <string name="total_diner_meal">Total Diner Meal</string>
+    <string name="total_information">Total Information</string>
+    <string name="approved">Approved</string>
+    <string name="declined">Declined</string>
 
 
     <string-array name="spinnerItems">

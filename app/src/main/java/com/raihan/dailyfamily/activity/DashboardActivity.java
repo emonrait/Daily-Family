@@ -446,6 +446,7 @@ public class DashboardActivity extends AutoLogout {
             list.add(new MenuModel("Report", R.drawable.reportnew, "rep"));
             list.add(new MenuModel("Password Change", R.drawable.password, "pac"));
             list.add(new MenuModel("Upload Image", R.drawable.camera, "ui"));
+            list.add(new MenuModel("Meal Appoval", R.drawable.camera, "ma"));
 
         } else if (globalVariable.getRole().toLowerCase().equals("cash")) {
             list.add(new MenuModel("Profile", R.drawable.ic_user, "pf"));
@@ -467,6 +468,7 @@ public class DashboardActivity extends AutoLogout {
             list.add(new MenuModel("Report", R.drawable.reportnew, "rep"));
             list.add(new MenuModel("Password Change", R.drawable.password, "pac"));
             list.add(new MenuModel("Upload Image", R.drawable.camera, "ui"));
+            list.add(new MenuModel("Meal Appoval", R.drawable.camera, "ma"));
 
         } else {
             list.add(new MenuModel("Profile", R.drawable.ic_user, "pf"));
@@ -498,67 +500,51 @@ public class DashboardActivity extends AutoLogout {
             if ("pf".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, ProfileActivity.class);
                 startActivity(intent);
-
             } else if ("bl".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, TotalBalanceActivity.class);
                 startActivity(intent);
-
             } else if ("st".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, StatetmentActivity.class);
                 startActivity(intent);
-
             } else if ("me".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, MemberActivity.class);
                 startActivity(intent);
-
             } else if ("co".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, ConditionActivity.class);
                 startActivity(intent);
-
             } else if ("con".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, ContactActivity.class);
                 startActivity(intent);
-
             } else if ("no".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, NotificationActivity.class);
                 startActivity(intent);
-
             } else if ("db".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, DebitActivity.class);
                 startActivity(intent);
-
             } else if ("cr".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, CreditActivity.class);
                 startActivity(intent);
-
             } else if ("dev".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, AboutActivity.class);
                 startActivity(intent);
-
             } else if ("pa".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, TransactionActivity.class);
                 startActivity(intent);
-
             } else if ("tl".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, AllTxnListActivity.class);
                 startActivity(intent);
-
             } else if ("reg".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, RegisterActivity.class);
                 startActivity(intent);
-
             } else if ("rep".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, ReportActivity.class);
                 startActivity(intent);
-
             } else if ("pac".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, PasswordChangeNew.class);
                 startActivity(intent);
-
             } else if ("ui".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, ImageUpload.class);
                 startActivity(intent);
-
             } else if ("mb".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, MealBoard.class);
                 startActivity(intent);
@@ -567,6 +553,9 @@ public class DashboardActivity extends AutoLogout {
                 startActivity(intent);
             } else if ("abc".equals(menu_soft_code.getText().toString())) {
                 Intent intent = new Intent(DashboardActivity.this, AddBazarCost.class);
+                startActivity(intent);
+            } else if ("ma".equals(menu_soft_code.getText().toString())) {
+                Intent intent = new Intent(DashboardActivity.this, MealApproval.class);
                 startActivity(intent);
             }
 
