@@ -109,8 +109,9 @@ public class MealApproval extends AutoLogout {
                     String launch = ds.child("launch").getValue(String.class);
                     String dinner = ds.child("dinner").getValue(String.class);
                     String flag = ds.child("flag").getValue(String.class);
+                    String id = ds.child("id").getValue(String.class);
 
-                    Meal meal = new Meal(email, date, email, breakfast, launch, dinner, flag);
+                    Meal meal = new Meal(email, date, email, breakfast, launch, dinner, flag, id);
 
                     listdata.add(meal);
                     loadingDialog.dismisstDialoglog();

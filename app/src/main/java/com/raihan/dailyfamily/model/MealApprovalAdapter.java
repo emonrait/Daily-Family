@@ -95,14 +95,14 @@ public class MealApprovalAdapter extends RecyclerView.Adapter<MealApprovalAdapte
             @Override
             public void onClick(View v) {
 
-                updateMealApproval(data.getEmail(), "R", data.getBreakfast(), data.getLaunch(), data.getDinner(), data.getDate());
+                updateMealApproval(data.getEmail(), "R", data.getBreakfast(), data.getLaunch(), data.getDinner(), data.getDate(), data.getId());
             }
         });
 
         holder.btn_approved.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateMealApproval(data.getEmail(), "Y", data.getBreakfast(), data.getLaunch(), data.getDinner(), data.getDate());
+                updateMealApproval(data.getEmail(), "Y", data.getBreakfast(), data.getLaunch(), data.getDinner(), data.getDate(), data.getId());
             }
         });
 
@@ -155,9 +155,9 @@ public class MealApprovalAdapter extends RecyclerView.Adapter<MealApprovalAdapte
         void onContactSelected(Meal contact);
     }
 
-    private void updateMealApproval(String email, String flag, String breakfast, String launch, String dinner, String date) {
+    private void updateMealApproval(String email, String flag, String breakfast, String launch, String dinner, String date, String id) {
 
-        Query queryt = FirebaseDatabase.getInstance().getReference().child("Meal").orderByChild("email").equalTo(email);
+        Query queryt = FirebaseDatabase.getInstance().getReference("Meal").orderByChild("id").equalTo(id);
 
         queryt.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override

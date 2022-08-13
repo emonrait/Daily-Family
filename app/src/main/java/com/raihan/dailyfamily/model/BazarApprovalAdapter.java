@@ -151,7 +151,7 @@ public class BazarApprovalAdapter extends RecyclerView.Adapter<BazarApprovalAdap
 
     private void updateMealApproval(String email, String flag, String amount, String date, String id, String productDetails) {
 
-        Query queryt = FirebaseDatabase.getInstance().getReference().child("Bazaar").orderByChild("email").equalTo(email);
+        Query queryt = FirebaseDatabase.getInstance().getReference("Bazaar").orderByChild("id").equalTo(id);
 
         queryt.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
