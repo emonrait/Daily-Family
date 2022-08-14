@@ -201,13 +201,11 @@ public class MealBoard extends AutoLogout {
                     }
                     //globalVariable.setTotalAmount(String.valueOf(total));
 
-                    total_bazar_value.setText(String.valueOf(bazartotal));
+                    total_bazar_value.setText(ValidationUtil.commaSeparateAmount(String.valueOf(bazartotal)));
                 }
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
-                    //loadingDialog.dismisstDialoglog();
-                    //throw databaseError.toException(); // don't ignore errors
                     DialogCustom.showErrorMessage(MealBoard.this, databaseError.getMessage());
                 }
             });

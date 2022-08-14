@@ -216,7 +216,7 @@ public class AddMeal extends AutoLogout {
                     double dinnertotal = 0;
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
                         Map<String, Object> map = (Map<String, Object>) ds.getValue();
-                        if (map.get("email").equals(firebaseAuth.getCurrentUser().getEmail().trim())) {
+                        if (map.get("email").equals(firebaseAuth.getCurrentUser().getEmail().trim()) && !map.get("flag").equals("R")) {
                             Object breakfast = map.get("breakfast");
                             Object launch = map.get("launch");
                             Object dinner = map.get("dinner");
