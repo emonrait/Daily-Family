@@ -86,7 +86,7 @@ public class AddMonthlyCost extends AutoLogout {
             }
         });
 
-        tv_genereal_header_title.setText(R.string.add_daily_bazar_cost);
+        tv_genereal_header_title.setText(R.string.add_monthly_cost);
 
         ivLogout.setOnClickListener(new View.OnClickListener() {
             @Override

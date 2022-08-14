@@ -3943,6 +3943,7 @@ string add_bazaar_cost
 string add_daily_bazar_cost
 string add_daily_meal
 string add_meal
+string add_monthly_cost
 string address
 string already_a_member_login
 string androidx_startup
