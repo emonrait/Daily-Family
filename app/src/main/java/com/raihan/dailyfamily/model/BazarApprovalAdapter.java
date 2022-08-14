@@ -1,7 +1,9 @@
 package com.raihan.dailyfamily.model;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +21,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.raihan.dailyfamily.R;
+import com.raihan.dailyfamily.activity.BazarApproval;
+import com.raihan.dailyfamily.activity.DashboardActivity;
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -84,7 +88,7 @@ public class BazarApprovalAdapter extends RecyclerView.Adapter<BazarApprovalAdap
 
         holder.tv_email.setText(data.getEmail());
         holder.tv_date.setText(data.getDate());
-        holder.tv_total_amount.setText(data.getAmount());
+        holder.tv_total_amount.setText(ValidationUtil.commaSeparateAmount(data.getAmount()));
         holder.tv_product_details.setText(data.getProductDetails());
 
 
@@ -92,7 +96,7 @@ public class BazarApprovalAdapter extends RecyclerView.Adapter<BazarApprovalAdap
             @Override
             public void onClick(View v) {
 
-                updateMealApproval(data.getEmail(), "R", data.getAmount(), data.getDate(), data.getId(), data.getProductDetails());
+                updateMealApproval(data.getEmail(), "Y", data.getAmount(), data.getDate(), data.getId(), data.getProductDetails());
             }
         });
 
@@ -168,6 +172,8 @@ public class BazarApprovalAdapter extends RecyclerView.Adapter<BazarApprovalAdap
                     edtData.getRef().child("id").setValue(id);
 
                 }
+                Intent intent = new Intent(context, BazarApproval.class);
+                DialogCustom.doClearActivity(intent, (Activity) context);
             }
 
             @Override
