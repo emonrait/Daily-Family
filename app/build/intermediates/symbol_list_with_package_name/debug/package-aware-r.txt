@@ -2653,6 +2653,8 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable addcart
 drawable addfood
+drawable approvedbazar
+drawable approvedmeal
 drawable arrow_left
 drawable avd_hide_password
 drawable avd_show_password
@@ -2771,6 +2773,7 @@ drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
 drawable mealboard
 drawable membership
+drawable monthlycost
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -2969,6 +2972,7 @@ id btn_send
 id btn_sendMoney
 id btn_update
 id btn_yes
+id bua_value
 id budgetStatus
 id buttonPanel
 id cache_measures
@@ -2993,6 +2997,7 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
+id city_cor_bill_value
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -3080,6 +3085,7 @@ id edit_query
 id edittext_dropdown_editable
 id edittext_dropdown_noneditable
 id elastic
+id elictricity_value
 id email
 id end
 id endToStart
@@ -3126,6 +3132,7 @@ id home
 id homeAsUp
 id honorRequest
 id horizontal_only
+id house_rent_value
 id iamge
 id icon
 id icon_frame
@@ -3224,6 +3231,7 @@ id matrix
 id mb
 id meal_recyclerView
 id media_actions
+id member_value
 id members
 id menuGridView
 id menu_icon
@@ -3304,6 +3312,7 @@ id oldamountnew
 id on
 id onInterceptTouchReturnSwipe
 id onTouch
+id others_value
 id outline
 id outward
 id oval
@@ -3713,6 +3722,7 @@ layout abc_tooltip
 layout activity_about
 layout activity_add_bazar_cost
 layout activity_add_meal
+layout activity_add_monthly_cost
 layout activity_all_txn_list
 layout activity_bazar_approval
 layout activity_condition
@@ -3961,10 +3971,12 @@ string blogspot
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
 string breakfast
+string bua
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
+string city_cor_bill
 string clear_text_end_icon_content_description
 string close
 string common_google_play_services_enable_button
@@ -4013,6 +4025,7 @@ string do_you_want_to_logout_the_application
 string due_balance
 string due_months
 string edit
+string elictricity
 string email
 string email_address
 string email_id
@@ -4047,6 +4060,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string gulshan_02_dhaka_1212
 string hide_bottom_view_on_scroll_behavior
+string house_rent
 string iamge_upload
 string icon_content_description
 string item_view_role_description
@@ -4104,6 +4118,7 @@ string member
 string member_name
 string mobile_no
 string mobile_no_2
+string months
 string motion_easing_standard_missing_control_point
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
@@ -4142,6 +4157,7 @@ string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
 string my_meal_info
+string my_total_bazaar_info
 string name
 string new_member_registration
 string new_total
@@ -4156,6 +4172,7 @@ string ok
 string old_password
 string open
 string organization
+string others_bill
 string password
 string password_change
 string password_toggle_content_description

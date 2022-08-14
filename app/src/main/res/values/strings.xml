@@ -157,6 +157,13 @@
     <string name="status">Status</string>
     <string name="payment">Payment</string>
     <string name="meal">Meal</string>
+    <string name="my_total_bazaar_info">My Total Bazaar Info</string>
+    <string name="months">Month</string>
+    <string name="house_rent">House Rent</string>
+    <string name="city_cor_bill">City Cor. Bill</string>
+    <string name="elictricity">Electricity Bill</string>
+    <string name="bua">Bua Bill</string>
+    <string name="others_bill">Others Bill</string>
 
 
     <string-array name="spinnerItems">

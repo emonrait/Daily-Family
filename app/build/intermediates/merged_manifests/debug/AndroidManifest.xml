@@ -37,6 +37,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.raihan.dailyfamily.activity.AddMonthlyCost"
+            android:exported="true" />
+        <activity
             android:name="com.raihan.dailyfamily.activity.BazarApproval"
             android:configChanges="orientation|keyboardHidden"
             android:exported="true"

@@ -304,6 +304,10 @@
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable_approvedbazar.png.flat",
+        "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\drawable\\approvedbazar.png"
+    },
+    {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_password.png.flat",
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_password.png"
     },
@@ -592,6 +596,10 @@
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_notifications.xml"
     },
     {
+        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable_monthlycost.png.flat",
+        "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\drawable\\monthlycost.png"
+    },
+    {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\menu_nav_drawer_menu.xml.flat",
         "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\menu\\nav_drawer_menu.xml"
     },
@@ -844,6 +852,10 @@
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\search_utility.png"
     },
     {
+        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_monthly_cost.xml.flat",
+        "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\layout\\activity_add_monthly_cost.xml"
+    },
+    {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_devloper.png.flat",
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_devloper.png"
     },
@@ -1088,6 +1100,10 @@
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_devloper.png"
     },
     {
+        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_report_daily_bazaar.xml.flat",
+        "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\layout\\row_report_daily_bazaar.xml"
+    },
+    {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_foreground.png.flat",
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_foreground.png"
     },
@@ -1202,6 +1218,10 @@
     {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_camera.png.flat",
         "source": "E:\\Workspace\\Daily-Family\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\camera.png"
+    },
+    {
+        "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable_approvedmeal.png.flat",
+        "source": "E:\\Workspace\\Daily-Family\\app\\src\\main\\res\\drawable\\approvedmeal.png"
     },
     {
         "merged": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_pdate.png.flat",

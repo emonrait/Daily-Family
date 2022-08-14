@@ -209,6 +209,14 @@
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/my_total_bazaar_info"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
                     <include layout="@layout/row_report_daily_bazaar" />
                 </LinearLayout>
 

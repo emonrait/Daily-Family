@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-239:12
-INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-239:12
-INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-239:12
-INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-239:12
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-242:12
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-242:12
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-242:12
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-242:12
 MERGED from [androidx.multidex:multidex:2.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\206f108751a2f5c3eb85a58ab584c925\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.7.0-alpha01] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\3d46d1742139235713c7290afedd8340\material-1.7.0-alpha01\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\e2ed4bb1e4fb431131953fa714005ea9\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -100,22 +100,22 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] H:\Workspace\Android proj
 MERGED from [androidx.documentfile:documentfile:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\beeb1faf75debc28d0db76f0ae023bfe\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\92bface2787d8d2d0dd3db086e997be3\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\0b916f9d9d31d576339b50edb56f6cb1\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-239:12
-INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-239:12
-INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-239:12
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-242:12
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-242:12
+INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-242:12
 	package
 		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:4:5-37
 		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
 		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-239:12
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-242:12
 		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-239:12
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:1-242:12
 		INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:2:11-69
@@ -206,7 +206,7 @@ ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:16:5-18:47
 	android:name
 		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:17:9-57
 application
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:20:5-237:19
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:20:5-240:19
 MERGED from [com.google.android.material:material:1.7.0-alpha01] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\3d46d1742139235713c7290afedd8340\material-1.7.0-alpha01\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0-alpha01] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\3d46d1742139235713c7290afedd8340\material-1.7.0-alpha01\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\e2ed4bb1e4fb431131953fa714005ea9\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -299,410 +299,416 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] H:\Workspace\Android projec
 		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:29:9-40
 	android:name
 		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:21:9-45
+activity#com.raihan.dailyfamily.activity.AddMonthlyCost
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:30:9-32:39
+	android:exported
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:32:13-36
+	android:name
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:31:13-52
 activity#com.raihan.dailyfamily.activity.BazarApproval
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:30:9-36:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:33:9-39:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:35:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:38:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:34:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:37:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:33:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:36:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:32:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:35:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:36:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:39:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:31:13-51
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:34:13-51
 activity#com.raihan.dailyfamily.activity.MealApproval
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:37:9-43:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:40:9-46:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:42:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:45:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:41:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:44:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:40:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:43:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:39:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:42:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:43:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:46:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:38:13-50
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:41:13-50
 activity#com.raihan.dailyfamily.activity.AddBazarCost
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:44:9-50:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:47:9-53:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:49:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:52:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:48:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:51:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:47:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:50:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:46:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:49:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:50:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:53:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:45:13-50
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:48:13-50
 activity#com.raihan.dailyfamily.activity.AddMeal
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:51:9-57:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:54:9-60:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:56:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:59:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:55:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:58:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:54:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:57:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:53:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:56:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:57:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:60:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:52:13-45
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:55:13-45
 activity#com.raihan.dailyfamily.activity.MealBoard
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:58:9-64:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:61:9-67:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:63:13-49
-	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:62:13-69
-	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:61:13-36
-	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:60:13-63
-	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:64:13-44
-	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:59:13-47
-activity#com.raihan.dailyfamily.activity.ImageUpload
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:65:9-71:47
-	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:70:13-49
-	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:69:13-69
-	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:68:13-36
-	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:67:13-63
-	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:71:13-44
-	android:name
 		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:66:13-49
+	android:parentActivityName
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:65:13-69
+	android:exported
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:64:13-36
+	android:configChanges
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:63:13-63
+	android:theme
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:67:13-44
+	android:name
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:62:13-47
+activity#com.raihan.dailyfamily.activity.ImageUpload
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:68:9-74:47
+	android:screenOrientation
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:73:13-49
+	android:parentActivityName
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:72:13-69
+	android:exported
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:71:13-36
+	android:configChanges
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:70:13-63
+	android:theme
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:74:13-44
+	android:name
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:69:13-49
 activity#com.raihan.dailyfamily.activity.PasswordChangeNew
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:72:9-78:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:75:9-81:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:77:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:80:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:76:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:79:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:75:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:78:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:74:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:77:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:78:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:81:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:73:13-55
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:76:13-55
 service#com.raihan.dailyfamily.model.FCMService
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:80:9-86:19
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:83:9-89:19
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:82:13-37
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:85:13-37
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:81:13-45
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:84:13-45
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:83:13-85:29
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:86:13-88:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:84:17-78
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:87:17-78
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:84:25-75
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:87:25-75
 activity#com.raihan.dailyfamily.activity.ReportActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:88:9-94:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:91:9-97:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:93:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:96:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:92:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:95:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:91:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:94:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:90:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:93:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:94:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:97:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:89:13-52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:92:13-52
 activity#com.raihan.dailyfamily.activity.NewDashboardActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:95:9-101:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:98:9-104:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:100:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:103:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:99:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:102:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:98:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:101:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:97:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:100:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:101:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:104:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:96:13-58
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:99:13-58
 activity#com.raihan.dailyfamily.activity.AllTxnListActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:102:9-108:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:105:9-111:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:107:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:110:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:106:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:109:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:105:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:108:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:104:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:107:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:108:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:111:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:103:13-56
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:106:13-56
 activity#com.raihan.dailyfamily.activity.SplashActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:109:9-120:20
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:112:9-123:20
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:113:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:116:13-49
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:112:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:115:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:111:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:114:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:114:13-53
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:117:13-53
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:110:13-52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:113:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:115:13-119:29
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:118:13-122:29
 action#android.intent.action.MAIN
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:116:17-69
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:119:17-69
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:116:25-66
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:119:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:118:17-77
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:121:17-77
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:118:27-74
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:121:27-74
 activity#com.raihan.dailyfamily.activity.QRcodeActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:121:9-127:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:124:9-130:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:126:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:129:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:125:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:128:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:124:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:127:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:123:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:126:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:127:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:130:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:122:13-52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:125:13-52
 activity#com.raihan.dailyfamily.activity.CreditActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:128:9-134:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:131:9-137:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:133:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:136:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:132:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:135:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:131:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:134:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:130:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:133:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:134:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:137:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:129:13-52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:132:13-52
 activity#com.raihan.dailyfamily.activity.DebitActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:135:9-141:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:138:9-144:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:140:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:143:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:139:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:142:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:138:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:141:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:137:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:140:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:141:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:144:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:136:13-51
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:139:13-51
 activity#com.theartofdev.edmodo.cropper.CropImageActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:142:9-148:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:145:9-151:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:147:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:150:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:146:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:149:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:145:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:148:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:144:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:147:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:148:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:151:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:143:13-76
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:146:13-76
 activity#com.raihan.dailyfamily.activity.TransactionActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:149:9-155:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:152:9-158:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:154:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:157:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:153:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:156:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:152:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:155:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:151:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:154:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:155:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:158:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:150:13-57
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:153:13-57
 activity#com.raihan.dailyfamily.activity.AboutActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:156:9-162:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:159:9-165:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:161:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:164:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:160:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:163:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:159:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:162:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:158:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:161:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:162:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:165:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:157:13-51
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:160:13-51
 activity#com.raihan.dailyfamily.activity.NotificationActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:163:9-169:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:166:9-172:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:168:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:171:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:167:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:170:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:166:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:169:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:165:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:168:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:169:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:172:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:164:13-58
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:167:13-58
 activity#com.raihan.dailyfamily.activity.RegisterActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:170:9-176:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:173:9-179:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:175:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:178:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:174:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:177:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:173:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:176:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:172:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:175:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:176:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:179:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:171:13-54
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:174:13-54
 activity#com.raihan.dailyfamily.activity.ContactActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:177:9-183:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:180:9-186:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:182:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:185:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:181:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:184:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:180:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:183:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:179:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:182:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:183:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:186:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:178:13-53
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:181:13-53
 activity#com.raihan.dailyfamily.activity.StatetmentActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:184:9-190:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:187:9-193:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:189:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:192:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:188:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:191:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:187:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:190:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:186:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:189:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:190:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:193:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:185:13-56
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:188:13-56
 activity#com.raihan.dailyfamily.activity.TotalBalanceActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:191:9-197:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:194:9-200:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:196:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:199:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:195:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:198:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:194:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:197:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:193:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:196:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:197:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:200:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:192:13-58
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:195:13-58
 activity#com.raihan.dailyfamily.activity.ProfileActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:198:9-204:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:201:9-207:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:203:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:206:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:202:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:205:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:201:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:204:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:200:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:203:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:204:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:207:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:199:13-53
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:202:13-53
 activity#com.raihan.dailyfamily.activity.ConditionActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:205:9-211:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:208:9-214:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:210:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:213:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:209:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:212:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:208:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:211:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:207:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:210:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:211:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:214:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:206:13-55
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:209:13-55
 activity#com.raihan.dailyfamily.activity.MemberActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:212:9-218:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:215:9-221:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:217:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:220:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:216:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:219:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:215:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:218:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:214:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:217:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:218:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:221:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:213:13-52
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:216:13-52
 activity#com.raihan.dailyfamily.activity.DashboardActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:219:9-225:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:222:9-228:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:224:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:227:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:223:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:226:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:222:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:225:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:221:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:224:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:225:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:228:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:220:13-55
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:223:13-55
 activity#com.raihan.dailyfamily.activity.MainActivity
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:226:9-232:47
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:229:9-235:47
 	android:screenOrientation
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:231:13-49
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:234:13-49
 	android:parentActivityName
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:230:13-69
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:233:13-69
 	android:exported
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:229:13-36
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:232:13-36
 	android:configChanges
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:228:13-63
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:231:13-63
 	android:theme
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:232:13-44
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:235:13-44
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:227:13-50
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:230:13-50
 meta-data#preloaded_fonts
-ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:234:9-236:57
+ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:237:9-239:57
 	android:resource
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:236:13-54
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:239:13-54
 	android:name
-		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:235:13-43
+		ADDED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:238:13-43
 uses-sdk
 INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml

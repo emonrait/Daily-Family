@@ -28,6 +28,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".activity.AddMonthlyCost"
+            android:exported="true" />
+        <activity
             android:name=".activity.BazarApproval"
             android:configChanges="orientation|keyboardHidden"
             android:exported="true"
