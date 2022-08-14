@@ -488,7 +488,7 @@ public class DashboardActivity extends AutoLogout {
             list.add(new MenuModel("Report", R.drawable.reportnew, "rep"));
             list.add(new MenuModel("Password Change", R.drawable.password, "pac"));
             list.add(new MenuModel("Upload Image", R.drawable.camera, "ui"));
-            list.add(new MenuModel("Registration", R.drawable.membership, "reg"));
+            //list.add(new MenuModel("Registration", R.drawable.membership, "reg"));
         }
 
         MenuAdapter adapter = new MenuAdapter(this, list);
