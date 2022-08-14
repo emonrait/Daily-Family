@@ -38,38 +38,54 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.raihan.dailyfamily.BazarApproval"
-            android:exported="false" />
+            android:name="com.raihan.dailyfamily.activity.BazarApproval"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.MealApproval"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.AddBazarCost"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.AddMeal"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.MealBoard"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.ImageUpload"
             android:configChanges="orientation|keyboardHidden"
             android:exported="true"
-            android:screenOrientation="portrait" />
+            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.PasswordChangeNew"
             android:configChanges="orientation|keyboardHidden"
-            android:exported="false"
-            android:screenOrientation="portrait" />
+            android:exported="true"
+            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
 
         <service
             android:name="com.raihan.dailyfamily.model.FCMService"
@@ -84,17 +100,22 @@
             android:configChanges="orientation|keyboardHidden"
             android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.NewDashboardActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.AllTxnListActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.SplashActivity"
             android:configChanges="orientation|keyboardHidden"
@@ -110,81 +131,115 @@
         <activity
             android:name="com.raihan.dailyfamily.activity.QRcodeActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:parentActivityName="com.raihan.dailyfamily.activity.ProfileActivity"
-            android:screenOrientation="portrait" />
+            android:exported="true"
+            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.CreditActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.DebitActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Base.Theme.AppCompat" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.TransactionActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.AboutActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.NotificationActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.RegisterActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:parentActivityName="com.raihan.dailyfamily.activity.MainActivity"
-            android:screenOrientation="portrait" />
+            android:exported="true"
+            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.ContactActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.StatetmentActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.TotalBalanceActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.ProfileActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.ConditionActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.MemberActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
             android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.DashboardActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:exported="true"
+            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.raihan.dailyfamily.activity.MainActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:exported="true"
+            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
 
         <meta-data
             android:name="preloaded_fonts"

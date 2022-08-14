@@ -4,14 +4,10 @@
       <root url="jar://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/1b1150b390a5cf89aca8be1be0478a5d/preference-1.2.0/jars/classes.jar!/" />
       <root url="file://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/1b1150b390a5cf89aca8be1be0478a5d/preference-1.2.0/res" />
       <root url="file://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/1b1150b390a5cf89aca8be1be0478a5d/preference-1.2.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1b1150b390a5cf89aca8be1be0478a5d/preference-1.2.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1b1150b390a5cf89aca8be1be0478a5d/preference-1.2.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1b1150b390a5cf89aca8be1be0478a5d/preference-1.2.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://H:/Workspace/Android project/BankAsiaSmartApp/caches/modules-2/files-2.1/androidx.preference/preference/1.2.0/ea34e83a4931eaa12ec078439d10c32e24b67478/preference-1.2.0-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.preference/preference/1.2.0/ea34e83a4931eaa12ec078439d10c32e24b67478/preference-1.2.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

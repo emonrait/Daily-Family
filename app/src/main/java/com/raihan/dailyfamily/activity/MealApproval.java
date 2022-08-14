@@ -28,7 +28,6 @@ import com.raihan.dailyfamily.model.DialogCustom;
 import com.raihan.dailyfamily.model.GlobalVariable;
 import com.raihan.dailyfamily.model.Meal;
 import com.raihan.dailyfamily.model.MealApprovalAdapter;
-import com.raihan.dailyfamily.model.MealReportDailyListAdapter;
 import com.raihan.dailyfamily.model.ValidationUtil;
 
 import java.util.ArrayList;
@@ -111,7 +110,7 @@ public class MealApproval extends AutoLogout {
                     String flag = ds.child("flag").getValue(String.class);
                     String id = ds.child("id").getValue(String.class);
 
-                    Meal meal = new Meal(email, date, email, breakfast, launch, dinner, flag, id);
+                    Meal meal = new Meal(id, date, email, breakfast, launch, dinner, flag);
 
                     listdata.add(meal);
                     loadingDialog.dismisstDialoglog();

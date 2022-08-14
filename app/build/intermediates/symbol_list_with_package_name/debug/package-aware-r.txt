@@ -3532,6 +3532,7 @@ id tv_breakfast
 id tv_breakfast_label
 id tv_customer_care
 id tv_date
+id tv_date_label
 id tv_deposit_amount
 id tv_deposit_amount_label
 id tv_dinner
@@ -3539,6 +3540,7 @@ id tv_dinner_label
 id tv_due_balance
 id tv_due_balance_label
 id tv_email
+id tv_email_label
 id tv_email_level
 id tv_genereal_header_title
 id tv_invoiceno
@@ -3549,8 +3551,11 @@ id tv_message
 id tv_name
 id tv_name_label
 id tv_ocp_level
+id tv_product_details
+id tv_product_details_label
 id tv_registration_title
 id tv_title
+id tv_total_amount
 id tv_total_amount_label
 id tv_total_meal
 id tv_total_meal_cost
@@ -3834,6 +3839,7 @@ layout preference_widget_seekbar
 layout preference_widget_seekbar_material
 layout preference_widget_switch
 layout preference_widget_switch_compat
+layout row_daily_bazar_approval
 layout row_daily_meal_approval
 layout row_fundtransfer_menu
 layout row_report_daily_meal
@@ -4153,6 +4159,7 @@ string please_wait
 string positive_thinkers_unity
 string positive_thinkers_unity_authority
 string preference_copied
+string product_details
 string profile
 string project_id
 string raihan_mahamud_emon

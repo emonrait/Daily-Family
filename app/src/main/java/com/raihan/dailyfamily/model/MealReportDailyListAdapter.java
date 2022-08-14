@@ -90,7 +90,7 @@ public class MealReportDailyListAdapter extends RecyclerView.Adapter<MealReportD
         holder.tv_name.setText(data.getName());
 
         //  martextshow();
-        Query queryt = FirebaseDatabase.getInstance().getReference().child("Meal").orderByChild("date").equalTo(ValidationUtil.getTransactionCurrentDate());
+        Query queryt = FirebaseDatabase.getInstance().getReference().child("Meal").orderByChild("email").equalTo(data.getEmail());
 
         queryt.addValueEventListener(new ValueEventListener() {
             @Override
@@ -102,7 +102,7 @@ public class MealReportDailyListAdapter extends RecyclerView.Adapter<MealReportD
 
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
                         Map<String, Object> map = (Map<String, Object>) ds.getValue();
-                        if (map.get("flag").equals("Y")) {
+                        if (map.get("flag").equals("Y") && map.get("date").equals(data.getDate())) {
                             Object breakfast = map.get("breakfast");
                             Object launch = map.get("launch");
                             Object dinner = map.get("dinner");

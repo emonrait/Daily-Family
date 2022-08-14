@@ -4,17 +4,12 @@
       <root url="jar://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/eaec50b544866e4a374be6761e5c7bf4/jetified-firebase-storage-20.0.1/jars/classes.jar!/" />
       <root url="file://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/eaec50b544866e4a374be6761e5c7bf4/jetified-firebase-storage-20.0.1/res" />
       <root url="file://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/eaec50b544866e4a374be6761e5c7bf4/jetified-firebase-storage-20.0.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eaec50b544866e4a374be6761e5c7bf4/jetified-firebase-storage-20.0.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eaec50b544866e4a374be6761e5c7bf4/jetified-firebase-storage-20.0.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eaec50b544866e4a374be6761e5c7bf4/jetified-firebase-storage-20.0.1/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://H:/Workspace/Android project/BankAsiaSmartApp/caches/modules-2/files-2.1/com.google.firebase/firebase-storage/20.0.1/2e66e2f28eb6e473520d2e64a44b503f01f73c1f/firebase-storage-20.0.1-javadoc.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-storage/20.0.1/2e66e2f28eb6e473520d2e64a44b503f01f73c1f/firebase-storage-20.0.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://H:/Workspace/Android project/BankAsiaSmartApp/caches/modules-2/files-2.1/com.google.firebase/firebase-storage/20.0.1/fcad4128b95be5261e34b1d8d81b898f6dd02f6b/firebase-storage-20.0.1-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-storage/20.0.1/fcad4128b95be5261e34b1d8d81b898f6dd02f6b/firebase-storage-20.0.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

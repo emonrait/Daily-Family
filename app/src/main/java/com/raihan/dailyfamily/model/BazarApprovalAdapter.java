@@ -36,16 +36,16 @@ public class BazarApprovalAdapter extends RecyclerView.Adapter<BazarApprovalAdap
     String monthlydep = "";
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView tv_name, tv_breakfast, tv_launch, tv_dinner;
+        TextView tv_email, tv_date, tv_total_amount, tv_product_details;
         Button btn_approved;
         Button btn_declined;
 
         public MyViewHolder(View view) {
             super(view);
-            tv_name = (TextView) itemView.findViewById(R.id.tv_name);
-            tv_breakfast = (TextView) itemView.findViewById(R.id.tv_breakfast);
-            tv_launch = (TextView) itemView.findViewById(R.id.tv_launch);
-            tv_dinner = (TextView) itemView.findViewById(R.id.tv_dinner);
+            tv_email = (TextView) itemView.findViewById(R.id.tv_email);
+            tv_date = (TextView) itemView.findViewById(R.id.tv_date);
+            tv_total_amount = (TextView) itemView.findViewById(R.id.tv_total_amount);
+            tv_product_details = (TextView) itemView.findViewById(R.id.tv_product_details);
             btn_approved = (Button) itemView.findViewById(R.id.btn_approved);
             btn_declined = (Button) itemView.findViewById(R.id.btn_declined);
 
@@ -72,7 +72,7 @@ public class BazarApprovalAdapter extends RecyclerView.Adapter<BazarApprovalAdap
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.row_daily_meal_approval, parent, false);
+                .inflate(R.layout.row_daily_bazar_approval, parent, false);
 
         return new MyViewHolder(itemView);
     }
@@ -82,7 +82,10 @@ public class BazarApprovalAdapter extends RecyclerView.Adapter<BazarApprovalAdap
         final Bazaar data = contactList.get(position);
 
 
-        holder.tv_name.setText(data.getEmail());
+        holder.tv_email.setText(data.getEmail());
+        holder.tv_date.setText(data.getDate());
+        holder.tv_total_amount.setText(data.getAmount());
+        holder.tv_product_details.setText(data.getProductDetails());
 
 
         holder.btn_declined.setOnClickListener(new View.OnClickListener() {

@@ -85,7 +85,7 @@ public class MealApprovalAdapter extends RecyclerView.Adapter<MealApprovalAdapte
         final Meal data = contactList.get(position);
 
 
-        holder.tv_name.setText(data.getName());
+        holder.tv_name.setText(data.getId());
         holder.tv_breakfast.setText(String.valueOf(data.getBreakfast()));
         holder.tv_launch.setText(String.valueOf(data.getLaunch()));
         holder.tv_dinner.setText(String.valueOf(data.getDinner()));

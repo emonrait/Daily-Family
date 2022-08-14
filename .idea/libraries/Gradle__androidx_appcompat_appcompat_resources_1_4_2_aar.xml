@@ -4,14 +4,10 @@
       <root url="jar://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/18f969fadd7f76774a42c40bb39bbd07/jetified-appcompat-resources-1.4.2/jars/classes.jar!/" />
       <root url="file://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/18f969fadd7f76774a42c40bb39bbd07/jetified-appcompat-resources-1.4.2/res" />
       <root url="file://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/18f969fadd7f76774a42c40bb39bbd07/jetified-appcompat-resources-1.4.2/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/18f969fadd7f76774a42c40bb39bbd07/jetified-appcompat-resources-1.4.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/18f969fadd7f76774a42c40bb39bbd07/jetified-appcompat-resources-1.4.2/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/18f969fadd7f76774a42c40bb39bbd07/jetified-appcompat-resources-1.4.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://H:/Workspace/Android project/BankAsiaSmartApp/caches/modules-2/files-2.1/androidx.appcompat/appcompat-resources/1.4.2/8f78838745a125dea62514f7b4f70e8776a6244e/appcompat-resources-1.4.2-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat-resources/1.4.2/8f78838745a125dea62514f7b4f70e8776a6244e/appcompat-resources-1.4.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

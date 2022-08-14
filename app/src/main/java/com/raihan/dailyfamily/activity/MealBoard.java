@@ -31,16 +31,12 @@ import com.raihan.dailyfamily.model.DialogCustom;
 import com.raihan.dailyfamily.model.GlobalVariable;
 import com.raihan.dailyfamily.model.Meal;
 import com.raihan.dailyfamily.model.MealReportDailyListAdapter;
-import com.raihan.dailyfamily.model.Members;
-import com.raihan.dailyfamily.model.Report;
-import com.raihan.dailyfamily.model.ReportListAdapter;
 import com.raihan.dailyfamily.model.ValidationUtil;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.List;
 import java.util.Map;
 
 public class MealBoard extends AutoLogout {
@@ -235,10 +231,11 @@ public class MealBoard extends AutoLogout {
                     String mobile = ds.child("mobile").getValue(String.class);
                     String profile = ds.child("prolink").getValue(String.class);
                     String nick = ds.child("nick").getValue(String.class);
+                    String date = date_value.getText().toString().trim();
                     //Log.d("TAG", name + " / "+email+" / "+mobile+" / "+profile);
 
 
-                    Meal members = new Meal(mobile, name, email, name, name, name, name, nick);
+                    Meal members = new Meal(mobile, date, email, name, name, name, name, nick);
 
                     listdata.add(members);
                     loadingDialog.dismisstDialoglog();

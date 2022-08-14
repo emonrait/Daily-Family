@@ -148,6 +148,7 @@
     <string name="declined">Declined</string>
     <string name="add_meal">Add Meal</string>
     <string name="add_bazaar_cost">Add Bazaar Cost</string>
+    <string name="product_details">Product Details</string>
 
 
     <string-array name="spinnerItems">
