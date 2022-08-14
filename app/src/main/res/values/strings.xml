@@ -108,6 +108,8 @@
     <string name="enter_old_password">Enter Old Password</string>
     <string name="iamge_upload">Upload/Change Image</string>
     <string name="meal_board">Meal Board</string>
+    <string name="bazaar_approval">Meal Approval</string>
+    <string name="meal_approval">Meal Approval</string>
     <string name="add_daily_meal">Add Your Daily Meal</string>
     <string name="add_daily_bazar_cost">Add Your Daily Bazaar Cost</string>
     <string name="select_your_profile_image">Select Your Profile Image</string>
@@ -149,6 +151,9 @@
     <string name="add_meal">Add Meal</string>
     <string name="add_bazaar_cost">Add Bazaar Cost</string>
     <string name="product_details">Product Details</string>
+    <string name="submit">Submit</string>
+    <string name="my_meal_info">My Meal Info</string>
+    <string name="status">Status</string>
 
 
     <string-array name="spinnerItems">

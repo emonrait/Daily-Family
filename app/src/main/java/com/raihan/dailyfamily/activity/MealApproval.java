@@ -75,7 +75,7 @@ public class MealApproval extends AutoLogout {
             }
         });
 
-        tv_genereal_header_title.setText(R.string.meal_board);
+        tv_genereal_header_title.setText(R.string.meal_approval);
 
         ivLogout.setOnClickListener(new View.OnClickListener() {
             @Override

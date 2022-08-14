@@ -115,6 +115,10 @@ public class AddBazarCost extends AutoLogout {
                     amount_value.requestFocus();
                     DialogCustom.showErrorMessage(AddBazarCost.this, "Please Enter Total Amount.");
 
+                } else if (amount_value.getText().toString().trim().equals("0")) {
+                    amount_value.requestFocus();
+                    DialogCustom.showErrorMessage(AddBazarCost.this, "Please Enter Total Amount.");
+
                 } else if (product_details_value.getText().toString().trim().isEmpty()) {
                     product_details_value.requestFocus();
                     DialogCustom.showErrorMessage(AddBazarCost.this, "Please Enter Product Details.");

@@ -1,7 +1,9 @@
 package com.raihan.dailyfamily.model;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,7 +23,9 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.raihan.dailyfamily.BuildConfig;
 import com.raihan.dailyfamily.R;
+import com.raihan.dailyfamily.activity.BazarApproval;
 import com.raihan.dailyfamily.activity.DashboardActivity;
+import com.raihan.dailyfamily.activity.MealApproval;
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -39,7 +43,7 @@ public class MealApprovalAdapter extends RecyclerView.Adapter<MealApprovalAdapte
     String monthlydep = "";
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView tv_name, tv_breakfast, tv_launch, tv_dinner;
+        TextView tv_name, tv_breakfast, tv_launch, tv_dinner, tv_email, tv_date, tv_status;
         Button btn_approved;
         Button btn_declined;
 
@@ -49,6 +53,9 @@ public class MealApprovalAdapter extends RecyclerView.Adapter<MealApprovalAdapte
             tv_breakfast = (TextView) itemView.findViewById(R.id.tv_breakfast);
             tv_launch = (TextView) itemView.findViewById(R.id.tv_launch);
             tv_dinner = (TextView) itemView.findViewById(R.id.tv_dinner);
+            tv_email = (TextView) itemView.findViewById(R.id.tv_email);
+            tv_date = (TextView) itemView.findViewById(R.id.tv_date);
+            tv_status = (TextView) itemView.findViewById(R.id.tv_status);
             btn_approved = (Button) itemView.findViewById(R.id.btn_approved);
             btn_declined = (Button) itemView.findViewById(R.id.btn_declined);
 
@@ -86,9 +93,12 @@ public class MealApprovalAdapter extends RecyclerView.Adapter<MealApprovalAdapte
 
 
         holder.tv_name.setText(data.getId());
+        holder.tv_email.setText(data.getEmail());
         holder.tv_breakfast.setText(String.valueOf(data.getBreakfast()));
         holder.tv_launch.setText(String.valueOf(data.getLaunch()));
         holder.tv_dinner.setText(String.valueOf(data.getDinner()));
+        holder.tv_date.setText(String.valueOf(data.getDate()));
+        holder.tv_status.setText(String.valueOf(data.getFlag()));
 
 
         holder.btn_declined.setOnClickListener(new View.OnClickListener() {
@@ -171,6 +181,8 @@ public class MealApprovalAdapter extends RecyclerView.Adapter<MealApprovalAdapte
                     edtData.getRef().child("date").setValue(date);
 
                 }
+                Intent intent = new Intent(context, MealApproval.class);
+                DialogCustom.doClearActivity(intent, (Activity) context);
             }
 
             @Override

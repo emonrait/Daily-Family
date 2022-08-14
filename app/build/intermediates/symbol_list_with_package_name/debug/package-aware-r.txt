@@ -3554,6 +3554,8 @@ id tv_ocp_level
 id tv_product_details
 id tv_product_details_label
 id tv_registration_title
+id tv_status
+id tv_status_label
 id tv_title
 id tv_total_amount
 id tv_total_amount_label
@@ -3934,6 +3936,7 @@ string balance
 string balance_informatiom
 string balance_information
 string bazaar
+string bazaar_approval
 string biometric_cancelled
 string biometric_description
 string biometric_error_fingerprint_not_available
@@ -4085,6 +4088,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string meal_approval
 string meal_board
 string member
 string member_name
@@ -4127,6 +4131,7 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
+string my_meal_info
 string name
 string new_member_registration
 string new_total
@@ -4174,7 +4179,9 @@ string send_money
 string software_engineer_android_amp_ios
 string statement
 string statement_search
+string status
 string status_bar_notification_info_overflow
+string submit
 string summary_collapsed_preference_list
 string title
 string total_amount

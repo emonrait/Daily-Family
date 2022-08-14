@@ -19,8 +19,12 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.raihan.dailyfamily.BuildConfig;
 import com.raihan.dailyfamily.R;
 import com.raihan.dailyfamily.model.AutoLogout;
@@ -32,12 +36,19 @@ import com.raihan.dailyfamily.model.Members;
 import com.raihan.dailyfamily.model.ValidationUtil;
 
 import java.util.Calendar;
+import java.util.Map;
 
 public class AddMeal extends AutoLogout {
     GlobalVariable globalVariable;
     private ImageView ivLogout;
     private ImageView ivBack;
     private TextView tv_genereal_header_title;
+
+    private TextView tv_name_label;
+    private TextView tv_name;
+    private TextView tv_breakfast;
+    private TextView tv_launch;
+    private TextView tv_dinner;
 
     private EditText date_value;
     private EditText breakfast_value;
@@ -54,6 +65,7 @@ public class AddMeal extends AutoLogout {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_meal);
+
         ivLogout = findViewById(R.id.ivLogout);
         ivBack = findViewById(R.id.ivBack);
         tv_genereal_header_title = findViewById(R.id.tv_genereal_header_title);
@@ -63,6 +75,11 @@ public class AddMeal extends AutoLogout {
         launch_value = findViewById(R.id.launch_value);
         dinner_value = findViewById(R.id.dinner_value);
         btnSubmit = findViewById(R.id.btnSubmit);
+        tv_name_label = findViewById(R.id.tv_name_label);
+        tv_name = findViewById(R.id.tv_name);
+        tv_breakfast = findViewById(R.id.tv_breakfast);
+        tv_launch = findViewById(R.id.tv_launch);
+        tv_dinner = findViewById(R.id.tv_dinner);
 
 
         globalVariable = ((GlobalVariable) getApplicationContext());
@@ -89,8 +106,11 @@ public class AddMeal extends AutoLogout {
             }
         });
 
+        tv_name_label.setText("Date");
+
 
         date_value.setText(ValidationUtil.getTransactionCurrentDate());
+        totalMeal();
 
         DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
             @Override
@@ -99,12 +119,14 @@ public class AddMeal extends AutoLogout {
                 myCalendar.set(Calendar.MONTH, month);
                 myCalendar.set(Calendar.DAY_OF_MONTH, day);
                 date_value.setText(ValidationUtil.dateFormate(myCalendar));
+                totalMeal();
             }
         };
         date_value.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 new DatePickerDialog(AddMeal.this, date, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+
             }
         });
 
@@ -166,6 +188,7 @@ public class AddMeal extends AutoLogout {
                                         loadingDialog.dismisstDialoglog();
                                     }
                                 });
+                        totalMeal();
                     } catch (Exception e) {
                         DialogCustom.showErrorMessage(AddMeal.this, e.getMessage());
                     }
@@ -175,6 +198,52 @@ public class AddMeal extends AutoLogout {
         });
 
 
+    }
+
+    private void totalMeal() {
+        if (!DialogCustom.isOnline(AddMeal.this)) {
+            DialogCustom.showInternetConnectionMessage(AddMeal.this);
+        } else {
+            //loadingDialog.startDialoglog();
+            Query queryt = databaseReferenceMeal.orderByChild("date").equalTo(date_value.getText().toString().trim());
+            queryt.addValueEventListener(new ValueEventListener() {
+
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    // loadingDialog.dismisstDialoglog();
+                    double breakfasttotal = 0;
+                    double launchtotal = 0;
+                    double dinnertotal = 0;
+                    for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                        Map<String, Object> map = (Map<String, Object>) ds.getValue();
+                        if (map.get("email").equals(firebaseAuth.getCurrentUser().getEmail().trim())) {
+                            Object breakfast = map.get("breakfast");
+                            Object launch = map.get("launch");
+                            Object dinner = map.get("dinner");
+                            double breakfastvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(breakfast)));
+                            double launchvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(launch)));
+                            double dinnervalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(dinner)));
+                            breakfasttotal += breakfastvalue;
+                            launchtotal += launchvalue;
+                            dinnertotal += dinnervalue;
+                        }
+
+
+                    }
+                    //globalVariable.setTotalAmount(String.valueOf(total));
+                    tv_name.setText(date_value.getText().toString().trim());
+                    tv_breakfast.setText(String.valueOf(breakfasttotal));
+                    tv_launch.setText(String.valueOf(launchtotal));
+                    tv_dinner.setText(String.valueOf(dinnertotal));
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    DialogCustom.showErrorMessage(AddMeal.this, databaseError.getMessage());
+                }
+            });
+        }
     }
 
 
