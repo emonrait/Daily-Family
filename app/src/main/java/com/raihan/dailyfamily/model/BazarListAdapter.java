@@ -26,15 +26,14 @@ public class BazarListAdapter extends RecyclerView.Adapter<BazarListAdapter.MyVi
     private OnItemClickListener listener;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView tv_txnid, tv_invoiceno, tv_date, tv_amount;
+        TextView tv_date, tv_amount, tv_product_details;
         Button btn_payment_details;
 
         public MyViewHolder(View view) {
             super(view);
-            tv_txnid = (TextView) itemView.findViewById(R.id.tv_txnid);
-            tv_invoiceno = (TextView) itemView.findViewById(R.id.tv_invoiceno);
             tv_date = (TextView) itemView.findViewById(R.id.tv_date);
             tv_amount = (TextView) itemView.findViewById(R.id.tv_amount);
+            tv_product_details = (TextView) itemView.findViewById(R.id.tv_product_details);
             btn_payment_details = (Button) itemView.findViewById(R.id.btn_payment_details);
 
            /* view.setOnClickListener(new View.OnClickListener() {
@@ -58,7 +57,7 @@ public class BazarListAdapter extends RecyclerView.Adapter<BazarListAdapter.MyVi
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.row_statement_listview, parent, false);
+                .inflate(R.layout.row_report_daily_bazaar, parent, false);
 
         return new MyViewHolder(itemView);
     }
@@ -68,10 +67,9 @@ public class BazarListAdapter extends RecyclerView.Adapter<BazarListAdapter.MyVi
         final Bazaar data = contactList.get(position);
 
 
-        holder.tv_txnid.setText(data.getId());
-        holder.tv_invoiceno.setText(data.getAmount());
         holder.tv_date.setText(data.getDate());
-        holder.tv_amount.setText(data.getProductDetails());
+        holder.tv_amount.setText(ValidationUtil.commaSeparateAmount(data.getAmount()));
+        holder.tv_product_details.setText(data.getProductDetails());
         holder.btn_payment_details.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

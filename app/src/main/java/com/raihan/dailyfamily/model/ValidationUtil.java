@@ -99,7 +99,7 @@ public class ValidationUtil {
     }
 
     public static String replacecomma(String str) {
-        String rValue = "0";
+        String rValue = "0.0";
         try {
             //str = str.replaceAll(",", "");
             // String var10001 = "5/0,00:0.00";

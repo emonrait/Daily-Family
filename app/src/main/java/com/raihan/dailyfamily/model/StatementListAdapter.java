@@ -66,18 +66,11 @@ public class StatementListAdapter extends RecyclerView.Adapter<StatementListAdap
     @Override
     public void onBindViewHolder(MyViewHolder holder, @SuppressLint("RecyclerView") final int position) {
         final ListItem data = contactList.get(position);
-        //holder.tvUserNameSL.setText(contact.getBankCode() + "-" + contact.getBankName());
-        // holder.phone.setText(contact.getPhone());
-
-       /* Glide.with(context)
-                .load(contact.getImage())
-                .apply(RequestOptions.circleCropTransform())
-                .into(holder.thumbnail);*/
 
         holder.tv_txnid.setText(data.getId());
         holder.tv_invoiceno.setText(data.getInvoiceno());
         holder.tv_date.setText(data.getDate());
-        holder.tv_amount.setText(data.getAmount());
+        holder.tv_amount.setText(ValidationUtil.commaSeparateAmount(data.getAmount()));
         holder.btn_payment_details.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

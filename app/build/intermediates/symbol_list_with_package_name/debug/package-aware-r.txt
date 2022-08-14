@@ -3532,6 +3532,7 @@ id tv_address
 id tv_address_lebel
 id tv_amoumt
 id tv_amount
+id tv_amount_label
 id tv_bill_date_label
 id tv_bill_type_label
 id tv_breakfast
@@ -3850,6 +3851,7 @@ layout preference_widget_switch_compat
 layout row_daily_bazar_approval
 layout row_daily_meal_approval
 layout row_fundtransfer_menu
+layout row_report_daily_bazaar
 layout row_report_daily_meal
 layout row_report_listviewall
 layout row_statement_listview

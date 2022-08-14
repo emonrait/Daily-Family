@@ -26,15 +26,16 @@ public class MealListAdapter extends RecyclerView.Adapter<MealListAdapter.MyView
     private OnItemClickListener listener;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView tv_txnid, tv_invoiceno, tv_date, tv_amount;
+        TextView tv_name, tv_breakfast, tv_launch, tv_dinner, tv_name_label;
         Button btn_payment_details;
 
         public MyViewHolder(View view) {
             super(view);
-            tv_txnid = (TextView) itemView.findViewById(R.id.tv_txnid);
-            tv_invoiceno = (TextView) itemView.findViewById(R.id.tv_invoiceno);
-            tv_date = (TextView) itemView.findViewById(R.id.tv_date);
-            tv_amount = (TextView) itemView.findViewById(R.id.tv_amount);
+            tv_name = (TextView) itemView.findViewById(R.id.tv_name);
+            tv_breakfast = (TextView) itemView.findViewById(R.id.tv_breakfast);
+            tv_launch = (TextView) itemView.findViewById(R.id.tv_launch);
+            tv_dinner = (TextView) itemView.findViewById(R.id.tv_dinner);
+            tv_name_label = (TextView) itemView.findViewById(R.id.tv_name_label);
             btn_payment_details = (Button) itemView.findViewById(R.id.btn_payment_details);
 
            /* view.setOnClickListener(new View.OnClickListener() {
@@ -58,7 +59,7 @@ public class MealListAdapter extends RecyclerView.Adapter<MealListAdapter.MyView
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.row_statement_listview, parent, false);
+                .inflate(R.layout.row_report_daily_meal, parent, false);
 
         return new MyViewHolder(itemView);
     }
@@ -68,10 +69,11 @@ public class MealListAdapter extends RecyclerView.Adapter<MealListAdapter.MyView
         final Meal data = contactList.get(position);
 
 
-        holder.tv_txnid.setText(data.getLaunch());
-        holder.tv_invoiceno.setText(data.getDinner());
-        holder.tv_date.setText(data.getDate());
-        holder.tv_amount.setText(data.getBreakfast());
+        holder.tv_name_label.setText("Date");
+        holder.tv_name.setText(data.getDate());
+        holder.tv_breakfast.setText(String.valueOf(ValidationUtil.replacecommaDouble(data.getBreakfast())));
+        holder.tv_launch.setText(String.valueOf(ValidationUtil.replacecommaDouble(data.getLaunch())));
+        holder.tv_dinner.setText(String.valueOf(ValidationUtil.replacecommaDouble(data.getDinner())));
         holder.btn_payment_details.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

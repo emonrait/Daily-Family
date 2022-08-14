@@ -16,8 +16,12 @@ import android.widget.TextView;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.raihan.dailyfamily.R;
 import com.raihan.dailyfamily.model.AutoLogout;
 import com.raihan.dailyfamily.model.Bazaar;
@@ -27,6 +31,7 @@ import com.raihan.dailyfamily.model.Meal;
 import com.raihan.dailyfamily.model.ValidationUtil;
 
 import java.util.Calendar;
+import java.util.Map;
 import java.util.Objects;
 
 public class AddBazarCost extends AutoLogout {
@@ -34,6 +39,10 @@ public class AddBazarCost extends AutoLogout {
     private ImageView ivLogout;
     private ImageView ivBack;
     private TextView tv_genereal_header_title;
+
+    private TextView tv_date;
+    private TextView tv_amount;
+    private TextView tv_product_details;
 
     private EditText date_value;
     private EditText amount_value;
@@ -54,6 +63,10 @@ public class AddBazarCost extends AutoLogout {
         ivLogout = findViewById(R.id.ivLogout);
         ivBack = findViewById(R.id.ivBack);
         tv_genereal_header_title = findViewById(R.id.tv_genereal_header_title);
+
+        tv_date = findViewById(R.id.tv_date);
+        tv_amount = findViewById(R.id.tv_amount);
+        tv_product_details = findViewById(R.id.tv_product_details);
 
         date_value = findViewById(R.id.date_value);
         amount_value = findViewById(R.id.amount_value);
@@ -87,6 +100,7 @@ public class AddBazarCost extends AutoLogout {
 
 
         date_value.setText(ValidationUtil.getTransactionCurrentDate());
+        totalBazar();
 
         DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
             @Override
@@ -95,6 +109,7 @@ public class AddBazarCost extends AutoLogout {
                 myCalendar.set(Calendar.MONTH, month);
                 myCalendar.set(Calendar.DAY_OF_MONTH, day);
                 date_value.setText(ValidationUtil.dateFormate(myCalendar));
+                totalBazar();
             }
         };
         date_value.setOnClickListener(new View.OnClickListener() {
@@ -156,6 +171,7 @@ public class AddBazarCost extends AutoLogout {
                                         loadingDialog.dismisstDialoglog();
                                     }
                                 });
+                        totalBazar();
                     } catch (Exception e) {
                         DialogCustom.showErrorMessage(AddBazarCost.this, e.getMessage());
                         loadingDialog.dismisstDialoglog();
@@ -165,6 +181,49 @@ public class AddBazarCost extends AutoLogout {
             }
         });
 
+    }
+
+    private void totalBazar() {
+        if (!DialogCustom.isOnline(AddBazarCost.this)) {
+            DialogCustom.showInternetConnectionMessage(AddBazarCost.this);
+        } else {
+            //loadingDialog.startDialoglog();
+            Query queryt = databaseReferenceBazaar.orderByChild("date").equalTo(date_value.getText().toString().trim());
+            queryt.addValueEventListener(new ValueEventListener() {
+
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    // loadingDialog.dismisstDialoglog();
+                    double amounttotal = 0;
+                    String productDetailValue = "";
+                    double dinnertotal = 0;
+                    for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                        Map<String, Object> map = (Map<String, Object>) ds.getValue();
+                        if (map.get("email").equals(firebaseAuth.getCurrentUser().getEmail().trim()) && !map.get("flag").equals("R")) {
+                            Object amount = map.get("amount");
+
+                            double amountvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(amount)));
+                            amounttotal += amountvalue;
+                            Object productDetails = map.get("productDetails");
+                            productDetailValue = String.valueOf(productDetails);
+
+                        }
+
+
+                    }
+                    //globalVariable.setTotalAmount(String.valueOf(total));
+                    tv_date.setText(date_value.getText().toString().trim());
+                    tv_amount.setText(ValidationUtil.commaSeparateAmount(String.valueOf(amounttotal)));
+                    tv_product_details.setText(String.valueOf(productDetailValue));
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    DialogCustom.showErrorMessage(AddBazarCost.this, databaseError.getMessage());
+                }
+            });
+        }
     }
 
     @Override
