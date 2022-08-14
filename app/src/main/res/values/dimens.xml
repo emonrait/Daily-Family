@@ -24,6 +24,8 @@
     <dimen name="account_detail_padding_base">10dp</dimen>
     <dimen name="divider_height_base">1dp</dimen>
     <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_3">3dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
     <dimen name="title_textsize_base">20sp</dimen>
     <dimen name="content_minus_top_base">-45dp</dimen>
     <dimen name="margin_15">15dp</dimen>

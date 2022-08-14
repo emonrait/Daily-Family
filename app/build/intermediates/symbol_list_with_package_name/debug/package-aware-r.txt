@@ -2533,6 +2533,8 @@ dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
 dimen padding_10
+dimen padding_2
+dimen padding_3
 dimen padding_5
 dimen preference_dropdown_padding_start
 dimen preference_icon_minWidth
@@ -3361,6 +3363,9 @@ id rectangles
 id recycler_view
 id recyler
 id recylerReport
+id recyler_bazaar
+id recyler_meal
+id recyler_payment
 id report
 id reverseSawtooth
 id right
@@ -3444,6 +3449,7 @@ id submit_area
 id supportScrollUp
 id switchWidget
 id tabMode
+id tab_layout
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -3937,6 +3943,7 @@ string balance_informatiom
 string balance_information
 string bazaar
 string bazaar_approval
+string bazaar_t
 string biometric_cancelled
 string biometric_description
 string biometric_error_fingerprint_not_available
@@ -4088,6 +4095,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string meal
 string meal_approval
 string meal_board
 string member
@@ -4154,6 +4162,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string payment
 string payment_prompt
 string per_meal_cost
 string pick_image_intent_chooser_title

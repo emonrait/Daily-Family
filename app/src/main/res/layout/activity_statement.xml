@@ -25,65 +25,43 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/welcome_menu_icon_height_base"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@android:color/transparent"
+                android:nestedScrollingEnabled="true"
+                android:scrollbarThumbVertical="@color/black"
+                android:textAlignment="center"
+                app:tabGravity="center"
+                app:tabIndicatorAnimationDuration="1"
+                app:tabIndicatorColor="@color/black"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/black"
+                app:tabTextColor="@color/black" />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <androidx.cardview.widget.CardView
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyler_meal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/margin_10"
-                    android:layout_marginTop="@dimen/margin_10"
-                    android:layout_marginRight="@dimen/margin_10"
-                    app:cardBackgroundColor="@android:color/white"
-                    app:cardCornerRadius="@dimen/login_card_corner_radius_base"
-                    app:cardElevation="@dimen/login_card_elevation_base">
-
-                    <LinearLayout
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:paddingLeft="@dimen/input_padding_letf_base"
-                            android:paddingTop="@dimen/input_padding_top_base"
-                            android:paddingRight="@dimen/input_padding_right_base"
-                            android:text="@string/statement_search"
-                            android:textColor="#5F7586"
-                            android:textSize="@dimen/textsize_base"
-                            android:textStyle="bold" />
-
-                        <EditText
-                            android:id="@+id/input_invoice"
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
-                            android:background="@android:color/transparent"
-                            android:fontFamily="casual"
-                            android:hint="@string/enter_invoice_no"
-                            android:inputType="text"
-                            android:paddingLeft="15dp"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
+                    android:layout_height="wrap_content" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyler"
+                    android:id="@+id/recyler_bazaar"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_5" />
+                    android:layout_height="wrap_content" />
 
-
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyler_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
-
 
         </LinearLayout>
 

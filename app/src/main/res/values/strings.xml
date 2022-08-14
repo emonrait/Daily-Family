@@ -138,6 +138,7 @@
     <string name="please_input_your_daily_bazaar_cost">Please Input Your Daily Bazaar Cost</string>
     <string name="please_enter_product_details">Please Enter Product Details</string>
     <string name="bazaar">Total Bazaar</string>
+    <string name="bazaar_t">Bazaar</string>
     <string name="available_balance">Available Balance</string>
     <string name="total_deposit_amount">Total Deposit Amount</string>
     <string name="total_cost">Total Cost</string>
@@ -154,6 +155,8 @@
     <string name="submit">Submit</string>
     <string name="my_meal_info">My Meal Info</string>
     <string name="status">Status</string>
+    <string name="payment">Payment</string>
+    <string name="meal">Meal</string>
 
 
     <string-array name="spinnerItems">

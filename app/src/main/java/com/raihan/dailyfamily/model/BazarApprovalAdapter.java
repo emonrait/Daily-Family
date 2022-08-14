@@ -96,14 +96,14 @@ public class BazarApprovalAdapter extends RecyclerView.Adapter<BazarApprovalAdap
             @Override
             public void onClick(View v) {
 
-                updateMealApproval(data.getEmail(), "Y", data.getAmount(), data.getDate(), data.getId(), data.getProductDetails());
+                updateMealApproval(data.getEmail(), "R", data.getAmount(), data.getDate(), data.getId(), data.getProductDetails());
             }
         });
 
         holder.btn_approved.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateMealApproval(data.getEmail(), "R", data.getAmount(), data.getDate(), data.getId(), data.getProductDetails());
+                updateMealApproval(data.getEmail(), "Y", data.getAmount(), data.getDate(), data.getId(), data.getProductDetails());
             }
         });
 
