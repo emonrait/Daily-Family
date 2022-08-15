@@ -1169,6 +1169,7 @@ public class TransactionActivity extends AutoLogout {
         final EditText version = reg_layout.findViewById(R.id.version);
         final EditText deviceid = reg_layout.findViewById(R.id.deviceid);
         final EditText model = reg_layout.findViewById(R.id.model);
+        final EditText role = reg_layout.findViewById(R.id.role);
         final Spinner emaillist = reg_layout.findViewById(R.id.spinner);
 
         final Button btn_cancel = reg_layout.findViewById(R.id.btn_cancel);
@@ -1206,6 +1207,7 @@ public class TransactionActivity extends AutoLogout {
             final String username = name.getText().toString();
             final String poetId = id.getText().toString();
             final String poetversion = version.getText().toString();
+            final String poetrole = role.getText().toString();
 
             Query query = databaseReferenceM.orderByChild("email").equalTo(emaillist.getSelectedItem().toString().trim());
 
@@ -1217,6 +1219,7 @@ public class TransactionActivity extends AutoLogout {
                             edtData.getRef().child("member_name").setValue(username);
                             edtData.getRef().child("nick").setValue(poetId);
                             edtData.getRef().child("version").setValue(poetversion);
+                            edtData.getRef().child("role").setValue(poetrole);
 
                         }
                         Toast.makeText(TransactionActivity.this, "Information Update Successfully.....", Toast.LENGTH_LONG).show();
@@ -1251,11 +1254,13 @@ public class TransactionActivity extends AutoLogout {
                             String member_name = "" + ds.child("member_name").getValue();
                             String modeln = "" + ds.child("model").getValue();
                             String deviceidn = "" + ds.child("deviceid").getValue();
+                            String rolen = "" + ds.child("role").getValue();
                             id.setText(nick);
                             name.setText(member_name);
                             version.setText(versionnew);
                             model.setText(modeln);
                             deviceid.setText(deviceidn);
+                            role.setText(rolen);
 
                         }
                     }

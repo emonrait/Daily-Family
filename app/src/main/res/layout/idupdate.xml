@@ -7,164 +7,193 @@
     android:background="@android:color/transparent"
     android:orientation="vertical">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="6dp">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               app:cardCornerRadius="10dp"
+               app:cardElevation="6dp">
 
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:drawSelectorOnTop="true"
-            android:drawablePadding="10dp"
-            android:inputType="text"
-            android:paddingLeft="10dp"
-            android:prompt="@string/email_prompt"
-            android:spinnerMode="dialog"
-            android:textAlignment="center"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+               <Spinner
+                   android:id="@+id/spinner"
+                   android:layout_width="match_parent"
+                   android:layout_height="60dp"
+                   android:drawSelectorOnTop="true"
+                   android:drawablePadding="10dp"
+                   android:inputType="text"
+                   android:paddingLeft="10dp"
+                   android:prompt="@string/email_prompt"
+                   android:spinnerMode="dialog"
+                   android:textAlignment="center"
+                   android:textSize="14sp"
+                   android:textStyle="bold" />
 
-    </androidx.cardview.widget.CardView>
+           </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="6dp">
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               app:cardCornerRadius="10dp"
+               app:cardElevation="6dp">
 
-        <EditText
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@android:color/transparent"
-            android:drawableLeft="@drawable/identity_card"
-            android:drawablePadding="10dp"
-            android:hint="Enter Name"
-            android:inputType="textCapWords"
-            android:paddingLeft="10dp"
-            android:textSize="14sp" />
+               <EditText
+                   android:id="@+id/name"
+                   android:layout_width="match_parent"
+                   android:layout_height="60dp"
+                   android:background="@android:color/transparent"
+                   android:drawableLeft="@drawable/identity_card"
+                   android:drawablePadding="10dp"
+                   android:hint="Enter Name"
+                   android:inputType="textCapWords"
+                   android:paddingLeft="10dp"
+                   android:textSize="14sp" />
 
-    </androidx.cardview.widget.CardView>
+           </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="6dp">
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               app:cardCornerRadius="10dp"
+               app:cardElevation="6dp">
 
-        <EditText
-            android:id="@+id/id"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@android:color/transparent"
-            android:drawableLeft="@drawable/identity_card"
-            android:drawablePadding="10dp"
-            android:hint="Enter POET ID"
-            android:inputType="textCapCharacters"
-            android:paddingLeft="10dp"
-            android:textSize="14sp" />
+               <EditText
+                   android:id="@+id/id"
+                   android:layout_width="match_parent"
+                   android:layout_height="60dp"
+                   android:background="@android:color/transparent"
+                   android:drawableLeft="@drawable/identity_card"
+                   android:drawablePadding="10dp"
+                   android:hint="Enter POET ID"
+                   android:inputType="textCapCharacters"
+                   android:paddingLeft="10dp"
+                   android:textSize="14sp" />
 
-    </androidx.cardview.widget.CardView>
+           </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="6dp">
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               app:cardCornerRadius="10dp"
+               app:cardElevation="6dp">
 
-        <EditText
-            android:id="@+id/version"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@android:color/transparent"
-            android:drawableLeft="@drawable/identity_card"
-            android:drawablePadding="10dp"
-            android:hint="Enter Version"
-            android:inputType="numberDecimal"
-            android:paddingLeft="10dp"
-            android:textSize="14sp" />
+               <EditText
+                   android:id="@+id/version"
+                   android:layout_width="match_parent"
+                   android:layout_height="60dp"
+                   android:background="@android:color/transparent"
+                   android:drawableLeft="@drawable/identity_card"
+                   android:drawablePadding="10dp"
+                   android:hint="Enter Version"
+                   android:inputType="numberDecimal"
+                   android:paddingLeft="10dp"
+                   android:textSize="14sp" />
 
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="6dp">
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               app:cardCornerRadius="10dp"
+               app:cardElevation="6dp">
 
-        <EditText
-            android:id="@+id/deviceid"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@android:color/transparent"
-            android:drawableLeft="@drawable/identity_card"
-            android:drawablePadding="10dp"
-            android:hint="Enter Deviceid"
-            android:inputType="numberDecimal"
-            android:paddingLeft="10dp"
-            android:textSize="14sp" />
+               <EditText
+                   android:id="@+id/deviceid"
+                   android:layout_width="match_parent"
+                   android:layout_height="60dp"
+                   android:background="@android:color/transparent"
+                   android:drawableLeft="@drawable/identity_card"
+                   android:drawablePadding="10dp"
+                   android:hint="Enter Deviceid"
+                   android:inputType="numberDecimal"
+                   android:paddingLeft="10dp"
+                   android:textSize="14sp" />
 
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="6dp">
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               app:cardCornerRadius="10dp"
+               app:cardElevation="6dp">
 
-        <EditText
-            android:id="@+id/model"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@android:color/transparent"
-            android:drawableLeft="@drawable/identity_card"
-            android:drawablePadding="10dp"
-            android:hint="Enter Model"
-            android:inputType="textCapWords"
-            android:paddingLeft="10dp"
-            android:textSize="14sp" />
+               <EditText
+                   android:id="@+id/model"
+                   android:layout_width="match_parent"
+                   android:layout_height="60dp"
+                   android:background="@android:color/transparent"
+                   android:drawableLeft="@drawable/identity_card"
+                   android:drawablePadding="10dp"
+                   android:hint="Enter Model"
+                   android:inputType="textCapWords"
+                   android:paddingLeft="10dp"
+                   android:textSize="14sp" />
 
-    </androidx.cardview.widget.CardView>
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               app:cardCornerRadius="10dp"
+               app:cardElevation="6dp">
 
+               <EditText
+                   android:id="@+id/role"
+                   android:layout_width="match_parent"
+                   android:layout_height="60dp"
+                   android:background="@android:color/transparent"
+                   android:drawableLeft="@drawable/identity_card"
+                   android:drawablePadding="10dp"
+                   android:hint="Enter Role"
+                   android:inputType="text"
+                   android:paddingLeft="10dp"
+                   android:textSize="14sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/margin_short"
-        android:orientation="horizontal"
-        android:weightSum="2">
-
-        <Button
-            android:id="@+id/btn_cancel"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_short"
-            android:layout_weight="1"
-            android:background="@drawable/bt_background_rounded_green"
-            android:text="Cancel"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/btnUpdate"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_short"
-            android:layout_weight="1"
-            android:background="@drawable/bt_background_rounded_red"
-            android:text="ID Update"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" />
+           </androidx.cardview.widget.CardView>
 
 
-    </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="@dimen/margin_short"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <Button
+                   android:id="@+id/btn_cancel"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="@dimen/margin_short"
+                   android:layout_weight="1"
+                   android:background="@drawable/bt_background_rounded_green"
+                   android:text="Cancel"
+                   android:textColor="@android:color/white"
+                   android:textStyle="bold" />
+
+               <Button
+                   android:id="@+id/btnUpdate"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="@dimen/margin_short"
+                   android:layout_weight="1"
+                   android:background="@drawable/bt_background_rounded_red"
+                   android:text="ID Update"
+                   android:textColor="@android:color/white"
+                   android:textStyle="bold" />
+
+
+           </LinearLayout>
+       </LinearLayout>
+   </ScrollView>
 
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-#Mon Aug 15 20:31:00 BDT 2022
+#Mon Aug 15 21:02:07 BDT 2022
 base.2=/Users/user/Desktop/Daily-Family/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
 path.2=classes2.dex
 base.1=/Users/user/Desktop/Daily-Family/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex

@@ -3381,6 +3381,7 @@ id right
 id rightToLeft
 id right_icon
 id right_side
+id role
 id rounded
 id row_index_key
 id rtl
