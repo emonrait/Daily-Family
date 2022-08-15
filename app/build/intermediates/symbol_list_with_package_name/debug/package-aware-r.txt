@@ -4224,6 +4224,7 @@ string total_launch_meal
 string total_meal
 string total_meal_cost
 string total_shopping_cost
+string update
 string update_image
 string upload_image
 string v7_preference_off

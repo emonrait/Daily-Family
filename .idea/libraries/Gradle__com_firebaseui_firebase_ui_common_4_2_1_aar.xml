@@ -4,12 +4,17 @@
       <root url="jar://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/3cc79314662a399f85f44d49aa2adc9d/jetified-firebase-ui-common-4.2.1/jars/classes.jar!/" />
       <root url="file://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/3cc79314662a399f85f44d49aa2adc9d/jetified-firebase-ui-common-4.2.1/res" />
       <root url="file://H:/Workspace/Android project/BankAsiaSmartApp/caches/transforms-2/files-2.1/3cc79314662a399f85f44d49aa2adc9d/jetified-firebase-ui-common-4.2.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fbd8b2b862096f79e37ee3219f10fff1/jetified-firebase-ui-common-4.2.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fbd8b2b862096f79e37ee3219f10fff1/jetified-firebase-ui-common-4.2.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fbd8b2b862096f79e37ee3219f10fff1/jetified-firebase-ui-common-4.2.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://H:/Workspace/Android project/BankAsiaSmartApp/caches/modules-2/files-2.1/com.firebaseui/firebase-ui-common/4.2.1/ece02b08dc6e70a32e1b174d84e0bb829e0d2e88/firebase-ui-common-4.2.1-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.firebaseui/firebase-ui-common/4.2.1/ece02b08dc6e70a32e1b174d84e0bb829e0d2e88/firebase-ui-common-4.2.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://H:/Workspace/Android project/BankAsiaSmartApp/caches/modules-2/files-2.1/com.firebaseui/firebase-ui-common/4.2.1/56a01bc06e7056dd96ee53e836f9a10ef572fbac/firebase-ui-common-4.2.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.firebaseui/firebase-ui-common/4.2.1/56a01bc06e7056dd96ee53e836f9a10ef572fbac/firebase-ui-common-4.2.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -357,6 +357,20 @@
                                     android:textSize="16sp"
                                     android:textStyle="bold"
                                     android:visibility="visible" />
+                                <Button
+                                    android:id="@+id/btnUpdate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/round_corner"
+                                    android:text="@string/update"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
 
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>

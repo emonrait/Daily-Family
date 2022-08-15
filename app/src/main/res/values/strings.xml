@@ -165,6 +165,7 @@
     <string name="elictricity">Electricity Bill</string>
     <string name="bua">Bua Bill</string>
     <string name="others_bill">Others Bill</string>
+    <string name="update">Update</string>
 
 
     <string-array name="spinnerItems">

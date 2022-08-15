@@ -154,10 +154,8 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:exported="true"
-            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/Base.Theme.AppCompat" />
         <activity
             android:name="com.raihan.dailyfamily.activity.TransactionActivity"
             android:configChanges="orientation|keyboardHidden"

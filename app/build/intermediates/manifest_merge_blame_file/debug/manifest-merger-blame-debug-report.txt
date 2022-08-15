@@ -6,782 +6,778 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
-8-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
+8-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml
+9-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-11-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:6:5-80
-11-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:6:22-77
+11-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:6:5-80
+11-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:6:22-77
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:7:5-67
-12-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:7:22-64
+12-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:7:5-67
+12-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:7:22-64
 13    <uses-permission android:name="android.permission.CALL_PHONE" />
-13-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:8:5-69
-13-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:8:22-66
+13-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:8:5-69
+13-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:8:22-66
 14    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
-14-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:9:5-11:47
-14-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:10:9-70
+14-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:9:5-11:47
+14-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:10:9-70
 15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-15-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:12:5-81
-15-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:12:22-78
+15-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:12:5-81
+15-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:12:22-78
 16    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
-16-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:13:5-72
-16-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:13:22-69
+16-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:13:5-72
+16-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:13:22-69
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:14:5-79
-17-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:14:22-76
+17-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:14:5-79
+17-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:14:22-76
 18    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-18-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:15:5-75
-18-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:15:22-72
+18-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:15:5-75
+18-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:15:22-72
 19    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-19-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:16:5-18:47
-19-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:17:9-57
+19-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:16:5-18:47
+19-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:17:9-57
 20    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-20-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:26:5-77
-20-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:26:22-74
+20-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:26:5-77
+20-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:26:22-74
 21    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-21-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:27:5-68
-21-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:27:22-65
+21-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:27:5-68
+21-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:27:22-65
 22    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-22-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:29:5-82
-22-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:29:22-79
+22-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:29:5-82
+22-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:29:22-79
 23    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-23-->[com.google.android.gms:play-services-measurement-api:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\65ae23c9f977b46403e0d9c1e2aaec08\jetified-play-services-measurement-api-21.1.0\AndroidManifest.xml:25:5-79
-23-->[com.google.android.gms:play-services-measurement-api:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\65ae23c9f977b46403e0d9c1e2aaec08\jetified-play-services-measurement-api-21.1.0\AndroidManifest.xml:25:22-76
+23-->[com.google.android.gms:play-services-measurement-api:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/65ae23c9f977b46403e0d9c1e2aaec08/jetified-play-services-measurement-api-21.1.0/AndroidManifest.xml:25:5-79
+23-->[com.google.android.gms:play-services-measurement-api:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/65ae23c9f977b46403e0d9c1e2aaec08/jetified-play-services-measurement-api-21.1.0/AndroidManifest.xml:25:22-76
 24    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-24-->[com.google.android.gms:play-services-measurement:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\c640450b7fbd85d8fdfdf6857dce9141\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:26:5-110
-24-->[com.google.android.gms:play-services-measurement:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\c640450b7fbd85d8fdfdf6857dce9141\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:26:22-107
+24-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c640450b7fbd85d8fdfdf6857dce9141/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:26:5-110
+24-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c640450b7fbd85d8fdfdf6857dce9141/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:26:22-107
 25
 26    <application
-26-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:20:5-240:19
+26-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:20:5-239:19
 27        android:name="com.raihan.dailyfamily.model.GlobalVariable"
-27-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:21:9-45
+27-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:21:9-45
 28        android:allowBackup="true"
-28-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:22:9-35
+28-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:22:9-35
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.7.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\939757828d99f44c512ab2a186308018\core-1.7.0\AndroidManifest.xml:24:18-86
+29-->[androidx.core:core:1.7.0] /Users/user/.gradle/caches/transforms-2/files-2.1/939757828d99f44c512ab2a186308018/core-1.7.0/AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:fullBackupContent="@xml/my_backup_rules"
-31-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:23:9-57
+31-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:23:9-57
 32        android:icon="@mipmap/ic_launcher"
-32-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:24:9-43
+32-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:24:9-43
 33        android:label="@string/app_name"
-33-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:25:9-41
+33-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:25:9-41
 34        android:requestLegacyExternalStorage="true"
-34-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:26:9-52
+34-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:26:9-52
 35        android:roundIcon="@mipmap/ic_launcher_round"
-35-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:27:9-54
+35-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:27:9-54
 36        android:supportsRtl="true"
-36-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:28:9-35
+36-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:28:9-35
 37        android:testOnly="true"
 38        android:theme="@style/AppTheme" >
-38-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:29:9-40
+38-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:29:9-40
 39        <activity
-39-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:30:9-32:39
+39-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:30:9-32:39
 40            android:name="com.raihan.dailyfamily.activity.AddMonthlyCost"
-40-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:31:13-52
+40-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:31:13-52
 41            android:exported="true" />
-41-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:32:13-36
+41-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:32:13-36
 42        <activity
-42-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:33:9-39:47
+42-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:33:9-39:47
 43            android:name="com.raihan.dailyfamily.activity.BazarApproval"
-43-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:34:13-51
+43-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:34:13-51
 44            android:configChanges="orientation|keyboardHidden"
-44-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:35:13-63
+44-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:35:13-63
 45            android:exported="true"
-45-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:36:13-36
+45-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:36:13-36
 46            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-46-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:37:13-69
+46-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:37:13-69
 47            android:screenOrientation="portrait"
-47-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:38:13-49
+47-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:38:13-49
 48            android:theme="@style/AppTheme" />
-48-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:39:13-44
+48-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:39:13-44
 49        <activity
-49-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:40:9-46:47
+49-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:40:9-46:47
 50            android:name="com.raihan.dailyfamily.activity.MealApproval"
-50-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:41:13-50
+50-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:41:13-50
 51            android:configChanges="orientation|keyboardHidden"
-51-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:42:13-63
+51-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:42:13-63
 52            android:exported="true"
-52-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:43:13-36
+52-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:43:13-36
 53            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-53-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:44:13-69
+53-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:44:13-69
 54            android:screenOrientation="portrait"
-54-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:45:13-49
+54-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:45:13-49
 55            android:theme="@style/AppTheme" />
-55-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:46:13-44
+55-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:46:13-44
 56        <activity
-56-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:47:9-53:47
+56-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:47:9-53:47
 57            android:name="com.raihan.dailyfamily.activity.AddBazarCost"
-57-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:48:13-50
+57-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:48:13-50
 58            android:configChanges="orientation|keyboardHidden"
-58-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:49:13-63
+58-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:49:13-63
 59            android:exported="true"
-59-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:50:13-36
+59-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:50:13-36
 60            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-60-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:51:13-69
+60-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:51:13-69
 61            android:screenOrientation="portrait"
-61-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:52:13-49
+61-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:52:13-49
 62            android:theme="@style/AppTheme" />
-62-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:53:13-44
+62-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:53:13-44
 63        <activity
-63-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:54:9-60:47
+63-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:54:9-60:47
 64            android:name="com.raihan.dailyfamily.activity.AddMeal"
-64-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:55:13-45
+64-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:55:13-45
 65            android:configChanges="orientation|keyboardHidden"
-65-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:56:13-63
+65-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:56:13-63
 66            android:exported="true"
-66-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:57:13-36
+66-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:57:13-36
 67            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-67-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:58:13-69
+67-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:58:13-69
 68            android:screenOrientation="portrait"
-68-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:59:13-49
+68-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:59:13-49
 69            android:theme="@style/AppTheme" />
-69-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:60:13-44
+69-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:60:13-44
 70        <activity
-70-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:61:9-67:47
+70-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:61:9-67:47
 71            android:name="com.raihan.dailyfamily.activity.MealBoard"
-71-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:62:13-47
+71-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:62:13-47
 72            android:configChanges="orientation|keyboardHidden"
-72-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:63:13-63
+72-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:63:13-63
 73            android:exported="true"
-73-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:64:13-36
+73-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:64:13-36
 74            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-74-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:65:13-69
+74-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:65:13-69
 75            android:screenOrientation="portrait"
-75-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:66:13-49
+75-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:66:13-49
 76            android:theme="@style/AppTheme" />
-76-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:67:13-44
+76-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:67:13-44
 77        <activity
-77-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:68:9-74:47
+77-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:68:9-74:47
 78            android:name="com.raihan.dailyfamily.activity.ImageUpload"
-78-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:69:13-49
+78-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:69:13-49
 79            android:configChanges="orientation|keyboardHidden"
-79-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:70:13-63
+79-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:70:13-63
 80            android:exported="true"
-80-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:71:13-36
+80-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:71:13-36
 81            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-81-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:72:13-69
+81-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:72:13-69
 82            android:screenOrientation="portrait"
-82-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:73:13-49
+82-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:73:13-49
 83            android:theme="@style/AppTheme" />
-83-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:74:13-44
+83-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:74:13-44
 84        <activity
-84-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:75:9-81:47
+84-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:75:9-81:47
 85            android:name="com.raihan.dailyfamily.activity.PasswordChangeNew"
-85-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:76:13-55
+85-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:76:13-55
 86            android:configChanges="orientation|keyboardHidden"
-86-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:77:13-63
+86-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:77:13-63
 87            android:exported="true"
-87-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:78:13-36
+87-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:78:13-36
 88            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-88-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:79:13-69
+88-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:79:13-69
 89            android:screenOrientation="portrait"
-89-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:80:13-49
+89-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:80:13-49
 90            android:theme="@style/AppTheme" />
-90-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:81:13-44
+90-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:81:13-44
 91
 92        <service
-92-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:83:9-89:19
+92-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:83:9-89:19
 93            android:name="com.raihan.dailyfamily.model.FCMService"
-93-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:84:13-45
+93-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:84:13-45
 94            android:exported="false" >
-94-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:85:13-37
+94-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:85:13-37
 95            <intent-filter>
-95-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:86:13-88:29
+95-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:86:13-88:29
 96                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-96-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:87:17-78
-96-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:87:25-75
+96-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:87:17-78
+96-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:87:25-75
 97            </intent-filter>
 98        </service>
 99
 100        <activity
-100-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:91:9-97:47
+100-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:91:9-97:47
 101            android:name="com.raihan.dailyfamily.activity.ReportActivity"
-101-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:92:13-52
+101-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:92:13-52
 102            android:configChanges="orientation|keyboardHidden"
-102-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:93:13-63
+102-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:93:13-63
 103            android:exported="true"
-103-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:94:13-36
+103-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:94:13-36
 104            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-104-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:95:13-69
+104-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:95:13-69
 105            android:screenOrientation="portrait"
-105-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:96:13-49
+105-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:96:13-49
 106            android:theme="@style/AppTheme" />
-106-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:97:13-44
+106-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:97:13-44
 107        <activity
-107-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:98:9-104:47
+107-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:98:9-104:47
 108            android:name="com.raihan.dailyfamily.activity.NewDashboardActivity"
-108-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:99:13-58
+108-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:99:13-58
 109            android:configChanges="orientation|keyboardHidden"
-109-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:100:13-63
+109-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:100:13-63
 110            android:exported="true"
-110-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:101:13-36
+110-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:101:13-36
 111            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-111-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:102:13-69
+111-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:102:13-69
 112            android:screenOrientation="portrait"
-112-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:103:13-49
+112-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:103:13-49
 113            android:theme="@style/AppTheme" />
-113-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:104:13-44
+113-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:104:13-44
 114        <activity
-114-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:105:9-111:47
+114-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:105:9-111:47
 115            android:name="com.raihan.dailyfamily.activity.AllTxnListActivity"
-115-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:106:13-56
+115-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:106:13-56
 116            android:configChanges="orientation|keyboardHidden"
-116-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:107:13-63
+116-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:107:13-63
 117            android:exported="true"
-117-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:108:13-36
+117-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:108:13-36
 118            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-118-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:109:13-69
+118-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:109:13-69
 119            android:screenOrientation="portrait"
-119-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:110:13-49
+119-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:110:13-49
 120            android:theme="@style/AppTheme" />
-120-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:111:13-44
+120-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:111:13-44
 121        <activity
-121-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:112:9-123:20
+121-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:112:9-123:20
 122            android:name="com.raihan.dailyfamily.activity.SplashActivity"
-122-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:113:13-52
+122-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:113:13-52
 123            android:configChanges="orientation|keyboardHidden"
-123-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:114:13-63
+123-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:114:13-63
 124            android:exported="true"
-124-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:115:13-36
+124-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:115:13-36
 125            android:screenOrientation="portrait"
-125-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:116:13-49
+125-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:116:13-49
 126            android:theme="@style/SplashScreenTheme" >
-126-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:117:13-53
+126-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:117:13-53
 127            <intent-filter>
-127-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:118:13-122:29
+127-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:118:13-122:29
 128                <action android:name="android.intent.action.MAIN" />
-128-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:119:17-69
-128-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:119:25-66
+128-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:119:17-69
+128-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:119:25-66
 129
 130                <category android:name="android.intent.category.LAUNCHER" />
-130-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:121:17-77
-130-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:121:27-74
+130-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:121:17-77
+130-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:121:27-74
 131            </intent-filter>
 132        </activity>
 133        <activity
-133-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:124:9-130:47
+133-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:124:9-130:47
 134            android:name="com.raihan.dailyfamily.activity.QRcodeActivity"
-134-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:125:13-52
+134-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:125:13-52
 135            android:configChanges="orientation|keyboardHidden"
-135-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:126:13-63
+135-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:126:13-63
 136            android:exported="true"
-136-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:127:13-36
+136-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:127:13-36
 137            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-137-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:128:13-69
+137-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:128:13-69
 138            android:screenOrientation="portrait"
-138-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:129:13-49
+138-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:129:13-49
 139            android:theme="@style/AppTheme" />
-139-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:130:13-44
+139-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:130:13-44
 140        <activity
-140-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:131:9-137:47
+140-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:131:9-137:47
 141            android:name="com.raihan.dailyfamily.activity.CreditActivity"
-141-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:132:13-52
+141-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:132:13-52
 142            android:configChanges="orientation|keyboardHidden"
-142-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:133:13-63
+142-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:133:13-63
 143            android:exported="true"
-143-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:134:13-36
+143-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:134:13-36
 144            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-144-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:135:13-69
+144-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:135:13-69
 145            android:screenOrientation="portrait"
-145-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:136:13-49
+145-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:136:13-49
 146            android:theme="@style/AppTheme" />
-146-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:137:13-44
+146-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:137:13-44
 147        <activity
-147-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:138:9-144:47
+147-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:138:9-144:47
 148            android:name="com.raihan.dailyfamily.activity.DebitActivity"
-148-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:139:13-51
+148-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:139:13-51
 149            android:configChanges="orientation|keyboardHidden"
-149-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:140:13-63
+149-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:140:13-63
 150            android:exported="true"
-150-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:141:13-36
+150-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:141:13-36
 151            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-151-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:142:13-69
+151-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:142:13-69
 152            android:screenOrientation="portrait"
-152-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:143:13-49
+152-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:143:13-49
 153            android:theme="@style/AppTheme" />
-153-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:144:13-44
+153-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:144:13-44
 154        <activity
-154-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:145:9-151:47
+154-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:146:9-150:59
 155            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-155-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:146:13-76
+155-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:147:13-76
 156            android:configChanges="orientation|keyboardHidden"
-156-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:147:13-63
-157            android:exported="true"
-157-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:148:13-36
-158            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-158-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:149:13-69
-159            android:screenOrientation="portrait"
-159-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:150:13-49
-160            android:theme="@style/AppTheme" />
-160-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:151:13-44
-161        <activity
-161-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:152:9-158:47
-162            android:name="com.raihan.dailyfamily.activity.TransactionActivity"
-162-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:153:13-57
-163            android:configChanges="orientation|keyboardHidden"
-163-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:154:13-63
-164            android:exported="true"
-164-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:155:13-36
-165            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-165-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:156:13-69
-166            android:screenOrientation="portrait"
-166-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:157:13-49
-167            android:theme="@style/AppTheme" />
-167-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:158:13-44
-168        <activity
-168-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:159:9-165:47
-169            android:name="com.raihan.dailyfamily.activity.AboutActivity"
-169-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:160:13-51
-170            android:configChanges="orientation|keyboardHidden"
-170-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:161:13-63
-171            android:exported="true"
-171-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:162:13-36
-172            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-172-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:163:13-69
-173            android:screenOrientation="portrait"
-173-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:164:13-49
-174            android:theme="@style/AppTheme" />
-174-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:165:13-44
-175        <activity
-175-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:166:9-172:47
-176            android:name="com.raihan.dailyfamily.activity.NotificationActivity"
-176-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:167:13-58
-177            android:configChanges="orientation|keyboardHidden"
-177-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:168:13-63
-178            android:exported="true"
-178-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:169:13-36
-179            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-179-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:170:13-69
-180            android:screenOrientation="portrait"
-180-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:171:13-49
-181            android:theme="@style/AppTheme" />
-181-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:172:13-44
-182        <activity
-182-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:173:9-179:47
-183            android:name="com.raihan.dailyfamily.activity.RegisterActivity"
-183-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:174:13-54
-184            android:configChanges="orientation|keyboardHidden"
-184-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:175:13-63
-185            android:exported="true"
-185-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:176:13-36
-186            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-186-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:177:13-69
-187            android:screenOrientation="portrait"
-187-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:178:13-49
-188            android:theme="@style/AppTheme" />
-188-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:179:13-44
-189        <activity
-189-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:180:9-186:47
-190            android:name="com.raihan.dailyfamily.activity.ContactActivity"
-190-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:181:13-53
-191            android:configChanges="orientation|keyboardHidden"
-191-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:182:13-63
-192            android:exported="true"
-192-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:183:13-36
-193            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-193-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:184:13-69
-194            android:screenOrientation="portrait"
-194-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:185:13-49
-195            android:theme="@style/AppTheme" />
-195-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:186:13-44
-196        <activity
-196-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:187:9-193:47
-197            android:name="com.raihan.dailyfamily.activity.StatetmentActivity"
-197-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:188:13-56
-198            android:configChanges="orientation|keyboardHidden"
-198-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:189:13-63
-199            android:exported="true"
-199-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:190:13-36
-200            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-200-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:191:13-69
-201            android:screenOrientation="portrait"
-201-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:192:13-49
-202            android:theme="@style/AppTheme" />
-202-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:193:13-44
-203        <activity
-203-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:194:9-200:47
-204            android:name="com.raihan.dailyfamily.activity.TotalBalanceActivity"
-204-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:195:13-58
-205            android:configChanges="orientation|keyboardHidden"
-205-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:196:13-63
-206            android:exported="true"
-206-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:197:13-36
-207            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-207-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:198:13-69
-208            android:screenOrientation="portrait"
-208-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:199:13-49
-209            android:theme="@style/AppTheme" />
-209-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:200:13-44
-210        <activity
-210-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:201:9-207:47
-211            android:name="com.raihan.dailyfamily.activity.ProfileActivity"
-211-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:202:13-53
-212            android:configChanges="orientation|keyboardHidden"
-212-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:203:13-63
-213            android:exported="true"
-213-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:204:13-36
-214            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-214-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:205:13-69
-215            android:screenOrientation="portrait"
-215-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:206:13-49
-216            android:theme="@style/AppTheme" />
-216-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:207:13-44
-217        <activity
-217-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:208:9-214:47
-218            android:name="com.raihan.dailyfamily.activity.ConditionActivity"
-218-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:209:13-55
-219            android:configChanges="orientation|keyboardHidden"
-219-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:210:13-63
-220            android:exported="true"
-220-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:211:13-36
-221            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-221-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:212:13-69
-222            android:screenOrientation="portrait"
-222-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:213:13-49
-223            android:theme="@style/AppTheme" />
-223-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:214:13-44
-224        <activity
-224-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:215:9-221:47
-225            android:name="com.raihan.dailyfamily.activity.MemberActivity"
-225-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:216:13-52
-226            android:configChanges="orientation|keyboardHidden"
-226-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:217:13-63
-227            android:exported="true"
-227-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:218:13-36
-228            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-228-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:219:13-69
-229            android:screenOrientation="portrait"
-229-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:220:13-49
-230            android:theme="@style/AppTheme" />
-230-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:221:13-44
-231        <activity
-231-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:222:9-228:47
-232            android:name="com.raihan.dailyfamily.activity.DashboardActivity"
-232-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:223:13-55
-233            android:configChanges="orientation|keyboardHidden"
-233-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:224:13-63
-234            android:exported="true"
-234-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:225:13-36
-235            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-235-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:226:13-69
-236            android:screenOrientation="portrait"
-236-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:227:13-49
-237            android:theme="@style/AppTheme" />
-237-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:228:13-44
-238        <activity
-238-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:229:9-235:47
-239            android:name="com.raihan.dailyfamily.activity.MainActivity"
-239-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:230:13-50
-240            android:configChanges="orientation|keyboardHidden"
-240-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:231:13-63
-241            android:exported="true"
-241-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:232:13-36
-242            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
-242-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:233:13-69
-243            android:screenOrientation="portrait"
-243-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:234:13-49
-244            android:theme="@style/AppTheme" />
-244-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:235:13-44
-245
-246        <meta-data
-246-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:237:9-239:57
-247            android:name="preloaded_fonts"
-247-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:238:13-43
-248            android:resource="@array/preloaded_fonts" />
-248-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:239:13-54
-249
-250        <activity
-250-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:27:9-44:20
-251            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-251-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:28:13-80
-252            android:excludeFromRecents="true"
-252-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:29:13-46
-253            android:exported="true"
-253-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:30:13-36
-254            android:launchMode="singleTask"
-254-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:31:13-44
-255            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-255-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:32:13-72
-256            <intent-filter>
-256-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:33:13-43:29
-257                <action android:name="android.intent.action.VIEW" />
-257-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:34:17-69
-257-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:34:25-66
-258
-259                <category android:name="android.intent.category.DEFAULT" />
-259-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:36:17-76
-259-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:36:27-73
-260                <category android:name="android.intent.category.BROWSABLE" />
-260-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:37:17-78
-260-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:37:27-75
-261
-262                <data
-262-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:39:17-42:51
-263                    android:host="firebase.auth"
-263-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:40:21-49
-264                    android:path="/"
-264-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:41:21-37
-265                    android:scheme="genericidp" />
-265-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:42:21-48
-266            </intent-filter>
-267        </activity>
-268        <activity
-268-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:45:9-62:20
-269            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-269-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:46:13-79
-270            android:excludeFromRecents="true"
-270-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:47:13-46
-271            android:exported="true"
-271-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:48:13-36
-272            android:launchMode="singleTask"
-272-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:49:13-44
-273            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-273-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:50:13-72
-274            <intent-filter>
-274-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:51:13-61:29
-275                <action android:name="android.intent.action.VIEW" />
-275-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:34:17-69
-275-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:34:25-66
-276
-277                <category android:name="android.intent.category.DEFAULT" />
-277-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:36:17-76
-277-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:36:27-73
-278                <category android:name="android.intent.category.BROWSABLE" />
-278-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:37:17-78
-278-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:37:27-75
-279
-280                <data
-280-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:39:17-42:51
-281                    android:host="firebase.auth"
-281-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:40:21-49
-282                    android:path="/"
-282-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:41:21-37
-283                    android:scheme="recaptcha" />
-283-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:42:21-48
-284            </intent-filter>
-285        </activity>
-286
-287        <service
-287-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:64:9-70:19
-288            android:name="com.google.firebase.components.ComponentDiscoveryService"
-288-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:65:13-84
-289            android:directBootAware="true"
-289-->[com.google.firebase:firebase-common:20.1.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\11cbada50274fd8389be2aa9fd96d938\jetified-firebase-common-20.1.1\AndroidManifest.xml:35:13-43
-290            android:exported="false" >
-290-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:66:13-37
-291            <meta-data
-291-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:67:13-69:85
-292                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-292-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:68:17-109
-293                android:value="com.google.firebase.components.ComponentRegistrar" />
-293-->[com.google.firebase:firebase-auth:21.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7da9e0d261af8ef068da651e229703be\jetified-firebase-auth-21.0.6\AndroidManifest.xml:69:17-82
-294            <meta-data
-294-->[com.google.firebase:firebase-storage:20.0.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\eaec50b544866e4a374be6761e5c7bf4\jetified-firebase-storage-20.0.1\AndroidManifest.xml:33:13-35:85
-295                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-295-->[com.google.firebase:firebase-storage:20.0.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\eaec50b544866e4a374be6761e5c7bf4\jetified-firebase-storage-20.0.1\AndroidManifest.xml:34:17-107
-296                android:value="com.google.firebase.components.ComponentRegistrar" />
-296-->[com.google.firebase:firebase-storage:20.0.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\eaec50b544866e4a374be6761e5c7bf4\jetified-firebase-storage-20.0.1\AndroidManifest.xml:35:17-82
-297            <meta-data
-297-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:56:13-58:85
-298                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-298-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:57:17-119
-299                android:value="com.google.firebase.components.ComponentRegistrar" />
-299-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:58:17-82
-300            <meta-data
-300-->[com.google.firebase:firebase-database:20.0.5] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\2da31fcaa1e9d874e0d02dafb1a3a890\jetified-firebase-database-20.0.5\AndroidManifest.xml:32:13-34:85
-301                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-301-->[com.google.firebase:firebase-database:20.0.5] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\2da31fcaa1e9d874e0d02dafb1a3a890\jetified-firebase-database-20.0.5\AndroidManifest.xml:33:17-109
-302                android:value="com.google.firebase.components.ComponentRegistrar" />
-302-->[com.google.firebase:firebase-database:20.0.5] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\2da31fcaa1e9d874e0d02dafb1a3a890\jetified-firebase-database-20.0.5\AndroidManifest.xml:34:17-82
-303            <meta-data
-303-->[com.google.firebase:firebase-datatransport:18.1.5] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\1f90e1c71dfbda1830736645ff014739\jetified-firebase-datatransport-18.1.5\AndroidManifest.xml:28:13-30:85
-304                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-304-->[com.google.firebase:firebase-datatransport:18.1.5] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\1f90e1c71dfbda1830736645ff014739\jetified-firebase-datatransport-18.1.5\AndroidManifest.xml:29:17-115
-305                android:value="com.google.firebase.components.ComponentRegistrar" />
-305-->[com.google.firebase:firebase-datatransport:18.1.5] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\1f90e1c71dfbda1830736645ff014739\jetified-firebase-datatransport-18.1.5\AndroidManifest.xml:30:17-82
-306            <meta-data
-306-->[com.google.android.gms:play-services-measurement-api:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\65ae23c9f977b46403e0d9c1e2aaec08\jetified-play-services-measurement-api-21.1.0\AndroidManifest.xml:31:13-33:85
-307                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-307-->[com.google.android.gms:play-services-measurement-api:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\65ae23c9f977b46403e0d9c1e2aaec08\jetified-play-services-measurement-api-21.1.0\AndroidManifest.xml:32:17-139
-308                android:value="com.google.firebase.components.ComponentRegistrar" />
-308-->[com.google.android.gms:play-services-measurement-api:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\65ae23c9f977b46403e0d9c1e2aaec08\jetified-play-services-measurement-api-21.1.0\AndroidManifest.xml:33:17-82
-309            <meta-data
-309-->[com.google.firebase:firebase-installations:17.0.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\785342e16428aae590cb3e524f59049b\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
-310                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-310-->[com.google.firebase:firebase-installations:17.0.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\785342e16428aae590cb3e524f59049b\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
-311                android:value="com.google.firebase.components.ComponentRegistrar" />
-311-->[com.google.firebase:firebase-installations:17.0.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\785342e16428aae590cb3e524f59049b\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
-312        </service>
-313
-314        <receiver
-314-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:32:9-39:20
-315            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-315-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:33:13-78
-316            android:exported="true"
-316-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:34:13-36
-317            android:permission="com.google.android.c2dm.permission.SEND" >
-317-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:35:13-73
-318            <intent-filter>
-318-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:36:13-38:29
-319                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-319-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:37:17-81
-319-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:37:25-78
-320            </intent-filter>
-321        </receiver>
-322        <!--
-323             FirebaseMessagingService performs security checks at runtime,
-324             but set to not exported to explicitly avoid allowing another app to call it.
-325        -->
-326        <service
-326-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:45:9-52:19
-327            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-327-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:46:13-82
-328            android:directBootAware="true"
-328-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:47:13-43
-329            android:exported="false" >
-329-->[com.google.firebase:firebase-messaging:23.0.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\adfaaefc30f8fa39081732bcebdccdde\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:48:13-37
-330            <intent-filter android:priority="-500" >
-330-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:86:13-88:29
-331                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-331-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:87:17-78
-331-->E:\Workspace\Daily-Family\app\src\main\AndroidManifest.xml:87:25-75
-332            </intent-filter>
-333        </service>
-334
-335        <provider
-335-->[com.squareup.picasso:picasso:2.71828] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\701e66b47d1fcf28baf1c8bf72768b2a\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-336            android:name="com.squareup.picasso.PicassoProvider"
-336-->[com.squareup.picasso:picasso:2.71828] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\701e66b47d1fcf28baf1c8bf72768b2a\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-337            android:authorities="com.raihan.dailyfamily.com.squareup.picasso"
-337-->[com.squareup.picasso:picasso:2.71828] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\701e66b47d1fcf28baf1c8bf72768b2a\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-338            android:exported="false" />
-338-->[com.squareup.picasso:picasso:2.71828] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\701e66b47d1fcf28baf1c8bf72768b2a\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-339
-340        <activity
-340-->[com.google.android.gms:play-services-base:18.0.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\ad860e74d9f67c730e88c221860bc6c6\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-341            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-341-->[com.google.android.gms:play-services-base:18.0.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\ad860e74d9f67c730e88c221860bc6c6\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-342            android:exported="false"
-342-->[com.google.android.gms:play-services-base:18.0.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\ad860e74d9f67c730e88c221860bc6c6\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-343            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-343-->[com.google.android.gms:play-services-base:18.0.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\ad860e74d9f67c730e88c221860bc6c6\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-344
-345        <provider
-345-->[com.google.firebase:firebase-common:20.1.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\11cbada50274fd8389be2aa9fd96d938\jetified-firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
-346            android:name="com.google.firebase.provider.FirebaseInitProvider"
-346-->[com.google.firebase:firebase-common:20.1.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\11cbada50274fd8389be2aa9fd96d938\jetified-firebase-common-20.1.1\AndroidManifest.xml:27:13-77
-347            android:authorities="com.raihan.dailyfamily.firebaseinitprovider"
-347-->[com.google.firebase:firebase-common:20.1.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\11cbada50274fd8389be2aa9fd96d938\jetified-firebase-common-20.1.1\AndroidManifest.xml:28:13-72
-348            android:directBootAware="true"
-348-->[com.google.firebase:firebase-common:20.1.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\11cbada50274fd8389be2aa9fd96d938\jetified-firebase-common-20.1.1\AndroidManifest.xml:29:13-43
-349            android:exported="false"
-349-->[com.google.firebase:firebase-common:20.1.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\11cbada50274fd8389be2aa9fd96d938\jetified-firebase-common-20.1.1\AndroidManifest.xml:30:13-37
-350            android:initOrder="100" />
-350-->[com.google.firebase:firebase-common:20.1.1] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\11cbada50274fd8389be2aa9fd96d938\jetified-firebase-common-20.1.1\AndroidManifest.xml:31:13-36
-351
-352        <receiver
-352-->[com.google.android.gms:play-services-measurement:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\c640450b7fbd85d8fdfdf6857dce9141\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:29:9-33:20
-353            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-353-->[com.google.android.gms:play-services-measurement:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\c640450b7fbd85d8fdfdf6857dce9141\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:30:13-85
-354            android:enabled="true"
-354-->[com.google.android.gms:play-services-measurement:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\c640450b7fbd85d8fdfdf6857dce9141\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:31:13-35
-355            android:exported="false" >
-355-->[com.google.android.gms:play-services-measurement:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\c640450b7fbd85d8fdfdf6857dce9141\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:32:13-37
-356        </receiver>
-357
-358        <service
-358-->[com.google.android.gms:play-services-measurement:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\c640450b7fbd85d8fdfdf6857dce9141\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:35:9-38:40
-359            android:name="com.google.android.gms.measurement.AppMeasurementService"
-359-->[com.google.android.gms:play-services-measurement:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\c640450b7fbd85d8fdfdf6857dce9141\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:36:13-84
-360            android:enabled="true"
-360-->[com.google.android.gms:play-services-measurement:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\c640450b7fbd85d8fdfdf6857dce9141\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:37:13-35
-361            android:exported="false" />
-361-->[com.google.android.gms:play-services-measurement:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\c640450b7fbd85d8fdfdf6857dce9141\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:38:13-37
-362        <service
-362-->[com.google.android.gms:play-services-measurement:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\c640450b7fbd85d8fdfdf6857dce9141\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:39:9-43:72
-363            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-363-->[com.google.android.gms:play-services-measurement:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\c640450b7fbd85d8fdfdf6857dce9141\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:40:13-87
-364            android:enabled="true"
-364-->[com.google.android.gms:play-services-measurement:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\c640450b7fbd85d8fdfdf6857dce9141\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:41:13-35
-365            android:exported="false"
-365-->[com.google.android.gms:play-services-measurement:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\c640450b7fbd85d8fdfdf6857dce9141\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:42:13-37
-366            android:permission="android.permission.BIND_JOB_SERVICE" />
-366-->[com.google.android.gms:play-services-measurement:21.1.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\c640450b7fbd85d8fdfdf6857dce9141\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:43:13-69
-367
-368        <meta-data
-368-->[com.google.android.gms:play-services-basement:18.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\d2379cadb68a0ce08072e2bdac672d53\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
-369            android:name="com.google.android.gms.version"
-369-->[com.google.android.gms:play-services-basement:18.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\d2379cadb68a0ce08072e2bdac672d53\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
-370            android:value="@integer/google_play_services_version" />
-370-->[com.google.android.gms:play-services-basement:18.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\d2379cadb68a0ce08072e2bdac672d53\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
-371
-372        <provider
-372-->[androidx.emoji2:emoji2:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\a75d19aae0c419e4683c31ab9bd4f411\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-373            android:name="androidx.startup.InitializationProvider"
-373-->[androidx.emoji2:emoji2:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\a75d19aae0c419e4683c31ab9bd4f411\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-374            android:authorities="com.raihan.dailyfamily.androidx-startup"
-374-->[androidx.emoji2:emoji2:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\a75d19aae0c419e4683c31ab9bd4f411\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-375            android:exported="false" >
-375-->[androidx.emoji2:emoji2:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\a75d19aae0c419e4683c31ab9bd4f411\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-376            <meta-data
-376-->[androidx.emoji2:emoji2:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\a75d19aae0c419e4683c31ab9bd4f411\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-377                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-377-->[androidx.emoji2:emoji2:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\a75d19aae0c419e4683c31ab9bd4f411\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-378                android:value="androidx.startup" />
-378-->[androidx.emoji2:emoji2:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\a75d19aae0c419e4683c31ab9bd4f411\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-379            <meta-data
-379-->[androidx.lifecycle:lifecycle-process:2.4.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\ae90a0424572e7454b26d90004299501\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-380                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-380-->[androidx.lifecycle:lifecycle-process:2.4.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\ae90a0424572e7454b26d90004299501\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-381                android:value="androidx.startup" />
-381-->[androidx.lifecycle:lifecycle-process:2.4.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\ae90a0424572e7454b26d90004299501\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-382        </provider>
-383
-384        <uses-library
-384-->[androidx.window:window:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\0ac3d09ddb81f65f3fa3f0fac1db3502\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
-385            android:name="androidx.window.extensions"
-385-->[androidx.window:window:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\0ac3d09ddb81f65f3fa3f0fac1db3502\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
-386            android:required="false" />
-386-->[androidx.window:window:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\0ac3d09ddb81f65f3fa3f0fac1db3502\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
-387        <uses-library
-387-->[androidx.window:window:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\0ac3d09ddb81f65f3fa3f0fac1db3502\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
-388            android:name="androidx.window.sidecar"
-388-->[androidx.window:window:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\0ac3d09ddb81f65f3fa3f0fac1db3502\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
-389            android:required="false" />
-389-->[androidx.window:window:1.0.0] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\0ac3d09ddb81f65f3fa3f0fac1db3502\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
-390
-391        <service
-391-->[com.google.android.datatransport:transport-backend-cct:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\4d5d7d161560a81f1db413da412040fc\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:29:9-35:19
-392            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-392-->[com.google.android.datatransport:transport-backend-cct:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\4d5d7d161560a81f1db413da412040fc\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:30:13-103
-393            android:exported="false" >
-393-->[com.google.android.datatransport:transport-backend-cct:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\4d5d7d161560a81f1db413da412040fc\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:31:13-37
-394            <meta-data
-394-->[com.google.android.datatransport:transport-backend-cct:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\4d5d7d161560a81f1db413da412040fc\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:32:13-34:39
-395                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-395-->[com.google.android.datatransport:transport-backend-cct:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\4d5d7d161560a81f1db413da412040fc\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:33:17-94
-396                android:value="cct" />
-396-->[com.google.android.datatransport:transport-backend-cct:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\4d5d7d161560a81f1db413da412040fc\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:34:17-36
-397        </service>
-398        <service
-398-->[com.google.android.datatransport:transport-runtime:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7ebff0a6e4a0de1ef1798a3e0b956cf7\jetified-transport-runtime-3.1.6\AndroidManifest.xml:26:9-30:19
-399            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-399-->[com.google.android.datatransport:transport-runtime:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7ebff0a6e4a0de1ef1798a3e0b956cf7\jetified-transport-runtime-3.1.6\AndroidManifest.xml:27:13-117
-400            android:exported="false"
-400-->[com.google.android.datatransport:transport-runtime:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7ebff0a6e4a0de1ef1798a3e0b956cf7\jetified-transport-runtime-3.1.6\AndroidManifest.xml:28:13-37
-401            android:permission="android.permission.BIND_JOB_SERVICE" >
-401-->[com.google.android.datatransport:transport-runtime:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7ebff0a6e4a0de1ef1798a3e0b956cf7\jetified-transport-runtime-3.1.6\AndroidManifest.xml:29:13-69
-402        </service>
-403
-404        <receiver
-404-->[com.google.android.datatransport:transport-runtime:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7ebff0a6e4a0de1ef1798a3e0b956cf7\jetified-transport-runtime-3.1.6\AndroidManifest.xml:32:9-34:40
-405            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-405-->[com.google.android.datatransport:transport-runtime:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7ebff0a6e4a0de1ef1798a3e0b956cf7\jetified-transport-runtime-3.1.6\AndroidManifest.xml:33:13-132
-406            android:exported="false" />
-406-->[com.google.android.datatransport:transport-runtime:3.1.6] H:\Workspace\Android project\BankAsiaSmartApp\caches\transforms-2\files-2.1\7ebff0a6e4a0de1ef1798a3e0b956cf7\jetified-transport-runtime-3.1.6\AndroidManifest.xml:34:13-37
-407    </application>
-408
-409</manifest>
+156-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:148:13-63
+157            android:screenOrientation="portrait"
+157-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:149:13-49
+158            android:theme="@style/Base.Theme.AppCompat" />
+158-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:150:13-56
+159        <activity
+159-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:151:9-157:47
+160            android:name="com.raihan.dailyfamily.activity.TransactionActivity"
+160-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:152:13-57
+161            android:configChanges="orientation|keyboardHidden"
+161-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:153:13-63
+162            android:exported="true"
+162-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:154:13-36
+163            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+163-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:155:13-69
+164            android:screenOrientation="portrait"
+164-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:156:13-49
+165            android:theme="@style/AppTheme" />
+165-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:157:13-44
+166        <activity
+166-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:158:9-164:47
+167            android:name="com.raihan.dailyfamily.activity.AboutActivity"
+167-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:159:13-51
+168            android:configChanges="orientation|keyboardHidden"
+168-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:160:13-63
+169            android:exported="true"
+169-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:161:13-36
+170            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+170-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:162:13-69
+171            android:screenOrientation="portrait"
+171-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:163:13-49
+172            android:theme="@style/AppTheme" />
+172-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:164:13-44
+173        <activity
+173-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:165:9-171:47
+174            android:name="com.raihan.dailyfamily.activity.NotificationActivity"
+174-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:166:13-58
+175            android:configChanges="orientation|keyboardHidden"
+175-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:167:13-63
+176            android:exported="true"
+176-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:168:13-36
+177            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+177-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:169:13-69
+178            android:screenOrientation="portrait"
+178-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:170:13-49
+179            android:theme="@style/AppTheme" />
+179-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:171:13-44
+180        <activity
+180-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:172:9-178:47
+181            android:name="com.raihan.dailyfamily.activity.RegisterActivity"
+181-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:173:13-54
+182            android:configChanges="orientation|keyboardHidden"
+182-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:174:13-63
+183            android:exported="true"
+183-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:175:13-36
+184            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+184-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:176:13-69
+185            android:screenOrientation="portrait"
+185-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:177:13-49
+186            android:theme="@style/AppTheme" />
+186-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:178:13-44
+187        <activity
+187-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:179:9-185:47
+188            android:name="com.raihan.dailyfamily.activity.ContactActivity"
+188-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:180:13-53
+189            android:configChanges="orientation|keyboardHidden"
+189-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:181:13-63
+190            android:exported="true"
+190-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:182:13-36
+191            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+191-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:183:13-69
+192            android:screenOrientation="portrait"
+192-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:184:13-49
+193            android:theme="@style/AppTheme" />
+193-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:185:13-44
+194        <activity
+194-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:186:9-192:47
+195            android:name="com.raihan.dailyfamily.activity.StatetmentActivity"
+195-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:187:13-56
+196            android:configChanges="orientation|keyboardHidden"
+196-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:188:13-63
+197            android:exported="true"
+197-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:189:13-36
+198            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+198-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:190:13-69
+199            android:screenOrientation="portrait"
+199-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:191:13-49
+200            android:theme="@style/AppTheme" />
+200-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:192:13-44
+201        <activity
+201-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:193:9-199:47
+202            android:name="com.raihan.dailyfamily.activity.TotalBalanceActivity"
+202-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:194:13-58
+203            android:configChanges="orientation|keyboardHidden"
+203-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:195:13-63
+204            android:exported="true"
+204-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:196:13-36
+205            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+205-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:197:13-69
+206            android:screenOrientation="portrait"
+206-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:198:13-49
+207            android:theme="@style/AppTheme" />
+207-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:199:13-44
+208        <activity
+208-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:200:9-206:47
+209            android:name="com.raihan.dailyfamily.activity.ProfileActivity"
+209-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:201:13-53
+210            android:configChanges="orientation|keyboardHidden"
+210-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:202:13-63
+211            android:exported="true"
+211-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:203:13-36
+212            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+212-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:204:13-69
+213            android:screenOrientation="portrait"
+213-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:205:13-49
+214            android:theme="@style/AppTheme" />
+214-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:206:13-44
+215        <activity
+215-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:207:9-213:47
+216            android:name="com.raihan.dailyfamily.activity.ConditionActivity"
+216-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:208:13-55
+217            android:configChanges="orientation|keyboardHidden"
+217-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:209:13-63
+218            android:exported="true"
+218-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:210:13-36
+219            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+219-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:211:13-69
+220            android:screenOrientation="portrait"
+220-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:212:13-49
+221            android:theme="@style/AppTheme" />
+221-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:213:13-44
+222        <activity
+222-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:214:9-220:47
+223            android:name="com.raihan.dailyfamily.activity.MemberActivity"
+223-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:215:13-52
+224            android:configChanges="orientation|keyboardHidden"
+224-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:216:13-63
+225            android:exported="true"
+225-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:217:13-36
+226            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+226-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:218:13-69
+227            android:screenOrientation="portrait"
+227-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:219:13-49
+228            android:theme="@style/AppTheme" />
+228-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:220:13-44
+229        <activity
+229-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:221:9-227:47
+230            android:name="com.raihan.dailyfamily.activity.DashboardActivity"
+230-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:222:13-55
+231            android:configChanges="orientation|keyboardHidden"
+231-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:223:13-63
+232            android:exported="true"
+232-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:224:13-36
+233            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+233-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:225:13-69
+234            android:screenOrientation="portrait"
+234-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:226:13-49
+235            android:theme="@style/AppTheme" />
+235-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:227:13-44
+236        <activity
+236-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:228:9-234:47
+237            android:name="com.raihan.dailyfamily.activity.MainActivity"
+237-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:229:13-50
+238            android:configChanges="orientation|keyboardHidden"
+238-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:230:13-63
+239            android:exported="true"
+239-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:231:13-36
+240            android:parentActivityName="com.raihan.dailyfamily.activity.DashboardActivity"
+240-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:232:13-69
+241            android:screenOrientation="portrait"
+241-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:233:13-49
+242            android:theme="@style/AppTheme" />
+242-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:234:13-44
+243
+244        <meta-data
+244-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:236:9-238:57
+245            android:name="preloaded_fonts"
+245-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:237:13-43
+246            android:resource="@array/preloaded_fonts" />
+246-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:238:13-54
+247
+248        <activity
+248-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:27:9-44:20
+249            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+249-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:28:13-80
+250            android:excludeFromRecents="true"
+250-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:29:13-46
+251            android:exported="true"
+251-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:30:13-36
+252            android:launchMode="singleTask"
+252-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:31:13-44
+253            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+253-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:32:13-72
+254            <intent-filter>
+254-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:33:13-43:29
+255                <action android:name="android.intent.action.VIEW" />
+255-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:17-69
+255-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:25-66
+256
+257                <category android:name="android.intent.category.DEFAULT" />
+257-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:17-76
+257-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:27-73
+258                <category android:name="android.intent.category.BROWSABLE" />
+258-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:17-78
+258-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:27-75
+259
+260                <data
+260-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:39:17-42:51
+261                    android:host="firebase.auth"
+261-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:40:21-49
+262                    android:path="/"
+262-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:41:21-37
+263                    android:scheme="genericidp" />
+263-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:42:21-48
+264            </intent-filter>
+265        </activity>
+266        <activity
+266-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:45:9-62:20
+267            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+267-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:46:13-79
+268            android:excludeFromRecents="true"
+268-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:47:13-46
+269            android:exported="true"
+269-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:48:13-36
+270            android:launchMode="singleTask"
+270-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:49:13-44
+271            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+271-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:50:13-72
+272            <intent-filter>
+272-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:51:13-61:29
+273                <action android:name="android.intent.action.VIEW" />
+273-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:17-69
+273-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:34:25-66
+274
+275                <category android:name="android.intent.category.DEFAULT" />
+275-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:17-76
+275-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:36:27-73
+276                <category android:name="android.intent.category.BROWSABLE" />
+276-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:17-78
+276-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:37:27-75
+277
+278                <data
+278-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:39:17-42:51
+279                    android:host="firebase.auth"
+279-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:40:21-49
+280                    android:path="/"
+280-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:41:21-37
+281                    android:scheme="recaptcha" />
+281-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:42:21-48
+282            </intent-filter>
+283        </activity>
+284
+285        <service
+285-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:64:9-70:19
+286            android:name="com.google.firebase.components.ComponentDiscoveryService"
+286-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:65:13-84
+287            android:directBootAware="true"
+287-->[com.google.firebase:firebase-common:20.1.1] /Users/user/.gradle/caches/transforms-2/files-2.1/11cbada50274fd8389be2aa9fd96d938/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
+288            android:exported="false" >
+288-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:66:13-37
+289            <meta-data
+289-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:67:13-69:85
+290                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+290-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:68:17-109
+291                android:value="com.google.firebase.components.ComponentRegistrar" />
+291-->[com.google.firebase:firebase-auth:21.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7da9e0d261af8ef068da651e229703be/jetified-firebase-auth-21.0.6/AndroidManifest.xml:69:17-82
+292            <meta-data
+292-->[com.google.firebase:firebase-storage:20.0.1] /Users/user/.gradle/caches/transforms-2/files-2.1/eaec50b544866e4a374be6761e5c7bf4/jetified-firebase-storage-20.0.1/AndroidManifest.xml:33:13-35:85
+293                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+293-->[com.google.firebase:firebase-storage:20.0.1] /Users/user/.gradle/caches/transforms-2/files-2.1/eaec50b544866e4a374be6761e5c7bf4/jetified-firebase-storage-20.0.1/AndroidManifest.xml:34:17-107
+294                android:value="com.google.firebase.components.ComponentRegistrar" />
+294-->[com.google.firebase:firebase-storage:20.0.1] /Users/user/.gradle/caches/transforms-2/files-2.1/eaec50b544866e4a374be6761e5c7bf4/jetified-firebase-storage-20.0.1/AndroidManifest.xml:35:17-82
+295            <meta-data
+295-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:56:13-58:85
+296                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+296-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:57:17-119
+297                android:value="com.google.firebase.components.ComponentRegistrar" />
+297-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:58:17-82
+298            <meta-data
+298-->[com.google.firebase:firebase-database:20.0.5] /Users/user/.gradle/caches/transforms-2/files-2.1/2da31fcaa1e9d874e0d02dafb1a3a890/jetified-firebase-database-20.0.5/AndroidManifest.xml:32:13-34:85
+299                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+299-->[com.google.firebase:firebase-database:20.0.5] /Users/user/.gradle/caches/transforms-2/files-2.1/2da31fcaa1e9d874e0d02dafb1a3a890/jetified-firebase-database-20.0.5/AndroidManifest.xml:33:17-109
+300                android:value="com.google.firebase.components.ComponentRegistrar" />
+300-->[com.google.firebase:firebase-database:20.0.5] /Users/user/.gradle/caches/transforms-2/files-2.1/2da31fcaa1e9d874e0d02dafb1a3a890/jetified-firebase-database-20.0.5/AndroidManifest.xml:34:17-82
+301            <meta-data
+301-->[com.google.firebase:firebase-datatransport:18.1.5] /Users/user/.gradle/caches/transforms-2/files-2.1/1f90e1c71dfbda1830736645ff014739/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:28:13-30:85
+302                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+302-->[com.google.firebase:firebase-datatransport:18.1.5] /Users/user/.gradle/caches/transforms-2/files-2.1/1f90e1c71dfbda1830736645ff014739/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:29:17-115
+303                android:value="com.google.firebase.components.ComponentRegistrar" />
+303-->[com.google.firebase:firebase-datatransport:18.1.5] /Users/user/.gradle/caches/transforms-2/files-2.1/1f90e1c71dfbda1830736645ff014739/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:30:17-82
+304            <meta-data
+304-->[com.google.android.gms:play-services-measurement-api:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/65ae23c9f977b46403e0d9c1e2aaec08/jetified-play-services-measurement-api-21.1.0/AndroidManifest.xml:31:13-33:85
+305                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+305-->[com.google.android.gms:play-services-measurement-api:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/65ae23c9f977b46403e0d9c1e2aaec08/jetified-play-services-measurement-api-21.1.0/AndroidManifest.xml:32:17-139
+306                android:value="com.google.firebase.components.ComponentRegistrar" />
+306-->[com.google.android.gms:play-services-measurement-api:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/65ae23c9f977b46403e0d9c1e2aaec08/jetified-play-services-measurement-api-21.1.0/AndroidManifest.xml:33:17-82
+307            <meta-data
+307-->[com.google.firebase:firebase-installations:17.0.1] /Users/user/.gradle/caches/transforms-2/files-2.1/785342e16428aae590cb3e524f59049b/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
+308                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+308-->[com.google.firebase:firebase-installations:17.0.1] /Users/user/.gradle/caches/transforms-2/files-2.1/785342e16428aae590cb3e524f59049b/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+309                android:value="com.google.firebase.components.ComponentRegistrar" />
+309-->[com.google.firebase:firebase-installations:17.0.1] /Users/user/.gradle/caches/transforms-2/files-2.1/785342e16428aae590cb3e524f59049b/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
+310        </service>
+311
+312        <receiver
+312-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:32:9-39:20
+313            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+313-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:33:13-78
+314            android:exported="true"
+314-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:34:13-36
+315            android:permission="com.google.android.c2dm.permission.SEND" >
+315-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:35:13-73
+316            <intent-filter>
+316-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:36:13-38:29
+317                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+317-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:37:17-81
+317-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:37:25-78
+318            </intent-filter>
+319        </receiver>
+320        <!--
+321             FirebaseMessagingService performs security checks at runtime,
+322             but set to not exported to explicitly avoid allowing another app to call it.
+323        -->
+324        <service
+324-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:45:9-52:19
+325            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+325-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:46:13-82
+326            android:directBootAware="true"
+326-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:47:13-43
+327            android:exported="false" >
+327-->[com.google.firebase:firebase-messaging:23.0.6] /Users/user/.gradle/caches/transforms-2/files-2.1/adfaaefc30f8fa39081732bcebdccdde/jetified-firebase-messaging-23.0.6/AndroidManifest.xml:48:13-37
+328            <intent-filter android:priority="-500" >
+328-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:86:13-88:29
+329                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+329-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:87:17-78
+329-->/Users/user/Desktop/Daily-Family/app/src/main/AndroidManifest.xml:87:25-75
+330            </intent-filter>
+331        </service>
+332
+333        <provider
+333-->[com.squareup.picasso:picasso:2.71828] /Users/user/.gradle/caches/transforms-2/files-2.1/39fef48a04108d80cc3888306575b59b/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+334            android:name="com.squareup.picasso.PicassoProvider"
+334-->[com.squareup.picasso:picasso:2.71828] /Users/user/.gradle/caches/transforms-2/files-2.1/39fef48a04108d80cc3888306575b59b/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+335            android:authorities="com.raihan.dailyfamily.com.squareup.picasso"
+335-->[com.squareup.picasso:picasso:2.71828] /Users/user/.gradle/caches/transforms-2/files-2.1/39fef48a04108d80cc3888306575b59b/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+336            android:exported="false" />
+336-->[com.squareup.picasso:picasso:2.71828] /Users/user/.gradle/caches/transforms-2/files-2.1/39fef48a04108d80cc3888306575b59b/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+337
+338        <activity
+338-->[com.google.android.gms:play-services-base:18.0.1] /Users/user/.gradle/caches/transforms-2/files-2.1/ad860e74d9f67c730e88c221860bc6c6/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+339            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+339-->[com.google.android.gms:play-services-base:18.0.1] /Users/user/.gradle/caches/transforms-2/files-2.1/ad860e74d9f67c730e88c221860bc6c6/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+340            android:exported="false"
+340-->[com.google.android.gms:play-services-base:18.0.1] /Users/user/.gradle/caches/transforms-2/files-2.1/ad860e74d9f67c730e88c221860bc6c6/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+341            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+341-->[com.google.android.gms:play-services-base:18.0.1] /Users/user/.gradle/caches/transforms-2/files-2.1/ad860e74d9f67c730e88c221860bc6c6/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+342
+343        <provider
+343-->[com.google.firebase:firebase-common:20.1.1] /Users/user/.gradle/caches/transforms-2/files-2.1/11cbada50274fd8389be2aa9fd96d938/jetified-firebase-common-20.1.1/AndroidManifest.xml:26:9-31:39
+344            android:name="com.google.firebase.provider.FirebaseInitProvider"
+344-->[com.google.firebase:firebase-common:20.1.1] /Users/user/.gradle/caches/transforms-2/files-2.1/11cbada50274fd8389be2aa9fd96d938/jetified-firebase-common-20.1.1/AndroidManifest.xml:27:13-77
+345            android:authorities="com.raihan.dailyfamily.firebaseinitprovider"
+345-->[com.google.firebase:firebase-common:20.1.1] /Users/user/.gradle/caches/transforms-2/files-2.1/11cbada50274fd8389be2aa9fd96d938/jetified-firebase-common-20.1.1/AndroidManifest.xml:28:13-72
+346            android:directBootAware="true"
+346-->[com.google.firebase:firebase-common:20.1.1] /Users/user/.gradle/caches/transforms-2/files-2.1/11cbada50274fd8389be2aa9fd96d938/jetified-firebase-common-20.1.1/AndroidManifest.xml:29:13-43
+347            android:exported="false"
+347-->[com.google.firebase:firebase-common:20.1.1] /Users/user/.gradle/caches/transforms-2/files-2.1/11cbada50274fd8389be2aa9fd96d938/jetified-firebase-common-20.1.1/AndroidManifest.xml:30:13-37
+348            android:initOrder="100" />
+348-->[com.google.firebase:firebase-common:20.1.1] /Users/user/.gradle/caches/transforms-2/files-2.1/11cbada50274fd8389be2aa9fd96d938/jetified-firebase-common-20.1.1/AndroidManifest.xml:31:13-36
+349
+350        <receiver
+350-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c640450b7fbd85d8fdfdf6857dce9141/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:29:9-33:20
+351            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+351-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c640450b7fbd85d8fdfdf6857dce9141/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:30:13-85
+352            android:enabled="true"
+352-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c640450b7fbd85d8fdfdf6857dce9141/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:31:13-35
+353            android:exported="false" >
+353-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c640450b7fbd85d8fdfdf6857dce9141/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:32:13-37
+354        </receiver>
+355
+356        <service
+356-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c640450b7fbd85d8fdfdf6857dce9141/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:35:9-38:40
+357            android:name="com.google.android.gms.measurement.AppMeasurementService"
+357-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c640450b7fbd85d8fdfdf6857dce9141/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:36:13-84
+358            android:enabled="true"
+358-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c640450b7fbd85d8fdfdf6857dce9141/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:37:13-35
+359            android:exported="false" />
+359-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c640450b7fbd85d8fdfdf6857dce9141/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:38:13-37
+360        <service
+360-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c640450b7fbd85d8fdfdf6857dce9141/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:39:9-43:72
+361            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+361-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c640450b7fbd85d8fdfdf6857dce9141/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:40:13-87
+362            android:enabled="true"
+362-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c640450b7fbd85d8fdfdf6857dce9141/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:41:13-35
+363            android:exported="false"
+363-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c640450b7fbd85d8fdfdf6857dce9141/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:42:13-37
+364            android:permission="android.permission.BIND_JOB_SERVICE" />
+364-->[com.google.android.gms:play-services-measurement:21.1.0] /Users/user/.gradle/caches/transforms-2/files-2.1/c640450b7fbd85d8fdfdf6857dce9141/jetified-play-services-measurement-21.1.0/AndroidManifest.xml:43:13-69
+365
+366        <meta-data
+366-->[com.google.android.gms:play-services-basement:18.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/d2379cadb68a0ce08072e2bdac672d53/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+367            android:name="com.google.android.gms.version"
+367-->[com.google.android.gms:play-services-basement:18.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/d2379cadb68a0ce08072e2bdac672d53/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+368            android:value="@integer/google_play_services_version" />
+368-->[com.google.android.gms:play-services-basement:18.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/d2379cadb68a0ce08072e2bdac672d53/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+369
+370        <provider
+370-->[androidx.emoji2:emoji2:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/a75d19aae0c419e4683c31ab9bd4f411/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+371            android:name="androidx.startup.InitializationProvider"
+371-->[androidx.emoji2:emoji2:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/a75d19aae0c419e4683c31ab9bd4f411/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+372            android:authorities="com.raihan.dailyfamily.androidx-startup"
+372-->[androidx.emoji2:emoji2:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/a75d19aae0c419e4683c31ab9bd4f411/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+373            android:exported="false" >
+373-->[androidx.emoji2:emoji2:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/a75d19aae0c419e4683c31ab9bd4f411/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+374            <meta-data
+374-->[androidx.emoji2:emoji2:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/a75d19aae0c419e4683c31ab9bd4f411/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+375                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+375-->[androidx.emoji2:emoji2:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/a75d19aae0c419e4683c31ab9bd4f411/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+376                android:value="androidx.startup" />
+376-->[androidx.emoji2:emoji2:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/a75d19aae0c419e4683c31ab9bd4f411/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+377            <meta-data
+377-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/user/.gradle/caches/transforms-2/files-2.1/ae90a0424572e7454b26d90004299501/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+378                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+378-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/user/.gradle/caches/transforms-2/files-2.1/ae90a0424572e7454b26d90004299501/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+379                android:value="androidx.startup" />
+379-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/user/.gradle/caches/transforms-2/files-2.1/ae90a0424572e7454b26d90004299501/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+380        </provider>
+381
+382        <uses-library
+382-->[androidx.window:window:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/0ac3d09ddb81f65f3fa3f0fac1db3502/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+383            android:name="androidx.window.extensions"
+383-->[androidx.window:window:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/0ac3d09ddb81f65f3fa3f0fac1db3502/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+384            android:required="false" />
+384-->[androidx.window:window:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/0ac3d09ddb81f65f3fa3f0fac1db3502/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+385        <uses-library
+385-->[androidx.window:window:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/0ac3d09ddb81f65f3fa3f0fac1db3502/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+386            android:name="androidx.window.sidecar"
+386-->[androidx.window:window:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/0ac3d09ddb81f65f3fa3f0fac1db3502/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+387            android:required="false" />
+387-->[androidx.window:window:1.0.0] /Users/user/.gradle/caches/transforms-2/files-2.1/0ac3d09ddb81f65f3fa3f0fac1db3502/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+388
+389        <service
+389-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/user/.gradle/caches/transforms-2/files-2.1/4d5d7d161560a81f1db413da412040fc/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:29:9-35:19
+390            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+390-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/user/.gradle/caches/transforms-2/files-2.1/4d5d7d161560a81f1db413da412040fc/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:30:13-103
+391            android:exported="false" >
+391-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/user/.gradle/caches/transforms-2/files-2.1/4d5d7d161560a81f1db413da412040fc/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:31:13-37
+392            <meta-data
+392-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/user/.gradle/caches/transforms-2/files-2.1/4d5d7d161560a81f1db413da412040fc/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:32:13-34:39
+393                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+393-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/user/.gradle/caches/transforms-2/files-2.1/4d5d7d161560a81f1db413da412040fc/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:33:17-94
+394                android:value="cct" />
+394-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/user/.gradle/caches/transforms-2/files-2.1/4d5d7d161560a81f1db413da412040fc/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:34:17-36
+395        </service>
+396        <service
+396-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7ebff0a6e4a0de1ef1798a3e0b956cf7/jetified-transport-runtime-3.1.6/AndroidManifest.xml:26:9-30:19
+397            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+397-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7ebff0a6e4a0de1ef1798a3e0b956cf7/jetified-transport-runtime-3.1.6/AndroidManifest.xml:27:13-117
+398            android:exported="false"
+398-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7ebff0a6e4a0de1ef1798a3e0b956cf7/jetified-transport-runtime-3.1.6/AndroidManifest.xml:28:13-37
+399            android:permission="android.permission.BIND_JOB_SERVICE" >
+399-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7ebff0a6e4a0de1ef1798a3e0b956cf7/jetified-transport-runtime-3.1.6/AndroidManifest.xml:29:13-69
+400        </service>
+401
+402        <receiver
+402-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7ebff0a6e4a0de1ef1798a3e0b956cf7/jetified-transport-runtime-3.1.6/AndroidManifest.xml:32:9-34:40
+403            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+403-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7ebff0a6e4a0de1ef1798a3e0b956cf7/jetified-transport-runtime-3.1.6/AndroidManifest.xml:33:13-132
+404            android:exported="false" />
+404-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/user/.gradle/caches/transforms-2/files-2.1/7ebff0a6e4a0de1ef1798a3e0b956cf7/jetified-transport-runtime-3.1.6/AndroidManifest.xml:34:13-37
+405    </application>
+406
+407</manifest>
