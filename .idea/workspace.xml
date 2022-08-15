@@ -6,7 +6,6 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="data" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
@@ -34,11 +33,14 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_idupdate.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_idupdate.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_row_report_listviewall.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_row_report_listviewall.xml.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/raihan/dailyfamily/activity/TransactionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/raihan/dailyfamily/activity/TransactionActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/idupdate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/idupdate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/raihan/dailyfamily/activity/ReportActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/raihan/dailyfamily/activity/ReportActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/raihan/dailyfamily/activity/TotalBalanceActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/raihan/dailyfamily/activity/TotalBalanceActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/raihan/dailyfamily/model/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/raihan/dailyfamily/model/Report.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/raihan/dailyfamily/model/ReportListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/raihan/dailyfamily/model/ReportListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_report_listviewall.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_report_listviewall.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652071144181</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Update">
-      <created>1658207971463</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1658207971463</updated>
     </task>
     <task id="LOCAL-00005" summary="Automatic pdf send by email">
       <created>1658211963514</created>
@@ -516,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660574686788</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="add bazar cost">
+      <created>1660575813985</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1660575813985</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

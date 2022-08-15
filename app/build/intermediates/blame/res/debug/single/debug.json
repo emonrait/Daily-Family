@@ -8,12 +8,12 @@
         "source": "/Users/user/Desktop/Daily-Family/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/user/Desktop/Daily-Family/app/build/intermediates/res/merged/debug/drawable-xxhdpi_taka.png.flat",
-        "source": "/Users/user/Desktop/Daily-Family/app/build/generated/res/pngs/debug/drawable-xxhdpi/taka.png"
-    },
-    {
         "merged": "/Users/user/Desktop/Daily-Family/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_bal.png.flat",
         "source": "/Users/user/Desktop/Daily-Family/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_bal.png"
+    },
+    {
+        "merged": "/Users/user/Desktop/Daily-Family/app/build/intermediates/res/merged/debug/drawable-xxhdpi_taka.png.flat",
+        "source": "/Users/user/Desktop/Daily-Family/app/build/generated/res/pngs/debug/drawable-xxhdpi/taka.png"
     },
     {
         "merged": "/Users/user/Desktop/Daily-Family/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_devloper.png.flat",

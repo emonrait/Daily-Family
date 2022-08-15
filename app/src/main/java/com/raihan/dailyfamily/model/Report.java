@@ -8,6 +8,9 @@ public class Report {
     String dueMonths;
     String email;
     String nick;
+     double alltotalMeal = 0.0;
+     double perMealAmount = 0.0;
+     double alltotalCostAmount = 0.0;
 
 
     public Report() {
@@ -20,6 +23,42 @@ public class Report {
         this.dueMonths = dueMonths;
         this.email = email;
         this.nick = nick;
+    }
+
+    public Report(String name, String depositAmount, String dueAmount, String dueMonths, String email, String nick, double alltotalMeal, double perMealAmount, double alltotalCostAmount) {
+        this.name = name;
+        this.depositAmount = depositAmount;
+        this.dueAmount = dueAmount;
+        this.dueMonths = dueMonths;
+        this.email = email;
+        this.nick = nick;
+        this.alltotalMeal = alltotalMeal;
+        this.perMealAmount = perMealAmount;
+        this.alltotalCostAmount = alltotalCostAmount;
+    }
+
+    public double getAlltotalMeal() {
+        return alltotalMeal;
+    }
+
+    public void setAlltotalMeal(double alltotalMeal) {
+        this.alltotalMeal = alltotalMeal;
+    }
+
+    public double getPerMealAmount() {
+        return perMealAmount;
+    }
+
+    public void setPerMealAmount(double perMealAmount) {
+        this.perMealAmount = perMealAmount;
+    }
+
+    public double getAlltotalCostAmount() {
+        return alltotalCostAmount;
+    }
+
+    public void setAlltotalCostAmount(double alltotalCostAmount) {
+        this.alltotalCostAmount = alltotalCostAmount;
     }
 
     public String getName() {

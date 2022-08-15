@@ -7,10 +7,12 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -33,6 +35,7 @@ import com.raihan.dailyfamily.model.ValidationUtil;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Map;
 
 public class ReportActivity extends AutoLogout {
     DatabaseReference reference;
@@ -48,6 +51,9 @@ public class ReportActivity extends AutoLogout {
     private EditText input_name;
     ArrayList<Report> listdata = new ArrayList<>();
     LoadingDialog loadingDialog = new LoadingDialog(this);
+    private double alltotalMeal = 0.0;
+    private double perMealAmount = 0.0;
+    private double alltotalCostAmount = 0.0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +81,7 @@ public class ReportActivity extends AutoLogout {
             }
         });
 
-        tv_genereal_header_title.setText(R.string.balance_informatiom);
+        tv_genereal_header_title.setText(R.string.report);
 
         ivLogout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,9 +98,8 @@ public class ReportActivity extends AutoLogout {
             }
         });
 
+        allTotalBazar();
 
-
-        getFbddata();
 
         input_name.addTextChangedListener(new TextWatcher() {
             @Override
@@ -113,7 +118,6 @@ public class ReportActivity extends AutoLogout {
 
             }
         });
-
 
 
     }
@@ -135,7 +139,7 @@ public class ReportActivity extends AutoLogout {
                     String email = ds.child("email").getValue(String.class);
                     String nick = ds.child("nick").getValue(String.class);
                     // Log.d("TAG", date + " / "+txn);
-                    Report report = new Report(member_name, date, amo, invoice, email,nick);
+                    Report report = new Report(member_name, date, amo, invoice, email, nick, alltotalMeal, perMealAmount, alltotalCostAmount);
                     listdata.add(report);
                     // Log.e("Data--3", listitem.getTxnid());
                     loadingDialog.dismisstDialoglog();
@@ -173,5 +177,86 @@ public class ReportActivity extends AutoLogout {
             }
         });
 
+    }
+
+    private void allTotalMeal() {
+        if (!DialogCustom.isOnline((ReportActivity.this))) {
+            DialogCustom.showInternetConnectionMessage(ReportActivity.this);
+        } else {
+            FirebaseDatabase.getInstance().getReference().child("Meal").addValueEventListener(new ValueEventListener() {
+
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    double breakfasttotal = 0;
+                    double launchtotal = 0;
+                    double dinnertotal = 0;
+                    for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                        Map<String, Object> map = (Map<String, Object>) ds.getValue();
+                        if (map.get("flag").equals("Y")) {
+                            Object breakfast = map.get("breakfast");
+                            Object launch = map.get("launch");
+                            Object dinner = map.get("dinner");
+                            double breakfastvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(breakfast)));
+                            double launchvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(launch)));
+                            double dinnervalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(dinner)));
+                            breakfasttotal += breakfastvalue;
+                            launchtotal += launchvalue;
+                            dinnertotal += dinnervalue;
+                        }
+
+
+                    }
+
+                    alltotalMeal = (breakfasttotal * .5) + launchtotal + dinnertotal;
+                    perMealAmount = alltotalCostAmount / alltotalMeal;
+
+                    Log.d("alltotalMeal", String.valueOf(alltotalMeal));
+                    Log.d("perMealAmount", String.valueOf(perMealAmount));
+
+                    getFbddata();
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    DialogCustom.showErrorMessage(ReportActivity.this, databaseError.getMessage());
+                }
+            });
+        }
+    }
+
+    private void allTotalBazar() {
+        if (!DialogCustom.isOnline(ReportActivity.this)) {
+            DialogCustom.showInternetConnectionMessage(ReportActivity.this);
+        } else {
+            FirebaseDatabase.getInstance().getReference().child("Bazaar").addValueEventListener(new ValueEventListener() {
+
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    double bazartotal = 0;
+
+                    for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                        Map<String, Object> map = (Map<String, Object>) ds.getValue();
+                        if (map.get("flag").equals("Y")) {
+                            Object breakfast = map.get("amount");
+
+                            double bazarvalue = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(breakfast)));
+                            bazartotal += bazarvalue;
+                            alltotalCostAmount = bazartotal;
+
+                            Log.d("alltotalCostAmount", String.valueOf(alltotalCostAmount));
+
+                        }
+                    }
+                    allTotalMeal();
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    DialogCustom.showErrorMessage(ReportActivity.this, databaseError.getMessage());
+                }
+            });
+        }
     }
 }

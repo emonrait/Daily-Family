@@ -165,13 +165,12 @@ public class TotalBalanceActivity extends AutoLogout {
         if (!DialogCustom.isOnline(TotalBalanceActivity.this)) {
             DialogCustom.showInternetConnectionMessage(TotalBalanceActivity.this);
         } else {
-            //loadingDialog.startDialoglog();
-            Query queryt = databaseReferenceMeal.orderByChild("date").equalTo(ValidationUtil.getTransactionCurrentDate());
+            loadingDialog.startDialoglog();
             databaseReferenceMeal.addValueEventListener(new ValueEventListener() {
 
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    // loadingDialog.dismisstDialoglog();
+                    loadingDialog.dismisstDialoglog();
                     double breakfasttotal = 0;
                     double launchtotal = 0;
                     double dinnertotal = 0;
@@ -212,31 +211,31 @@ public class TotalBalanceActivity extends AutoLogout {
                         available_balance_value.setText(ValidationUtil.commaSeparateAmount(String.valueOf(availableBalance)));
                         available_balance_label.setText("Due Balance");
                     }
-
+                    loadingDialog.dismisstDialoglog();
 
                 }
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
-                    //loadingDialog.dismisstDialoglog();
-                    //throw databaseError.toException(); // don't ignore errors
+                    loadingDialog.dismisstDialoglog();
                     DialogCustom.showErrorMessage(TotalBalanceActivity.this, databaseError.getMessage());
                 }
             });
         }
+        loadingDialog.dismisstDialoglog();
+
     }
 
     private void totalBazar() {
         if (!DialogCustom.isOnline(TotalBalanceActivity.this)) {
             DialogCustom.showInternetConnectionMessage(TotalBalanceActivity.this);
         } else {
-            //loadingDialog.startDialoglog();
-            // Query queryt = databaseReferenceBazaar.orderByChild("date").equalTo(ValidationUtil.getTransactionCurrentDate());
+            loadingDialog.startDialoglog();
             databaseReferenceBazaar.addValueEventListener(new ValueEventListener() {
 
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    // loadingDialog.dismisstDialoglog();
+                    loadingDialog.dismisstDialoglog();
                     double bazartotal = 0;
 
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
@@ -253,15 +252,16 @@ public class TotalBalanceActivity extends AutoLogout {
                     //globalVariable.setTotalAmount(String.valueOf(total));
 
                     total_cost_value.setText(ValidationUtil.commaSeparateAmount(String.valueOf(bazartotal)));
+                    loadingDialog.dismisstDialoglog();
                 }
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
-                    //loadingDialog.dismisstDialoglog();
-                    //throw databaseError.toException(); // don't ignore errors
+                    loadingDialog.dismisstDialoglog();
                     DialogCustom.showErrorMessage(TotalBalanceActivity.this, databaseError.getMessage());
                 }
             });
+            loadingDialog.dismisstDialoglog();
         }
     }
 
@@ -293,17 +293,21 @@ public class TotalBalanceActivity extends AutoLogout {
                     totalDepositAmount = total;
 
                     globalVariable.setTotalAmount(String.valueOf(total));
+                    loadingDialog.dismisstDialoglog();
 
                 }
+
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
                     //throw databaseError.toException(); // don't ignore errors
                     DialogCustom.showErrorMessage(TotalBalanceActivity.this, databaseError.getMessage());
-                    loadingDialog.startDialoglog();
+                    loadingDialog.dismisstDialoglog();
                 }
             });
         }
+        loadingDialog.dismisstDialoglog();
+
     }
 
 

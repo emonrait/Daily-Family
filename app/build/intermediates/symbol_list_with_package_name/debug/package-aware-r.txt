@@ -3518,6 +3518,7 @@ id toolbar
 id top
 id topPanel
 id total_bazar_value
+id total_breakfast_label
 id total_breakfast_value
 id total_cost_value
 id total_deposit_amount_value
@@ -3568,6 +3569,8 @@ id tv_message
 id tv_name
 id tv_name_label
 id tv_ocp_level
+id tv_per_meal_cost
+id tv_per_meal_cost_label
 id tv_product_details
 id tv_product_details_label
 id tv_registration_title
@@ -3576,6 +3579,11 @@ id tv_status_label
 id tv_title
 id tv_total_amount
 id tv_total_amount_label
+id tv_total_breakfast
+id tv_total_diner_meal
+id tv_total_diner_meal_label
+id tv_total_launch_meal
+id tv_total_launch_meal_label
 id tv_total_meal
 id tv_total_meal_cost
 id tv_total_meal_cost_label
