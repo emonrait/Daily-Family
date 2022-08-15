@@ -226,9 +226,11 @@ public class ReportActivity extends AutoLogout {
     }
 
     private void allTotalBazar() {
+
         if (!DialogCustom.isOnline(ReportActivity.this)) {
             DialogCustom.showInternetConnectionMessage(ReportActivity.this);
         } else {
+            loadingDialog.startDialoglog();
             FirebaseDatabase.getInstance().getReference().child("Bazaar").addValueEventListener(new ValueEventListener() {
 
                 @Override
@@ -248,13 +250,16 @@ public class ReportActivity extends AutoLogout {
 
                         }
                     }
+                    loadingDialog.dismisstDialoglog();
                     allTotalMeal();
+
 
                 }
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
                     DialogCustom.showErrorMessage(ReportActivity.this, databaseError.getMessage());
+                    loadingDialog.dismisstDialoglog();
                 }
             });
         }
