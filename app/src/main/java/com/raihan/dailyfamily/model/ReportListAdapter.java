@@ -40,9 +40,6 @@ public class ReportListAdapter extends RecyclerView.Adapter<ReportListAdapter.My
     private ArrayList<Report> contactList = null;
     private ArrayList<Report> contactListFiltered;
     private OnItemClickListener listener;
-    String date = "";
-    String oldtotal = "";
-    String monthlydep = "";
     double totalMeal = 0.0;
     double perMealAmount = 0.0;
     double alltotalMeal = 0.0;
