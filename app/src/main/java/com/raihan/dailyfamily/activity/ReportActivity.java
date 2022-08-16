@@ -11,13 +11,21 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.firebase.database.Query;
+import com.google.gson.Gson;
 import com.raihan.dailyfamily.R;
 import com.raihan.dailyfamily.model.AutoLogout;
 import com.raihan.dailyfamily.model.DialogCustom;
@@ -42,6 +50,7 @@ public class ReportActivity extends AutoLogout {
     RecyclerView recylerReport;
     ReportListAdapter reportListAdapter;
     FirebaseDatabase fbd;
+    DatabaseReference databaseReferenceMonthCost;
     FirebaseUser user;
     FirebaseAuth firebaseAuth;
     String check;
@@ -54,6 +63,27 @@ public class ReportActivity extends AutoLogout {
     private double alltotalMeal = 0.0;
     private double perMealAmount = 0.0;
     private double alltotalCostAmount = 0.0;
+    String id = "";
+    String date = "";
+    String houseRent = "";
+    String electricyBill = "";
+    String buaBill = "";
+    String otherBill = "";
+    String member = "";
+    String cityBill = "";
+
+    String nperMealAmount = "";
+    String ntotalCostAmount = "";
+    String ndate = "";
+    String nhouseRent = "";
+    String nelectricyBill = "";
+    String nbuaBill = "";
+    String notherBill = "";
+    String nmember = "";
+    String ncityBill = "";
+    String nname = "";
+    String nemail = "";
+    String nmobile = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +101,7 @@ public class ReportActivity extends AutoLogout {
         assert user != null;
         check = user.getEmail();
         fbd = FirebaseDatabase.getInstance();
+        databaseReferenceMonthCost = FirebaseDatabase.getInstance().getReference("MonthCost");
 
 
         ivBack.setOnClickListener(new View.OnClickListener() {
@@ -93,12 +124,13 @@ public class ReportActivity extends AutoLogout {
         reportListAdapter = new ReportListAdapter(this, listdata, new ReportListAdapter.OnItemClickListener() {
             @Override
             public void onContactSelected(Report item) {
-                DialogCustom.showSuccessMessage(ReportActivity.this, item.getName() + item.getEmail());
+                DialogCustom.showSuccessMessage(ReportActivity.this, item.toString());
 
             }
         });
 
         allTotalBazar();
+        getMonthlyCost();
 
 
         input_name.addTextChangedListener(new TextWatcher() {
@@ -133,13 +165,34 @@ public class ReportActivity extends AutoLogout {
 
 
                     String member_name = ds.child("member_name").getValue(String.class);
-                    String date = ds.child("date").getValue(String.class);
+                    String datem = ds.child("date").getValue(String.class);
                     String amo = ds.child("amount").getValue(String.class);
-                    String invoice = ds.child("invoiceno").getValue(String.class);
+                    String mobile = ds.child("mobile").getValue(String.class);
                     String email = ds.child("email").getValue(String.class);
                     String nick = ds.child("nick").getValue(String.class);
                     // Log.d("TAG", date + " / "+txn);
-                    Report report = new Report(member_name, date, amo, invoice, email, nick, alltotalMeal, perMealAmount, alltotalCostAmount);
+
+                    Report report = new Report(member_name,
+                            datem,
+                            amo,
+                            mobile,
+                            email,
+                            nick,
+                            alltotalMeal,
+                            perMealAmount,
+                            alltotalCostAmount,
+                            id,
+                            date,
+                            houseRent,
+                            electricyBill,
+                            buaBill,
+                            otherBill,
+                            member,
+                            cityBill,
+                            mobile
+
+                    );
+
                     listdata.add(report);
                     // Log.e("Data--3", listitem.getTxnid());
                     loadingDialog.dismisstDialoglog();
@@ -156,8 +209,24 @@ public class ReportActivity extends AutoLogout {
                 reportListAdapter = new ReportListAdapter(ReportActivity.this, listdata, new ReportListAdapter.OnItemClickListener() {
                     @Override
                     public void onContactSelected(Report item) {
-                        DialogCustom.showSuccessMessage(ReportActivity.this, item.getName() + item.getEmail());
 
+                        Gson gson = new Gson();
+                        String json = gson.toJson(item);
+                        Log.d("item-->", String.valueOf(json));
+                        DialogCustom.showSuccessMessage(ReportActivity.this, json.toString());
+                        nperMealAmount = String.valueOf(item.getPerMealAmount());
+                        ntotalCostAmount = "";
+                        ndate = item.getDate();
+                        nhouseRent = item.getHouseRent();
+                        nelectricyBill = item.getElectricyBill();
+                        nbuaBill = item.getBuaBill();
+                        notherBill = item.getOtherBill();
+                        nmember = item.getMember();
+                        ncityBill = item.getCityBill();
+                        nname = item.getName();
+                        nemail = item.getEmail();
+                        nmobile = item.getMobile();
+                        showDialog();
                     }
                 });
                 recylerReport.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
@@ -263,5 +332,126 @@ public class ReportActivity extends AutoLogout {
                 }
             });
         }
+    }
+
+    private void getMonthlyCost() {
+
+        if (!DialogCustom.isOnline(ReportActivity.this)) {
+            DialogCustom.showInternetConnectionMessage(ReportActivity.this);
+        } else {
+            //loadingDialog.startDialoglog();
+
+            Query queryt = databaseReferenceMonthCost.orderByChild("flag").equalTo("Y");
+            queryt.addValueEventListener(new ValueEventListener() {
+
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    double temphouseRent = 0.0;
+                    double tempelectricyBill = 0.0;
+                    double tempbuaBill = 0.0;
+                    double tempotherBill = 0.0;
+                    double tempmember = 0.0;
+                    double tempcityBill = 0.0;
+                    for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                        id = "" + ds.child("id").getValue();
+                        date = "" + ds.child("date").getValue();
+                        temphouseRent = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(ds.child("houseRent").getValue())));
+                        tempelectricyBill = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(ds.child("electricyBill").getValue())));
+                        tempbuaBill = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(ds.child("buaBill").getValue())));
+                        tempotherBill = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(ds.child("otherBill").getValue())));
+                        tempmember = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(ds.child("member").getValue())));
+                        tempcityBill = Double.parseDouble(ValidationUtil.replacecomma(String.valueOf(ds.child("cityBill").getValue())));
+
+                        houseRent = String.valueOf(temphouseRent / tempmember);
+                        electricyBill = String.valueOf(tempelectricyBill / tempmember);
+                        buaBill = String.valueOf(tempbuaBill / tempmember);
+                        otherBill = String.valueOf(tempotherBill / tempmember);
+                        cityBill = String.valueOf(tempcityBill / tempmember);
+                        member = String.valueOf(tempmember);
+
+
+                    }
+
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    DialogCustom.showErrorMessage(ReportActivity.this, databaseError.getMessage());
+                }
+            });
+        }
+    }
+
+
+    private void showDialog() {
+        final android.app.AlertDialog.Builder dialog = new android.app.AlertDialog.Builder(this).setCancelable(false);
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View reg_layout = inflater.inflate(R.layout.mess_bill_invoice, null);
+        dialog.setView(reg_layout);
+        final android.app.AlertDialog alertDialog = dialog.create();
+       /* WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+        lp.copyFrom(alertDialog.getWindow().getAttributes());
+        lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+        lp.height = WindowManager.LayoutParams.MATCH_PARENT;
+        alertDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);// before
+   */
+
+        final TextView tv_name = reg_layout.findViewById(R.id.tv_name);
+        final TextView tv_email = reg_layout.findViewById(R.id.tv_email);
+        final TextView tv_mobile_no = reg_layout.findViewById(R.id.tv_mobile_no);
+        final TextView tv_months = reg_layout.findViewById(R.id.tv_months);
+
+        final TextView tv_total_breakfast = reg_layout.findViewById(R.id.tv_total_breakfast);
+        final TextView tv_total_launch_meal = reg_layout.findViewById(R.id.tv_total_launch_meal);
+        final TextView tv_total_diner_meal = reg_layout.findViewById(R.id.tv_total_diner_meal);
+        final TextView tv_total_meal = reg_layout.findViewById(R.id.tv_total_meal);
+        final TextView tv_total_meal_cost = reg_layout.findViewById(R.id.tv_total_meal_cost);
+        final TextView tv_total_shopping_cost = reg_layout.findViewById(R.id.tv_total_shopping_cost);
+
+        final TextView tv_house_rent = reg_layout.findViewById(R.id.tv_house_rent);
+        final TextView tv_city_cor_bill = reg_layout.findViewById(R.id.tv_city_cor_bill);
+        final TextView tv_elictricity_bill = reg_layout.findViewById(R.id.tv_elictricity_bill);
+        final TextView tv_others_bill = reg_layout.findViewById(R.id.tv_others_bill);
+        final TextView tv_bua_bill = reg_layout.findViewById(R.id.tv_bua_bill);
+
+        final Button btn_reportCancel = reg_layout.findViewById(R.id.btn_reportCancel);
+        final Button btn_save_receipt = reg_layout.findViewById(R.id.btn_save_receipt);
+
+        tv_name.setText(nname);
+        tv_email.setText(nemail);
+        tv_mobile_no.setText(nmobile);
+        tv_months.setText(ndate);
+
+        tv_total_breakfast.setText(ndate);
+        tv_total_launch_meal.setText(ndate);
+        tv_total_diner_meal.setText(ndate);
+        tv_total_meal.setText(ndate);
+        tv_total_meal_cost.setText(ndate);
+        tv_total_shopping_cost.setText(ndate);
+
+        tv_house_rent.setText(nhouseRent);
+        tv_city_cor_bill.setText(ncityBill);
+        tv_elictricity_bill.setText(nelectricyBill);
+        tv_bua_bill.setText(nbuaBill);
+        tv_others_bill.setText(notherBill);
+
+
+        btn_reportCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alertDialog.dismiss();
+            }
+        });
+
+        btn_save_receipt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alertDialog.dismiss();
+            }
+        });
+
+        alertDialog.show();
+        //  alertDialog.getWindow().setAttributes(lp);
     }
 }

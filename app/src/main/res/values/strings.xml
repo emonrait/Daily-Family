@@ -166,6 +166,13 @@
     <string name="bua">Bua Bill</string>
     <string name="others_bill">Others Bill</string>
     <string name="update">Update</string>
+    <string name="meal_information">Meal Information</string>
+    <string name="monthly_mess_bill_information">Monthly Mess Bill Information</string>
+    <string name="this_is_mobile_generated_invoice">This is mobile generated Invoice.</string>
+    <string name="save_invoice">Save Invoice</string>
+    <string name="cancel">Cancel</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="total_bill">Total Bill</string>
 
 
     <string-array name="spinnerItems">

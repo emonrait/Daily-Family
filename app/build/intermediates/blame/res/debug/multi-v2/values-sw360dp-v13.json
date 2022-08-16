@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/user/Desktop/Daily-Family/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "outputFile": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw360dp-v13\\values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/user/.gradle/caches/transforms-2/files-2.1/1b1150b390a5cf89aca8be1be0478a5d/preference-1.2.0/res/values-sw360dp-v13/values-sw360dp-v13.xml",
+                    "source": "H:\\Workspace\\Android project\\BankAsiaSmartApp\\caches\\transforms-2\\files-2.1\\1b1150b390a5cf89aca8be1be0478a5d\\preference-1.2.0\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/user/Desktop/Daily-Family/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+            "outputFile": "E:\\Workspace\\Daily-Family\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
-                    "source": "/Users/user/.gradle/caches/transforms-2/files-2.1/cbaf322ea2c3b10ac0e11ed67259cf73/jetified-android-image-cropper-2.8.0/res/values-zh/values-zh.xml",
+                    "source": "H:\\Workspace\\Android project\\BankAsiaSmartApp\\caches\\transforms-2\\files-2.1\\cbaf322ea2c3b10ac0e11ed67259cf73\\jetified-android-image-cropper-2.8.0\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

@@ -8,15 +8,24 @@ public class Report {
     String dueMonths;
     String email;
     String nick;
-     double alltotalMeal = 0.0;
-     double perMealAmount = 0.0;
-     double alltotalCostAmount = 0.0;
+    double alltotalMeal = 0.0;
+    double perMealAmount = 0.0;
+    double alltotalCostAmount = 0.0;
+    String id = "";
+    String date = "";
+    String houseRent = "";
+    String electricyBill = "";
+    String buaBill = "";
+    String otherBill = "";
+    String member = "";
+    String cityBill = "";
+    String mobile = "";
 
 
     public Report() {
     }
 
-    public Report(String name, String depositAmount, String dueAmount, String dueMonths, String email,String nick) {
+    public Report(String name, String depositAmount, String dueAmount, String dueMonths, String email, String nick) {
         this.name = name;
         this.depositAmount = depositAmount;
         this.dueAmount = dueAmount;
@@ -35,6 +44,27 @@ public class Report {
         this.alltotalMeal = alltotalMeal;
         this.perMealAmount = perMealAmount;
         this.alltotalCostAmount = alltotalCostAmount;
+    }
+
+    public Report(String name, String depositAmount, String dueAmount, String dueMonths, String email, String nick, double alltotalMeal, double perMealAmount, double alltotalCostAmount, String id, String date, String houseRent, String electricyBill, String buaBill, String otherBill, String member, String cityBill, String mobile) {
+        this.name = name;
+        this.depositAmount = depositAmount;
+        this.dueAmount = dueAmount;
+        this.dueMonths = dueMonths;
+        this.email = email;
+        this.nick = nick;
+        this.alltotalMeal = alltotalMeal;
+        this.perMealAmount = perMealAmount;
+        this.alltotalCostAmount = alltotalCostAmount;
+        this.id = id;
+        this.date = date;
+        this.houseRent = houseRent;
+        this.electricyBill = electricyBill;
+        this.buaBill = buaBill;
+        this.otherBill = otherBill;
+        this.member = member;
+        this.cityBill = cityBill;
+        this.mobile = mobile;
     }
 
     public double getAlltotalMeal() {
@@ -107,5 +137,77 @@ public class Report {
 
     public void setNick(String nick) {
         this.nick = nick;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getHouseRent() {
+        return houseRent;
+    }
+
+    public void setHouseRent(String houseRent) {
+        this.houseRent = houseRent;
+    }
+
+    public String getElectricyBill() {
+        return electricyBill;
+    }
+
+    public void setElectricyBill(String electricyBill) {
+        this.electricyBill = electricyBill;
+    }
+
+    public String getBuaBill() {
+        return buaBill;
+    }
+
+    public void setBuaBill(String buaBill) {
+        this.buaBill = buaBill;
+    }
+
+    public String getOtherBill() {
+        return otherBill;
+    }
+
+    public void setOtherBill(String otherBill) {
+        this.otherBill = otherBill;
+    }
+
+    public String getMember() {
+        return member;
+    }
+
+    public void setMember(String member) {
+        this.member = member;
+    }
+
+    public String getCityBill() {
+        return cityBill;
+    }
+
+    public void setCityBill(String cityBill) {
+        this.cityBill = cityBill;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 }
