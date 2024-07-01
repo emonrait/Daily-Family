@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -21,14 +20,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import com.raihan.dailyfamily.BuildConfig;
 import com.raihan.dailyfamily.R;
-import com.raihan.dailyfamily.activity.BazarApproval;
-import com.raihan.dailyfamily.activity.DashboardActivity;
-import com.raihan.dailyfamily.activity.MealApproval;
+import com.raihan.dailyfamily.activity.MealApprovalActivity;
 
 import java.util.ArrayList;
-import java.util.Map;
 
 
 public class MealApprovalAdapter extends RecyclerView.Adapter<MealApprovalAdapter.MyViewHolder>
@@ -181,7 +176,7 @@ public class MealApprovalAdapter extends RecyclerView.Adapter<MealApprovalAdapte
                     edtData.getRef().child("date").setValue(date);
 
                 }
-                Intent intent = new Intent(context, MealApproval.class);
+                Intent intent = new Intent(context, MealApprovalActivity.class);
                 DialogCustom.doClearActivity(intent, (Activity) context);
             }
 

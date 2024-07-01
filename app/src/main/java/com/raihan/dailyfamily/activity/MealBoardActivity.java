@@ -1,7 +1,6 @@
 package com.raihan.dailyfamily.activity;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,7 +12,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -39,7 +37,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Map;
 
-public class MealBoard extends AutoLogout {
+public class MealBoardActivity extends AutoLogout {
     GlobalVariable globalVariable;
     private ImageView ivLogout;
     private ImageView ivBack;
@@ -60,7 +58,7 @@ public class MealBoard extends AutoLogout {
     ArrayList<Meal> listdata;
     RecyclerView meal_recyclerView;
     MealReportDailyListAdapter adpter;
-    LoadingDialog loadingDialog = new LoadingDialog(MealBoard.this);
+    LoadingDialog loadingDialog = new LoadingDialog(MealBoardActivity.this);
     final Calendar myCalendar = Calendar.getInstance();
 
     @Override
@@ -89,8 +87,8 @@ public class MealBoard extends AutoLogout {
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MealBoard.this, DashboardActivity.class);
-                DialogCustom.doClearActivity(intent, MealBoard.this);
+                Intent intent = new Intent(MealBoardActivity.this, DashboardActivity.class);
+                DialogCustom.doClearActivity(intent, MealBoardActivity.this);
             }
         });
 
@@ -99,7 +97,7 @@ public class MealBoard extends AutoLogout {
         ivLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogCustom.englishcustomLogout(MealBoard.this);
+                DialogCustom.englishcustomLogout(MealBoardActivity.this);
             }
         });
 
@@ -119,7 +117,7 @@ public class MealBoard extends AutoLogout {
         date_value.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new DatePickerDialog(MealBoard.this, date, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+                new DatePickerDialog(MealBoardActivity.this, date, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show();
             }
         });
 
@@ -130,8 +128,8 @@ public class MealBoard extends AutoLogout {
     }
 
     private void totalMeal() {
-        if (!DialogCustom.isOnline(MealBoard.this)) {
-            DialogCustom.showInternetConnectionMessage(MealBoard.this);
+        if (!DialogCustom.isOnline(MealBoardActivity.this)) {
+            DialogCustom.showInternetConnectionMessage(MealBoardActivity.this);
         } else {
             //loadingDialog.startDialoglog();
             Query queryt = databaseReferenceMeal.orderByChild("date").equalTo(date_value.getText().toString().trim());
@@ -169,15 +167,15 @@ public class MealBoard extends AutoLogout {
                 public void onCancelled(@NonNull DatabaseError databaseError) {
                     //loadingDialog.dismisstDialoglog();
                     //throw databaseError.toException(); // don't ignore errors
-                    DialogCustom.showErrorMessage(MealBoard.this, databaseError.getMessage());
+                    DialogCustom.showErrorMessage(MealBoardActivity.this, databaseError.getMessage());
                 }
             });
         }
     }
 
     private void totalBazar() {
-        if (!DialogCustom.isOnline(MealBoard.this)) {
-            DialogCustom.showInternetConnectionMessage(MealBoard.this);
+        if (!DialogCustom.isOnline(MealBoardActivity.this)) {
+            DialogCustom.showInternetConnectionMessage(MealBoardActivity.this);
         } else {
             //loadingDialog.startDialoglog();
             Query queryt = databaseReferenceBazaar.orderByChild("date").equalTo(date_value.getText().toString().trim());
@@ -206,7 +204,7 @@ public class MealBoard extends AutoLogout {
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
-                    DialogCustom.showErrorMessage(MealBoard.this, databaseError.getMessage());
+                    DialogCustom.showErrorMessage(MealBoardActivity.this, databaseError.getMessage());
                 }
             });
         }
@@ -247,10 +245,10 @@ public class MealBoard extends AutoLogout {
                     }
 
                 });
-                adpter = new MealReportDailyListAdapter(MealBoard.this, listdata, new MealReportDailyListAdapter.OnItemClickListener() {
+                adpter = new MealReportDailyListAdapter(MealBoardActivity.this, listdata, new MealReportDailyListAdapter.OnItemClickListener() {
                     @Override
                     public void onContactSelected(Meal item) {
-                        DialogCustom.showSuccessMessage(MealBoard.this, item.getName() + item.getEmail());
+                        DialogCustom.showSuccessMessage(MealBoardActivity.this, item.getName() + item.getEmail());
 
                     }
                 });
@@ -267,7 +265,7 @@ public class MealBoard extends AutoLogout {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                DialogCustom.showErrorMessage(MealBoard.this, databaseError.getMessage());
+                DialogCustom.showErrorMessage(MealBoardActivity.this, databaseError.getMessage());
 
             }
         });
@@ -275,7 +273,7 @@ public class MealBoard extends AutoLogout {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(MealBoard.this, DashboardActivity.class);
-        DialogCustom.doClearActivity(intent, MealBoard.this);
+        Intent intent = new Intent(MealBoardActivity.this, DashboardActivity.class);
+        DialogCustom.doClearActivity(intent, MealBoardActivity.this);
     }
 }

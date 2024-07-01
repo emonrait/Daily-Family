@@ -21,11 +21,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.raihan.dailyfamily.R;
-import com.raihan.dailyfamily.activity.BazarApproval;
-import com.raihan.dailyfamily.activity.DashboardActivity;
+import com.raihan.dailyfamily.activity.BazarApprovalActivity;
 
 import java.util.ArrayList;
-import java.util.Map;
 
 
 public class BazarApprovalAdapter extends RecyclerView.Adapter<BazarApprovalAdapter.MyViewHolder>
@@ -172,7 +170,7 @@ public class BazarApprovalAdapter extends RecyclerView.Adapter<BazarApprovalAdap
                     edtData.getRef().child("id").setValue(id);
 
                 }
-                Intent intent = new Intent(context, BazarApproval.class);
+                Intent intent = new Intent(context, BazarApprovalActivity.class);
                 DialogCustom.doClearActivity(intent, (Activity) context);
             }
 

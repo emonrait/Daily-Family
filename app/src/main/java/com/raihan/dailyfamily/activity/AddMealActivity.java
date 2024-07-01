@@ -1,13 +1,10 @@
 package com.raihan.dailyfamily.activity;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
-import android.text.format.DateUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -17,7 +14,6 @@ import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -25,20 +21,17 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import com.raihan.dailyfamily.BuildConfig;
 import com.raihan.dailyfamily.R;
 import com.raihan.dailyfamily.model.AutoLogout;
 import com.raihan.dailyfamily.model.DialogCustom;
 import com.raihan.dailyfamily.model.GlobalVariable;
-import com.raihan.dailyfamily.model.ListItem;
 import com.raihan.dailyfamily.model.Meal;
-import com.raihan.dailyfamily.model.Members;
 import com.raihan.dailyfamily.model.ValidationUtil;
 
 import java.util.Calendar;
 import java.util.Map;
 
-public class AddMeal extends AutoLogout {
+public class AddMealActivity extends AutoLogout {
     GlobalVariable globalVariable;
     private ImageView ivLogout;
     private ImageView ivBack;
@@ -92,8 +85,8 @@ public class AddMeal extends AutoLogout {
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AddMeal.this, DashboardActivity.class);
-                DialogCustom.doClearActivity(intent, AddMeal.this);
+                Intent intent = new Intent(AddMealActivity.this, DashboardActivity.class);
+                DialogCustom.doClearActivity(intent, AddMealActivity.this);
             }
         });
 
@@ -102,7 +95,7 @@ public class AddMeal extends AutoLogout {
         ivLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogCustom.englishcustomLogout(AddMeal.this);
+                DialogCustom.englishcustomLogout(AddMealActivity.this);
             }
         });
 
@@ -125,7 +118,7 @@ public class AddMeal extends AutoLogout {
         date_value.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new DatePickerDialog(AddMeal.this, date, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+                new DatePickerDialog(AddMealActivity.this, date, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show();
 
             }
         });
@@ -136,23 +129,23 @@ public class AddMeal extends AutoLogout {
             public void onClick(View v) {
                 if (date_value.getText().toString().trim().isEmpty()) {
                     date_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMeal.this, "Please Enter Date.");
+                    DialogCustom.showErrorMessage(AddMealActivity.this, "Please Enter Date.");
 
                 } else if (breakfast_value.getText().toString().trim().isEmpty()) {
                     breakfast_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMeal.this, "Please Enter Your Breakfast Meal.");
+                    DialogCustom.showErrorMessage(AddMealActivity.this, "Please Enter Your Breakfast Meal.");
 
                 } else if (launch_value.getText().toString().trim().isEmpty()) {
                     launch_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMeal.this, "Please Enter Your Launch Meal.");
+                    DialogCustom.showErrorMessage(AddMealActivity.this, "Please Enter Your Launch Meal.");
 
                 } else if (dinner_value.getText().toString().trim().isEmpty()) {
                     dinner_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMeal.this, "Please Enter Your Dinner Meal.");
+                    DialogCustom.showErrorMessage(AddMealActivity.this, "Please Enter Your Dinner Meal.");
 
                 } else if (ValidationUtil.getNumber(breakfast_value.getText().toString().trim(), launch_value.getText().toString().trim(), dinner_value.getText().toString().trim()) <= 0) {
                     dinner_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMeal.this, "Please Select at least any type of one Meal.");
+                    DialogCustom.showErrorMessage(AddMealActivity.this, "Please Select at least any type of one Meal.");
                 } else {
                     String id = databaseReferenceMeal.push().getKey();
                     String date = date_value.getText().toString().trim();
@@ -164,7 +157,7 @@ public class AddMeal extends AutoLogout {
                     Meal meal = new Meal(id, date, email, breakfast, launch, dinner, flag);
                     // assert id != null;
                     //databaseReferenceMeal.child(id).setValue(meal);
-                    final LoadingDialog loadingDialog = new LoadingDialog(AddMeal.this);
+                    final LoadingDialog loadingDialog = new LoadingDialog(AddMealActivity.this);
                     loadingDialog.startDialoglog();
                     try {
                         databaseReferenceMeal.child(id)
@@ -177,11 +170,11 @@ public class AddMeal extends AutoLogout {
                                             launch_value.setText("");
                                             dinner_value.setText("");
                                             loadingDialog.dismisstDialoglog();
-                                            DialogCustom.showSuccessMessage(AddMeal.this, "Your Meal Add Successfully.");
+                                            DialogCustom.showSuccessMessage(AddMealActivity.this, "Your Meal Add Successfully.");
 
 
                                         } else {
-                                            DialogCustom.showErrorMessage(AddMeal.this, task.getResult() + "Unsuccessful");
+                                            DialogCustom.showErrorMessage(AddMealActivity.this, task.getResult() + "Unsuccessful");
                                             loadingDialog.dismisstDialoglog();
 
                                         }
@@ -190,7 +183,7 @@ public class AddMeal extends AutoLogout {
                                 });
                         totalMeal();
                     } catch (Exception e) {
-                        DialogCustom.showErrorMessage(AddMeal.this, e.getMessage());
+                        DialogCustom.showErrorMessage(AddMealActivity.this, e.getMessage());
                     }
 
                 }
@@ -201,8 +194,8 @@ public class AddMeal extends AutoLogout {
     }
 
     private void totalMeal() {
-        if (!DialogCustom.isOnline(AddMeal.this)) {
-            DialogCustom.showInternetConnectionMessage(AddMeal.this);
+        if (!DialogCustom.isOnline(AddMealActivity.this)) {
+            DialogCustom.showInternetConnectionMessage(AddMealActivity.this);
         } else {
             //loadingDialog.startDialoglog();
             Query queryt = databaseReferenceMeal.orderByChild("date").equalTo(date_value.getText().toString().trim());
@@ -240,7 +233,7 @@ public class AddMeal extends AutoLogout {
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
-                    DialogCustom.showErrorMessage(AddMeal.this, databaseError.getMessage());
+                    DialogCustom.showErrorMessage(AddMealActivity.this, databaseError.getMessage());
                 }
             });
         }
@@ -249,7 +242,7 @@ public class AddMeal extends AutoLogout {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(AddMeal.this, DashboardActivity.class);
-        DialogCustom.doClearActivity(intent, AddMeal.this);
+        Intent intent = new Intent(AddMealActivity.this, DashboardActivity.class);
+        DialogCustom.doClearActivity(intent, AddMealActivity.this);
     }
 }

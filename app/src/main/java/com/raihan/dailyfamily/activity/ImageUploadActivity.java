@@ -37,7 +37,7 @@ import com.theartofdev.edmodo.cropper.CropImageView;
 
 import java.util.UUID;
 
-public class ImageUpload extends AutoLogout {
+public class ImageUploadActivity extends AutoLogout {
     GlobalVariable globalVariable;
     private ImageView ivLogout;
     private ImageView userPhoto;
@@ -90,8 +90,8 @@ public class ImageUpload extends AutoLogout {
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ImageUpload.this, DashboardActivity.class);
-                DialogCustom.doClearActivity(intent, ImageUpload.this);
+                Intent intent = new Intent(ImageUploadActivity.this, DashboardActivity.class);
+                DialogCustom.doClearActivity(intent, ImageUploadActivity.this);
             }
         });
 
@@ -100,7 +100,7 @@ public class ImageUpload extends AutoLogout {
         ivLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogCustom.englishcustomLogout(ImageUpload.this);
+                DialogCustom.englishcustomLogout(ImageUploadActivity.this);
             }
         });
 
@@ -108,7 +108,7 @@ public class ImageUpload extends AutoLogout {
             @Override
             public void onClick(View view) {
                 if (filePath == null) {
-                    DialogCustom.showErrorMessage(ImageUpload.this, "Please Select Image to Upload");
+                    DialogCustom.showErrorMessage(ImageUploadActivity.this, "Please Select Image to Upload");
                 } else {
                     uploadImage();
 
@@ -212,7 +212,7 @@ public class ImageUpload extends AutoLogout {
                         @Override
                         public void onFailure(@NonNull Exception e) {
                             progressDialog.dismiss();
-                            DialogCustom.showErrorMessage(ImageUpload.this, e.toString());
+                            DialogCustom.showErrorMessage(ImageUploadActivity.this, e.toString());
 
                             //   Toast.makeText(getApplicationContext(), "Failed " + e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
@@ -253,7 +253,7 @@ public class ImageUpload extends AutoLogout {
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError databaseError) {
-                        Toast.makeText(ImageUpload.this, databaseError.getMessage(), Toast.LENGTH_LONG).show();
+                        Toast.makeText(ImageUploadActivity.this, databaseError.getMessage(), Toast.LENGTH_LONG).show();
                     }
                 });
             }

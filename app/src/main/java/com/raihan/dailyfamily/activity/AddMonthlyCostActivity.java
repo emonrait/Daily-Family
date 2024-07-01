@@ -1,7 +1,6 @@
 package com.raihan.dailyfamily.activity;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -24,20 +23,17 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import com.raihan.dailyfamily.BuildConfig;
 import com.raihan.dailyfamily.R;
 import com.raihan.dailyfamily.model.AutoLogout;
-import com.raihan.dailyfamily.model.Bazaar;
 import com.raihan.dailyfamily.model.DialogCustom;
 import com.raihan.dailyfamily.model.GlobalVariable;
 import com.raihan.dailyfamily.model.MonthCost;
 import com.raihan.dailyfamily.model.ValidationUtil;
 
 import java.util.Calendar;
-import java.util.Map;
 import java.util.Objects;
 
-public class AddMonthlyCost extends AutoLogout {
+public class AddMonthlyCostActivity extends AutoLogout {
     GlobalVariable globalVariable;
     private ImageView ivLogout;
     private ImageView ivBack;
@@ -99,8 +95,8 @@ public class AddMonthlyCost extends AutoLogout {
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AddMonthlyCost.this, DashboardActivity.class);
-                DialogCustom.doClearActivity(intent, AddMonthlyCost.this);
+                Intent intent = new Intent(AddMonthlyCostActivity.this, DashboardActivity.class);
+                DialogCustom.doClearActivity(intent, AddMonthlyCostActivity.this);
             }
         });
 
@@ -109,7 +105,7 @@ public class AddMonthlyCost extends AutoLogout {
         ivLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogCustom.englishcustomLogout(AddMonthlyCost.this);
+                DialogCustom.englishcustomLogout(AddMonthlyCostActivity.this);
             }
         });
 
@@ -131,7 +127,7 @@ public class AddMonthlyCost extends AutoLogout {
         date_value.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new DatePickerDialog(AddMonthlyCost.this, date, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+                new DatePickerDialog(AddMonthlyCostActivity.this, date, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show();
             }
         });
 
@@ -140,27 +136,27 @@ public class AddMonthlyCost extends AutoLogout {
             public void onClick(View v) {
                 if (date_value.getText().toString().trim().isEmpty()) {
                     date_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMonthlyCost.this, "Please Enter Date.");
+                    DialogCustom.showErrorMessage(AddMonthlyCostActivity.this, "Please Enter Date.");
 
                 } else if (house_rent_value.getText().toString().trim().isEmpty()) {
                     house_rent_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMonthlyCost.this, "Please Enter House Rent Bill.");
+                    DialogCustom.showErrorMessage(AddMonthlyCostActivity.this, "Please Enter House Rent Bill.");
 
                 } else if (city_cor_bill_value.getText().toString().trim().isEmpty()) {
                     city_cor_bill_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMonthlyCost.this, "Please Enter City Corporation Bill.");
+                    DialogCustom.showErrorMessage(AddMonthlyCostActivity.this, "Please Enter City Corporation Bill.");
 
                 } else if (elictricity_value.getText().toString().trim().isEmpty()) {
                     elictricity_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMonthlyCost.this, "Please Enter Electricity Bill.");
+                    DialogCustom.showErrorMessage(AddMonthlyCostActivity.this, "Please Enter Electricity Bill.");
 
                 } else if (bua_value.getText().toString().trim().isEmpty()) {
                     bua_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMonthlyCost.this, "Please Enter Bua Bill.");
+                    DialogCustom.showErrorMessage(AddMonthlyCostActivity.this, "Please Enter Bua Bill.");
 
                 } else if (member_value.getText().toString().trim().isEmpty()) {
                     member_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMonthlyCost.this, "Please Enter Total Mess Member.");
+                    DialogCustom.showErrorMessage(AddMonthlyCostActivity.this, "Please Enter Total Mess Member.");
 
                 } else {
                     String id = databaseReferenceMonthCost.push().getKey();
@@ -176,7 +172,7 @@ public class AddMonthlyCost extends AutoLogout {
                     MonthCost monthCost = new MonthCost(id, date, houseRent, electricyBill, buaBill, otherBill, member, cityBill, flag, updateBy);
 
 
-                    final LoadingDialog loadingDialog = new LoadingDialog(AddMonthlyCost.this);
+                    final LoadingDialog loadingDialog = new LoadingDialog(AddMonthlyCostActivity.this);
                     loadingDialog.startDialoglog();
                     try {
                         assert id != null;
@@ -193,11 +189,11 @@ public class AddMonthlyCost extends AutoLogout {
                                             member_value.setText("");
                                             city_cor_bill_value.setText("");
                                             loadingDialog.dismisstDialoglog();
-                                            DialogCustom.showSuccessMessage(AddMonthlyCost.this, "Your Product Cost Add Successfully.");
+                                            DialogCustom.showSuccessMessage(AddMonthlyCostActivity.this, "Your Product Cost Add Successfully.");
 
 
                                         } else {
-                                            DialogCustom.showErrorMessage(AddMonthlyCost.this, task.getResult() + "Unsuccessful");
+                                            DialogCustom.showErrorMessage(AddMonthlyCostActivity.this, task.getResult() + "Unsuccessful");
                                             loadingDialog.dismisstDialoglog();
 
                                         }
@@ -206,7 +202,7 @@ public class AddMonthlyCost extends AutoLogout {
                                 });
 
                     } catch (Exception e) {
-                        DialogCustom.showErrorMessage(AddMonthlyCost.this, e.getMessage());
+                        DialogCustom.showErrorMessage(AddMonthlyCostActivity.this, e.getMessage());
                         loadingDialog.dismisstDialoglog();
                     }
 
@@ -219,27 +215,27 @@ public class AddMonthlyCost extends AutoLogout {
             public void onClick(View v) {
                 if (date_value.getText().toString().trim().isEmpty()) {
                     date_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMonthlyCost.this, "Please Enter Date.");
+                    DialogCustom.showErrorMessage(AddMonthlyCostActivity.this, "Please Enter Date.");
 
                 } else if (house_rent_value.getText().toString().trim().isEmpty()) {
                     house_rent_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMonthlyCost.this, "Please Enter House Rent Bill.");
+                    DialogCustom.showErrorMessage(AddMonthlyCostActivity.this, "Please Enter House Rent Bill.");
 
                 } else if (city_cor_bill_value.getText().toString().trim().isEmpty()) {
                     city_cor_bill_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMonthlyCost.this, "Please Enter City Corporation Bill.");
+                    DialogCustom.showErrorMessage(AddMonthlyCostActivity.this, "Please Enter City Corporation Bill.");
 
                 } else if (elictricity_value.getText().toString().trim().isEmpty()) {
                     elictricity_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMonthlyCost.this, "Please Enter Electricity Bill.");
+                    DialogCustom.showErrorMessage(AddMonthlyCostActivity.this, "Please Enter Electricity Bill.");
 
                 } else if (bua_value.getText().toString().trim().isEmpty()) {
                     bua_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMonthlyCost.this, "Please Enter Bua Bill.");
+                    DialogCustom.showErrorMessage(AddMonthlyCostActivity.this, "Please Enter Bua Bill.");
 
                 } else if (member_value.getText().toString().trim().isEmpty()) {
                     member_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddMonthlyCost.this, "Please Enter Total Mess Member.");
+                    DialogCustom.showErrorMessage(AddMonthlyCostActivity.this, "Please Enter Total Mess Member.");
 
                 } else {
                     updatevMonthlyCost();
@@ -250,8 +246,8 @@ public class AddMonthlyCost extends AutoLogout {
     }
 
     private void getMonthlyCost() {
-        if (!DialogCustom.isOnline(AddMonthlyCost.this)) {
-            DialogCustom.showInternetConnectionMessage(AddMonthlyCost.this);
+        if (!DialogCustom.isOnline(AddMonthlyCostActivity.this)) {
+            DialogCustom.showInternetConnectionMessage(AddMonthlyCostActivity.this);
         } else {
             //loadingDialog.startDialoglog();
             Query queryt = databaseReferenceMonthCost.orderByChild("flag").equalTo("Y");
@@ -290,7 +286,7 @@ public class AddMonthlyCost extends AutoLogout {
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
-                    DialogCustom.showErrorMessage(AddMonthlyCost.this, databaseError.getMessage());
+                    DialogCustom.showErrorMessage(AddMonthlyCostActivity.this, databaseError.getMessage());
                 }
             });
         }
@@ -316,13 +312,13 @@ public class AddMonthlyCost extends AutoLogout {
                     edtData.getRef().child("updateBy").setValue(firebaseAuth.getCurrentUser().getEmail());
 
                 }
-                Toast.makeText(AddMonthlyCost.this, "Information Update Successfully....", Toast.LENGTH_LONG).show();
+                Toast.makeText(AddMonthlyCostActivity.this, "Information Update Successfully....", Toast.LENGTH_LONG).show();
                 getMonthlyCost();
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(AddMonthlyCost.this, databaseError.getMessage(), Toast.LENGTH_LONG).show();
+                Toast.makeText(AddMonthlyCostActivity.this, databaseError.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
 
@@ -332,7 +328,7 @@ public class AddMonthlyCost extends AutoLogout {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(AddMonthlyCost.this, DashboardActivity.class);
-        DialogCustom.doClearActivity(intent, AddMonthlyCost.this);
+        Intent intent = new Intent(AddMonthlyCostActivity.this, DashboardActivity.class);
+        DialogCustom.doClearActivity(intent, AddMonthlyCostActivity.this);
     }
 }

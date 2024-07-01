@@ -1,7 +1,6 @@
 package com.raihan.dailyfamily.activity;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -27,14 +26,13 @@ import com.raihan.dailyfamily.model.AutoLogout;
 import com.raihan.dailyfamily.model.Bazaar;
 import com.raihan.dailyfamily.model.DialogCustom;
 import com.raihan.dailyfamily.model.GlobalVariable;
-import com.raihan.dailyfamily.model.Meal;
 import com.raihan.dailyfamily.model.ValidationUtil;
 
 import java.util.Calendar;
 import java.util.Map;
 import java.util.Objects;
 
-public class AddBazarCost extends AutoLogout {
+public class AddBazarCostActivity extends AutoLogout {
     GlobalVariable globalVariable;
     private ImageView ivLogout;
     private ImageView ivBack;
@@ -84,8 +82,8 @@ public class AddBazarCost extends AutoLogout {
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AddBazarCost.this, DashboardActivity.class);
-                DialogCustom.doClearActivity(intent, AddBazarCost.this);
+                Intent intent = new Intent(AddBazarCostActivity.this, DashboardActivity.class);
+                DialogCustom.doClearActivity(intent, AddBazarCostActivity.this);
             }
         });
 
@@ -94,7 +92,7 @@ public class AddBazarCost extends AutoLogout {
         ivLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogCustom.englishcustomLogout(AddBazarCost.this);
+                DialogCustom.englishcustomLogout(AddBazarCostActivity.this);
             }
         });
 
@@ -115,7 +113,7 @@ public class AddBazarCost extends AutoLogout {
         date_value.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new DatePickerDialog(AddBazarCost.this, date, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+                new DatePickerDialog(AddBazarCostActivity.this, date, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH)).show();
             }
         });
 
@@ -124,19 +122,19 @@ public class AddBazarCost extends AutoLogout {
             public void onClick(View v) {
                 if (date_value.getText().toString().trim().isEmpty()) {
                     date_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddBazarCost.this, "Please Enter Date.");
+                    DialogCustom.showErrorMessage(AddBazarCostActivity.this, "Please Enter Date.");
 
                 } else if (amount_value.getText().toString().trim().isEmpty()) {
                     amount_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddBazarCost.this, "Please Enter Total Amount.");
+                    DialogCustom.showErrorMessage(AddBazarCostActivity.this, "Please Enter Total Amount.");
 
                 } else if (amount_value.getText().toString().trim().equals("0")) {
                     amount_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddBazarCost.this, "Please Enter Total Amount.");
+                    DialogCustom.showErrorMessage(AddBazarCostActivity.this, "Please Enter Total Amount.");
 
                 } else if (product_details_value.getText().toString().trim().isEmpty()) {
                     product_details_value.requestFocus();
-                    DialogCustom.showErrorMessage(AddBazarCost.this, "Please Enter Product Details.");
+                    DialogCustom.showErrorMessage(AddBazarCostActivity.this, "Please Enter Product Details.");
 
                 } else {
                     String id = databaseReferenceBazaar.push().getKey();
@@ -147,7 +145,7 @@ public class AddBazarCost extends AutoLogout {
                     String flag = "N";
                     Bazaar meal = new Bazaar(id, date, email, amount, product_details, flag);
 
-                    final LoadingDialog loadingDialog = new LoadingDialog(AddBazarCost.this);
+                    final LoadingDialog loadingDialog = new LoadingDialog(AddBazarCostActivity.this);
                     loadingDialog.startDialoglog();
                     try {
                         assert id != null;
@@ -160,11 +158,11 @@ public class AddBazarCost extends AutoLogout {
                                             amount_value.setText("");
                                             product_details_value.setText("");
                                             loadingDialog.dismisstDialoglog();
-                                            DialogCustom.showSuccessMessage(AddBazarCost.this, "Your Product Cost Add Successfully.");
+                                            DialogCustom.showSuccessMessage(AddBazarCostActivity.this, "Your Product Cost Add Successfully.");
 
 
                                         } else {
-                                            DialogCustom.showErrorMessage(AddBazarCost.this, task.getResult() + "Unsuccessful");
+                                            DialogCustom.showErrorMessage(AddBazarCostActivity.this, task.getResult() + "Unsuccessful");
                                             loadingDialog.dismisstDialoglog();
 
                                         }
@@ -173,7 +171,7 @@ public class AddBazarCost extends AutoLogout {
                                 });
                         totalBazar();
                     } catch (Exception e) {
-                        DialogCustom.showErrorMessage(AddBazarCost.this, e.getMessage());
+                        DialogCustom.showErrorMessage(AddBazarCostActivity.this, e.getMessage());
                         loadingDialog.dismisstDialoglog();
                     }
 
@@ -184,8 +182,8 @@ public class AddBazarCost extends AutoLogout {
     }
 
     private void totalBazar() {
-        if (!DialogCustom.isOnline(AddBazarCost.this)) {
-            DialogCustom.showInternetConnectionMessage(AddBazarCost.this);
+        if (!DialogCustom.isOnline(AddBazarCostActivity.this)) {
+            DialogCustom.showInternetConnectionMessage(AddBazarCostActivity.this);
         } else {
             //loadingDialog.startDialoglog();
             Query queryt = databaseReferenceBazaar.orderByChild("date").equalTo(date_value.getText().toString().trim());
@@ -220,7 +218,7 @@ public class AddBazarCost extends AutoLogout {
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
-                    DialogCustom.showErrorMessage(AddBazarCost.this, databaseError.getMessage());
+                    DialogCustom.showErrorMessage(AddBazarCostActivity.this, databaseError.getMessage());
                 }
             });
         }
@@ -228,7 +226,7 @@ public class AddBazarCost extends AutoLogout {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(AddBazarCost.this, DashboardActivity.class);
-        DialogCustom.doClearActivity(intent, AddBazarCost.this);
+        Intent intent = new Intent(AddBazarCostActivity.this, DashboardActivity.class);
+        DialogCustom.doClearActivity(intent, AddBazarCostActivity.this);
     }
 }

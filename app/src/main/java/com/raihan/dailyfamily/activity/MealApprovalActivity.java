@@ -1,7 +1,6 @@
 package com.raihan.dailyfamily.activity;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -31,11 +30,9 @@ import com.raihan.dailyfamily.model.MealApprovalAdapter;
 import com.raihan.dailyfamily.model.ValidationUtil;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.Map;
 
-public class MealApproval extends AutoLogout {
+public class MealApprovalActivity extends AutoLogout {
     GlobalVariable globalVariable;
     private ImageView ivLogout;
     private ImageView ivBack;
@@ -70,8 +67,8 @@ public class MealApproval extends AutoLogout {
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MealApproval.this, DashboardActivity.class);
-                DialogCustom.doClearActivity(intent, MealApproval.this);
+                Intent intent = new Intent(MealApprovalActivity.this, DashboardActivity.class);
+                DialogCustom.doClearActivity(intent, MealApprovalActivity.this);
             }
         });
 
@@ -80,7 +77,7 @@ public class MealApproval extends AutoLogout {
         ivLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogCustom.englishcustomLogout(MealApproval.this);
+                DialogCustom.englishcustomLogout(MealApprovalActivity.this);
             }
         });
 
@@ -124,10 +121,10 @@ public class MealApproval extends AutoLogout {
                     }
 
                 });*/
-                adpter = new MealApprovalAdapter(MealApproval.this, listdata, new MealApprovalAdapter.OnItemClickListener() {
+                adpter = new MealApprovalAdapter(MealApprovalActivity.this, listdata, new MealApprovalAdapter.OnItemClickListener() {
                     @Override
                     public void onContactSelected(Meal item) {
-                        DialogCustom.showSuccessMessage(MealApproval.this, item.getName() + item.getEmail());
+                        DialogCustom.showSuccessMessage(MealApprovalActivity.this, item.getName() + item.getEmail());
 
                     }
                 });
@@ -144,7 +141,7 @@ public class MealApproval extends AutoLogout {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                DialogCustom.showErrorMessage(MealApproval.this, databaseError.getMessage());
+                DialogCustom.showErrorMessage(MealApprovalActivity.this, databaseError.getMessage());
                 loadingDialog.dismisstDialoglog();
 
             }
@@ -153,8 +150,8 @@ public class MealApproval extends AutoLogout {
     }
 
     private void totalMeal() {
-        if (!DialogCustom.isOnline(MealApproval.this)) {
-            DialogCustom.showInternetConnectionMessage(MealApproval.this);
+        if (!DialogCustom.isOnline(MealApprovalActivity.this)) {
+            DialogCustom.showInternetConnectionMessage(MealApprovalActivity.this);
         } else {
             //loadingDialog.startDialoglog();
             Query queryt = databaseReferenceMeal.orderByChild("flag").equalTo("N");
@@ -192,7 +189,7 @@ public class MealApproval extends AutoLogout {
                 public void onCancelled(@NonNull DatabaseError databaseError) {
                     //loadingDialog.dismisstDialoglog();
                     //throw databaseError.toException(); // don't ignore errors
-                    DialogCustom.showErrorMessage(MealApproval.this, databaseError.getMessage());
+                    DialogCustom.showErrorMessage(MealApprovalActivity.this, databaseError.getMessage());
                 }
             });
         }
@@ -200,7 +197,7 @@ public class MealApproval extends AutoLogout {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(MealApproval.this, DashboardActivity.class);
-        DialogCustom.doClearActivity(intent, MealApproval.this);
+        Intent intent = new Intent(MealApprovalActivity.this, DashboardActivity.class);
+        DialogCustom.doClearActivity(intent, MealApprovalActivity.this);
     }
 }

@@ -28,45 +28,45 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity.AddMonthlyCost"
+            android:name=".activity.AddMonthlyCostActivity"
             android:exported="true" />
         <activity
-            android:name=".activity.BazarApproval"
+            android:name=".activity.BazarApprovalActivity"
             android:configChanges="orientation|keyboardHidden"
             android:exported="true"
             android:parentActivityName=".activity.DashboardActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.MealApproval"
+            android:name=".activity.MealApprovalActivity"
             android:configChanges="orientation|keyboardHidden"
             android:exported="true"
             android:parentActivityName=".activity.DashboardActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.AddBazarCost"
+            android:name=".activity.AddBazarCostActivity"
             android:configChanges="orientation|keyboardHidden"
             android:exported="true"
             android:parentActivityName=".activity.DashboardActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.AddMeal"
+            android:name=".activity.AddMealActivity"
             android:configChanges="orientation|keyboardHidden"
             android:exported="true"
             android:parentActivityName=".activity.DashboardActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.MealBoard"
+            android:name=".activity.MealBoardActivity"
             android:configChanges="orientation|keyboardHidden"
             android:exported="true"
             android:parentActivityName=".activity.DashboardActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.ImageUpload"
+            android:name=".activity.ImageUploadActivity"
             android:configChanges="orientation|keyboardHidden"
             android:exported="true"
             android:parentActivityName=".activity.DashboardActivity"

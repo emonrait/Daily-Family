@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_gradient"
     android:orientation="vertical"
-    tools:context=".activity.ImageUpload">
+    tools:context=".activity.ImageUploadActivity">
 
     <include layout="@layout/header_general" />
 

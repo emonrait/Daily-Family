@@ -179,13 +179,13 @@ public class DashboardActivity extends AutoLogout {
                 Intent a = new Intent(getApplicationContext(), AboutActivity.class);
                 startActivity(a);
             } else if (item.getItemId() == R.id.am) {
-                Intent a = new Intent(getApplicationContext(), AddMeal.class);
+                Intent a = new Intent(getApplicationContext(), AddMealActivity.class);
                 startActivity(a);
             } else if (item.getItemId() == R.id.bc) {
-                Intent a = new Intent(getApplicationContext(), AddBazarCost.class);
+                Intent a = new Intent(getApplicationContext(), AddBazarCostActivity.class);
                 startActivity(a);
             } else if (item.getItemId() == R.id.mb) {
-                Intent a = new Intent(getApplicationContext(), MealBoard.class);
+                Intent a = new Intent(getApplicationContext(), MealBoardActivity.class);
                 startActivity(a);
             } else if (item.getItemId() == R.id.passChange) {
                 Intent a = new Intent(getApplicationContext(), PasswordChangeNew.class);
@@ -194,7 +194,7 @@ public class DashboardActivity extends AutoLogout {
                 Intent a = new Intent(getApplicationContext(), ReportActivity.class);
                 startActivity(a);
             } else if (item.getItemId() == R.id.imgUpload) {
-                Intent a = new Intent(getApplicationContext(), ImageUpload.class);
+                Intent a = new Intent(getApplicationContext(), ImageUploadActivity.class);
                 startActivity(a);
             }
 
@@ -544,25 +544,25 @@ public class DashboardActivity extends AutoLogout {
                 Intent intent = new Intent(DashboardActivity.this, PasswordChangeNew.class);
                 startActivity(intent);
             } else if ("ui".equals(menu_soft_code.getText().toString())) {
-                Intent intent = new Intent(DashboardActivity.this, ImageUpload.class);
+                Intent intent = new Intent(DashboardActivity.this, ImageUploadActivity.class);
                 startActivity(intent);
             } else if ("mb".equals(menu_soft_code.getText().toString())) {
-                Intent intent = new Intent(DashboardActivity.this, MealBoard.class);
+                Intent intent = new Intent(DashboardActivity.this, MealBoardActivity.class);
                 startActivity(intent);
             } else if ("am".equals(menu_soft_code.getText().toString())) {
-                Intent intent = new Intent(DashboardActivity.this, AddMeal.class);
+                Intent intent = new Intent(DashboardActivity.this, AddMealActivity.class);
                 startActivity(intent);
             } else if ("abc".equals(menu_soft_code.getText().toString())) {
-                Intent intent = new Intent(DashboardActivity.this, AddBazarCost.class);
+                Intent intent = new Intent(DashboardActivity.this, AddBazarCostActivity.class);
                 startActivity(intent);
             } else if ("ma".equals(menu_soft_code.getText().toString())) {
-                Intent intent = new Intent(DashboardActivity.this, MealApproval.class);
+                Intent intent = new Intent(DashboardActivity.this, MealApprovalActivity.class);
                 startActivity(intent);
             } else if ("ba".equals(menu_soft_code.getText().toString())) {
-                Intent intent = new Intent(DashboardActivity.this, BazarApproval.class);
+                Intent intent = new Intent(DashboardActivity.this, BazarApprovalActivity.class);
                 startActivity(intent);
             } else if ("mc".equals(menu_soft_code.getText().toString())) {
-                Intent intent = new Intent(DashboardActivity.this, AddMonthlyCost.class);
+                Intent intent = new Intent(DashboardActivity.this, AddMonthlyCostActivity.class);
                 startActivity(intent);
             }
 

@@ -1,7 +1,6 @@
 package com.raihan.dailyfamily.activity;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -28,12 +27,10 @@ import com.raihan.dailyfamily.model.Bazaar;
 import com.raihan.dailyfamily.model.BazarApprovalAdapter;
 import com.raihan.dailyfamily.model.DialogCustom;
 import com.raihan.dailyfamily.model.GlobalVariable;
-import com.raihan.dailyfamily.model.Meal;
-import com.raihan.dailyfamily.model.MealApprovalAdapter;
 
 import java.util.ArrayList;
 
-public class BazarApproval extends AutoLogout {
+public class BazarApprovalActivity extends AutoLogout {
     GlobalVariable globalVariable;
     private ImageView ivLogout;
     private ImageView ivBack;
@@ -68,8 +65,8 @@ public class BazarApproval extends AutoLogout {
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BazarApproval.this, DashboardActivity.class);
-                DialogCustom.doClearActivity(intent, BazarApproval.this);
+                Intent intent = new Intent(BazarApprovalActivity.this, DashboardActivity.class);
+                DialogCustom.doClearActivity(intent, BazarApprovalActivity.this);
             }
         });
 
@@ -78,7 +75,7 @@ public class BazarApproval extends AutoLogout {
         ivLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogCustom.englishcustomLogout(BazarApproval.this);
+                DialogCustom.englishcustomLogout(BazarApprovalActivity.this);
             }
         });
 
@@ -119,10 +116,10 @@ public class BazarApproval extends AutoLogout {
                     }
 
                 });*/
-                adpter = new BazarApprovalAdapter(BazarApproval.this, listdata, new BazarApprovalAdapter.OnItemClickListener() {
+                adpter = new BazarApprovalAdapter(BazarApprovalActivity.this, listdata, new BazarApprovalAdapter.OnItemClickListener() {
                     @Override
                     public void onContactSelected(Bazaar item) {
-                        DialogCustom.showSuccessMessage(BazarApproval.this, item.getAmount() + item.getEmail());
+                        DialogCustom.showSuccessMessage(BazarApprovalActivity.this, item.getAmount() + item.getEmail());
 
                     }
                 });
@@ -139,7 +136,7 @@ public class BazarApproval extends AutoLogout {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                DialogCustom.showErrorMessage(BazarApproval.this, databaseError.getMessage());
+                DialogCustom.showErrorMessage(BazarApprovalActivity.this, databaseError.getMessage());
                 loadingDialog.dismisstDialoglog();
 
             }
@@ -150,7 +147,7 @@ public class BazarApproval extends AutoLogout {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(BazarApproval.this, DashboardActivity.class);
-        DialogCustom.doClearActivity(intent, BazarApproval.this);
+        Intent intent = new Intent(BazarApprovalActivity.this, DashboardActivity.class);
+        DialogCustom.doClearActivity(intent, BazarApprovalActivity.this);
     }
 }
